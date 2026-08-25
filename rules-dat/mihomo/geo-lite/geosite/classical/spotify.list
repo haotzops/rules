@@ -18,7 +18,10 @@ DOMAIN-SUFFIX,spotifyjobs.com
 DOMAIN-SUFFIX,spotifynewsroom.jp
 DOMAIN-SUFFIX,spotilocal.com
 DOMAIN-SUFFIX,tospotify.com
+DOMAIN,adeventtracker.spotify.com
+DOMAIN,adstudio-assets.scdn.co
 DOMAIN,audio4-ak-spotify-com.akamaized.net
+DOMAIN,bloodhound.spotify.com
 DOMAIN,cdn-spotify-experiments.conductrics.com
 DOMAIN,heads-ak-spotify-com.akamaized.net
 DOMAIN,spotify.com.edgesuite.net

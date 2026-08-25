@@ -1,11 +1,4 @@
 payload:
-    - +.oemssl.cn
-    - +.oemssl.cn.cdn.cloudflare.net
-    - +.sectigochina.com
-    - +.sectigochina.com.cdn.cloudflare.net
-    - +.trust-provider.cn
-    - +.dcocsp.cn
-    - +.digicert.cn
     - pki-goog.l.google.com
     - c.pki.goog
     - i.pki.goog
@@ -21,6 +14,13 @@ payload:
     - ocsp2.apple.com
     - valid.apple.com
     - valid.origin-apple.com.akadns.net
+    - +.dcocsp.cn
+    - +.digicert.cn
+    - +.oemssl.cn
+    - +.oemssl.cn.cdn.cloudflare.net
+    - +.sectigochina.com
+    - +.sectigochina.com.cdn.cloudflare.net
+    - +.trust-provider.cn
     - +.alphassl.com
     - +.easy-signing.com
     - +.globalsign.cn

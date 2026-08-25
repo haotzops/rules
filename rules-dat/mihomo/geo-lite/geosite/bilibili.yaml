@@ -21,6 +21,7 @@ payload:
     - +.bilibili.com
     - +.bilibili.net
     - +.bilibili.tv
+    - +.bilibili.tv
     - +.bilibiligame.cn
     - +.bilibiligame.co
     - +.bilibiligame.net
@@ -40,11 +41,13 @@ payload:
     - +.biliimg.com
     - +.biliintl.co
     - +.biliintl.com
+    - +.biliintl.com
     - +.biliplus.com
     - +.bilivideo.cn
     - +.bilivideo.com
     - +.bilivideo.net
     - +.corari.com
+    - +.dreamcast.hk
     - +.dreamcast.hk
     - +.dyhgames.com
     - +.hdslb.com
@@ -114,3 +117,4 @@ payload:
     - p.bstarstatic.com
     - upos-bstar-mirrorakam.akamaized.net
     - upos-bstar1-mirrorakam.akamaized.net
+    - upos-hz-mirrorakam.akamaized.net

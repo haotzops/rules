@@ -1,5 +1,6 @@
 payload:
     - +.atom.io
+    - +.collector.github.com
     - +.dependabot.com
     - +.ghcr.io
     - +.git.io
@@ -29,3 +30,5 @@ payload:
     - +.rawgithub.com
     - +.repo.new
     - +.thegithubshop.com
+    - copilot-telemetry-service.githubusercontent.com
+    - copilot-telemetry.githubusercontent.com

@@ -1,5 +1,6 @@
 payload:
     - DOMAIN-SUFFIX,ads-twitter.com
+    - DOMAIN-SUFFIX,ads-twitter.com
     - DOMAIN-SUFFIX,cms-twdigitalassets.com
     - DOMAIN-SUFFIX,grok.com
     - DOMAIN-SUFFIX,periscope.tv

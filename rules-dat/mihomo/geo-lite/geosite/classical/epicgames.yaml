@@ -14,3 +14,5 @@ payload:
     - DOMAIN-SUFFIX,spyjinx.com
     - DOMAIN-SUFFIX,unrealengine.com
     - DOMAIN-SUFFIX,unrealtournament.com
+    - DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
+    - DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$

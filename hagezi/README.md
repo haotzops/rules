@@ -75,11 +75,11 @@ Curious about the sources? Check out: [Which sources are used for the lists and 
 
 | Version | Entries | Pro++ | Pro | Nor<br>mal | Light | [Fake](#fake) | [TIF](#tif) | [Nat<br>ive](#native) | [PopUp<br>Ads](#popupads) | Bug<br>Tracker |
 |:--------|---:|:------:|:-----:|:----:|:----:|:---:|:------:|:----------:|:----:|:----:|
-| :green_book:[Light](#light)             | 41485     |  |   |   | :green_circle:  |  | |  :yellow_square: | :yellow_square: | |
-| :blue_book:[Normal](#normal)       | 188418     |  |   | :green_circle: | :green_circle: | :green_circle: | :yellow_square: | :yellow_square: | :yellow_square: | |
-| :ledger:[Pro](#pro)              | 224690         |  | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
-| :orange_book:[Pro++](#proplus)    | 248687 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |:yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
-| :closed_book:[Ultimate](#ultimate)    | 267464 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle:  | :yellow_square: | :green_circle: | :green_circle: | :green_circle: |
+| :green_book:[Light](#light)             | 42098     |  |   |   | :green_circle:  |  | |  :yellow_square: | :yellow_square: | |
+| :blue_book:[Normal](#normal)       | 189012     |  |   | :green_circle: | :green_circle: | :green_circle: | :yellow_square: | :yellow_square: | :yellow_square: | |
+| :ledger:[Pro](#pro)              | 225346         |  | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
+| :orange_book:[Pro++](#proplus)    | 249553 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |:yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
+| :closed_book:[Ultimate](#ultimate)    | 268259 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle:  | :yellow_square: | :green_circle: | :green_circle: | :green_circle: |
 
 :green_circle: fully includes the list named in the column header
 :yellow_square: partially includes the list named in the column header
@@ -110,7 +110,7 @@ Hand brush edition. Cleans up the internet and protects your privacy without goi
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 41485
+**Entries:** 42098
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -131,7 +131,7 @@ Broom edition. Cleans up the internet and protects your privacy. Blocks ads, aff
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 188418
+**Entries:** 189012
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -153,7 +153,7 @@ Big broom edition. Cleans up the internet and protects your privacy. Blocks ads,
 > **Referral domains (affiliate and tracking links):**
 > Most referral domains are still allowed here, but a handful get blocked anyway, mainly ones that double as regular trackers or are commonly tied to scam and spam links. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 224690
+**Entries:** 225346
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -167,7 +167,7 @@ Big broom edition. Cleans up the internet and protects your privacy. Blocks ads,
 
 A size-optimized version made for DNS or browser blockers, like devices with limited RAM. This only contains domains from the full Pro list that show up on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 56763
+**Entries:** 57907
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -189,7 +189,7 @@ Sweeper edition. This one cleans up the internet aggressively and protects your 
 > **Referral domains (affiliate and tracking links):**
 > A handful of referral domains that double as regular trackers are blocked here too. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 248687
+**Entries:** 249553
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -203,7 +203,7 @@ Sweeper edition. This one cleans up the internet aggressively and protects your 
 
 A size-optimized version made for DNS or browser blockers, like devices with limited RAM. Contains only domains from the full Pro++ list that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 68126
+**Entries:** 69424
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -237,7 +237,7 @@ Ultimate sweeper edition. Strictly cleans up the internet and locks down your pr
 > **Anything else:**
 > More known quirks are listed [here](share/ultimate-known-issues.txt).
 
-**Entries:** 267464
+**Entries:** 268259
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -251,7 +251,7 @@ Ultimate sweeper edition. Strictly cleans up the internet and locks down your pr
 
 A size-optimized version made for DNS or browser blockers, like devices with limited RAM. Contains only domains from the full Ultimate list that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 78793
+**Entries:** 79887
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -273,7 +273,7 @@ This blocklist targets fake stores, fake streaming sites, rip-offs, subscription
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 17103
+**Entries:** 17113
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -295,7 +295,7 @@ Targets pop-up ads that range from annoying to outright malicious.
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 54161
+**Entries:** 54168
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -321,7 +321,7 @@ This blocklist targets malware, cryptojacking, scams, spam, and phishing. It blo
 > This list is huge and can eat up a lot of memory depending on your ad blocker.
 > If that's an issue, grab the medium or mini version instead.
 
-**Entries:** 2125216
+**Entries:** 2125948
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -341,7 +341,7 @@ A medium-sized version of the TIF list, built for ad blockers that struggle with
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 359029
+**Entries:** 321503
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -361,7 +361,7 @@ A size-optimized version of the TIF Medium list, for ad blockers that even strug
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 176001
+**Entries:** 174377
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -400,17 +400,17 @@ There are two variants:
 > Stamus Labs doesn't promise daily updates, so the data can sometimes lag by a few days.
 >
 > Current status of the data:
-> - Stamus Labs: :green_circle: - Mon, 24 Aug 2026 04:25:16 UTC / 10839519 domains
+> - Stamus Labs: :green_circle: - Tue, 25 Aug 2026 04:22:33 UTC / 10781952 domains
 
 #### :new: **NRDs:** all newly registered domains, unfiltered
 
 | Time<br>period | Entries | Format<br>AdBlock | Format<br>Domains |
 |:--------------:|:--------|:-----------------:|:-----------------:|
-| 7 days ago to yesterday    | 3064109 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
-| 14 days ago to 8 days ago  | 2657344 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
-| 21 days ago to 15 days ago | 2947612 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
-| 28 days ago to 22 days ago | 2320589 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
-| 35 days ago to 29 days ago | 2382614 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
+| 7 days ago to yesterday    | 2928315 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
+| 14 days ago to 8 days ago  | 2692814 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
+| 21 days ago to 15 days ago | 3036733 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
+| 28 days ago to 22 days ago | 2348333 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
+| 35 days ago to 29 days ago | 2329286 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
 
 > [!NOTE]
 > Want to block NRDs from the last 14 days? Combine the 7-day and 14-day lists. For the last 21 days, add in the 21-day list too, and so on.
@@ -426,9 +426,9 @@ There are two variants:
 
 | Time<br>period | Entries | Format<br>AdBlock | Format<br>Domains |
 |:--------------:|:--------|:-----------------:|:-----------------:|
-| Past 7 days    | 562331 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
-| Past 14 days   | 1117925 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
-| Past 30 days   | 2450222 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
+| Past 7 days    | 565881 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
+| Past 14 days   | 1124134 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
+| Past 30 days   | 2433080 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
 
 ---
 
@@ -646,7 +646,7 @@ Blocks sites and services mainly used for illegally distributing copyrighted con
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 44266
+**Entries:** 44463
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -668,7 +668,7 @@ Blocks gambling-related sites.
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 466290
+**Entries:** 464804
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -688,7 +688,7 @@ A medium-sized version for ad blockers that have trouble with the full gambling 
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 150058
+**Entries:** 147811
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -708,7 +708,7 @@ A size-optimized version of the Gambling Medium list. Only contains domains that
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 104091
+**Entries:** 102631
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|
@@ -755,7 +755,7 @@ Blocks adult content.
 
 :green_circle: yes :yellow_square: partially :x: no
 
-**Entries:** 112656
+**Entries:** 112967
 
 | Format | Links | Should be used for |
 |:-------|:-----|:----------------|

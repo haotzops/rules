@@ -1,5 +1,7 @@
 payload:
     - DOMAIN-SUFFIX,cdninstagram.com
+    - DOMAIN-SUFFIX,graph-fallback.instagram.com
+    - DOMAIN-SUFFIX,graph.instagram.com
     - DOMAIN-SUFFIX,instagr.am
     - DOMAIN-SUFFIX,instagram.com
     - DOMAIN-KEYWORD,instagram

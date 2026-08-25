@@ -3,6 +3,8 @@
   "rules": [
     {
       "domain_suffix": [
+        "ads.youtube.com",
+        "ggpht.cn",
         "ggpht.cn",
         "ggpht.com",
         "googlevideo.com",

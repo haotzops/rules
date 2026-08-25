@@ -469,6 +469,9 @@ payload:
     - DOMAIN-SUFFIX,qznovelpic.com
     - DOMAIN-SUFFIX,qznovelstatic.com
     - DOMAIN-SUFFIX,qznovelvod.com
+    - DOMAIN-SUFFIX,juejin.cn
+    - DOMAIN-SUFFIX,juejin.im
+    - DOMAIN-SUFFIX,xitu.io
     - DOMAIN-SUFFIX,baseopendev.com
     - DOMAIN-SUFFIX,bytecloud.com
     - DOMAIN-SUFFIX,byteoc.com
@@ -570,9 +573,6 @@ payload:
     - DOMAIN-SUFFIX,yoma.cn
     - DOMAIN-SUFFIX,dcarapi.com
     - DOMAIN-SUFFIX,xflowedge.com
-    - DOMAIN-SUFFIX,juejin.cn
-    - DOMAIN-SUFFIX,juejin.im
-    - DOMAIN-SUFFIX,xitu.io
     - DOMAIN-SUFFIX,volcanoarkshare.com
     - DOMAIN-SUFFIX,volcdns.com
     - DOMAIN-SUFFIX,aigc-cloud.com
@@ -902,21 +902,6 @@ payload:
     - DOMAIN-SUFFIX,ciciai.com
     - DOMAIN-SUFFIX,ciciaicdn.com
     - DOMAIN-SUFFIX,dola.com
-    - DOMAIN,ads3-normal-hl.zijieapi.com
-    - DOMAIN,ads3-normal.zijieapi.com
-    - DOMAIN,ads5-normal-hl.zijieapi.com
-    - DOMAIN,ads5-normal.zijieapi.com
-    - DOMAIN,log3-applog-hl.fqnovel.com
-    - DOMAIN,log3-applog.fqnovel.com
-    - DOMAIN,log5-applog-hl.fqnovel.com
-    - DOMAIN,log5-applog.fqnovel.com
-    - DOMAIN,p3-ad-sign.byteimg.com
-    - DOMAIN,p6-ad-sign.byteimg.com
-    - DOMAIN,p9-ad-sign.byteimg.com
-    - DOMAIN,rtlog3-applog-hl.fqnovel.com
-    - DOMAIN,rtlog3-applog.fqnovel.com
-    - DOMAIN,rtlog5-applog-hl.fqnovel.com
-    - DOMAIN,rtlog5-applog.fqnovel.com
     - DOMAIN-SUFFIX,bytedapm.com
     - DOMAIN-SUFFIX,muscdn.com
     - DOMAIN-SUFFIX,musical.ly
@@ -953,3 +938,18 @@ payload:
     - DOMAIN,roovza.launches.appsflyersdk.com
     - DOMAIN,roovza.skadsdk.appsflyersdk.com
     - DOMAIN-SUFFIX,analytics.tiktok.com
+    - DOMAIN,ads3-normal-hl.zijieapi.com
+    - DOMAIN,ads3-normal.zijieapi.com
+    - DOMAIN,ads5-normal-hl.zijieapi.com
+    - DOMAIN,ads5-normal.zijieapi.com
+    - DOMAIN,log3-applog-hl.fqnovel.com
+    - DOMAIN,log3-applog.fqnovel.com
+    - DOMAIN,log5-applog-hl.fqnovel.com
+    - DOMAIN,log5-applog.fqnovel.com
+    - DOMAIN,p3-ad-sign.byteimg.com
+    - DOMAIN,p6-ad-sign.byteimg.com
+    - DOMAIN,p9-ad-sign.byteimg.com
+    - DOMAIN,rtlog3-applog-hl.fqnovel.com
+    - DOMAIN,rtlog3-applog.fqnovel.com
+    - DOMAIN,rtlog5-applog-hl.fqnovel.com
+    - DOMAIN,rtlog5-applog.fqnovel.com

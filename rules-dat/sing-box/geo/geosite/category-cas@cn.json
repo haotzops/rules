@@ -23,13 +23,13 @@
         "www.entrust.cn"
       ],
       "domain_suffix": [
+        "dcocsp.cn",
+        "digicert.cn",
         "oemssl.cn",
         "oemssl.cn.cdn.cloudflare.net",
         "sectigochina.com",
         "sectigochina.com.cdn.cloudflare.net",
         "trust-provider.cn",
-        "dcocsp.cn",
-        "digicert.cn",
         "alphassl.com",
         "easy-signing.com",
         "globalsign.cn",

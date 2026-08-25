@@ -1,4 +1,5 @@
 +.atom.io
++.collector.github.com
 +.dependabot.com
 +.ghcr.io
 +.git.io
@@ -28,3 +29,5 @@
 +.rawgithub.com
 +.repo.new
 +.thegithubshop.com
+copilot-telemetry-service.githubusercontent.com
+copilot-telemetry.githubusercontent.com

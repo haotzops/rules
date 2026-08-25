@@ -2,8 +2,13 @@
   "version": 2,
   "rules": [
     {
+      "domain": [
+        "copilot-telemetry-service.githubusercontent.com",
+        "copilot-telemetry.githubusercontent.com"
+      ],
       "domain_suffix": [
         "atom.io",
+        "collector.github.com",
         "dependabot.com",
         "ghcr.io",
         "git.io",

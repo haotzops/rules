@@ -18,6 +18,10 @@
         "spyjinx.com",
         "unrealengine.com",
         "unrealtournament.com"
+      ],
+      "domain_regex": [
+        "^cdn\\d-epicgames-\\d+\\.file\\.myqcloud\\.com$",
+        "^epicgames-download\\d-\\d+\\.file\\.myqcloud\\.com$"
       ]
     }
   ]

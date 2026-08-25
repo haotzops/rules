@@ -3,11 +3,18 @@
   "rules": [
     {
       "domain": [
+        "amp-api-edge.music.apple.com",
+        "amp-api.music.apple.com",
         "aod-ssl.itunes.apple.com",
         "aod.itunes.apple.com",
         "audio-ssl.itunes.apple.com",
         "audio.itunes.apple.com",
+        "js-cdn.music.apple.com",
+        "music.apple.com",
+        "musicstatus.music.apple.com",
         "mvod.itunes.apple.com",
+        "play.music.apple.com",
+        "speedysub.music.apple.com",
         "streamingaudio.itunes.apple.com"
       ],
       "domain_suffix": [

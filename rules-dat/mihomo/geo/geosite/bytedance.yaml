@@ -469,6 +469,9 @@ payload:
     - +.qznovelpic.com
     - +.qznovelstatic.com
     - +.qznovelvod.com
+    - +.juejin.cn
+    - +.juejin.im
+    - +.xitu.io
     - +.baseopendev.com
     - +.bytecloud.com
     - +.byteoc.com
@@ -570,9 +573,6 @@ payload:
     - +.yoma.cn
     - +.dcarapi.com
     - +.xflowedge.com
-    - +.juejin.cn
-    - +.juejin.im
-    - +.xitu.io
     - +.volcanoarkshare.com
     - +.volcdns.com
     - +.aigc-cloud.com
@@ -902,21 +902,6 @@ payload:
     - +.ciciai.com
     - +.ciciaicdn.com
     - +.dola.com
-    - ads3-normal-hl.zijieapi.com
-    - ads3-normal.zijieapi.com
-    - ads5-normal-hl.zijieapi.com
-    - ads5-normal.zijieapi.com
-    - log3-applog-hl.fqnovel.com
-    - log3-applog.fqnovel.com
-    - log5-applog-hl.fqnovel.com
-    - log5-applog.fqnovel.com
-    - p3-ad-sign.byteimg.com
-    - p6-ad-sign.byteimg.com
-    - p9-ad-sign.byteimg.com
-    - rtlog3-applog-hl.fqnovel.com
-    - rtlog3-applog.fqnovel.com
-    - rtlog5-applog-hl.fqnovel.com
-    - rtlog5-applog.fqnovel.com
     - +.bytedapm.com
     - +.muscdn.com
     - +.musical.ly
@@ -953,3 +938,18 @@ payload:
     - roovza.launches.appsflyersdk.com
     - roovza.skadsdk.appsflyersdk.com
     - +.analytics.tiktok.com
+    - ads3-normal-hl.zijieapi.com
+    - ads3-normal.zijieapi.com
+    - ads5-normal-hl.zijieapi.com
+    - ads5-normal.zijieapi.com
+    - log3-applog-hl.fqnovel.com
+    - log3-applog.fqnovel.com
+    - log5-applog-hl.fqnovel.com
+    - log5-applog.fqnovel.com
+    - p3-ad-sign.byteimg.com
+    - p6-ad-sign.byteimg.com
+    - p9-ad-sign.byteimg.com
+    - rtlog3-applog-hl.fqnovel.com
+    - rtlog3-applog.fqnovel.com
+    - rtlog5-applog-hl.fqnovel.com
+    - rtlog5-applog.fqnovel.com

@@ -1,21 +1,27 @@
 payload:
     - +.apple-cloudkit.com
     - +.apple-icloud.cn
+    - +.apple-icloud.cn
     - +.apple-livephotoskit.com
+    - +.appleicloud.cn
     - +.appleicloud.cn
     - +.applemx-icloud.com
     - +.apzones.com
     - +.cdn-apple.com
     - +.gc.apple.com
     - +.icloud-apple.cn
+    - +.icloud-apple.cn
     - +.icloud-content.com
+    - +.icloud-content.com.cn
     - +.icloud-content.com.cn
     - +.icloud-isupport.com
     - +.icloud-sandbox.com
     - +.icloud.apple.com
     - +.icloud.ch
     - +.icloud.cn
+    - +.icloud.cn
     - +.icloud.com
+    - +.icloud.com.cn
     - +.icloud.com.cn
     - +.icloud.de
     - +.icloud.ee
@@ -27,6 +33,7 @@ payload:
     - +.icloud.jp
     - +.icloud.lv
     - +.icloud.net.cn
+    - +.icloud.net.cn
     - +.icloud.om
     - +.icloud.org
     - +.icloud.pt
@@ -36,6 +43,7 @@ payload:
     - +.icloud.sk
     - +.icloud.vn
     - +.icloudads.net
+    - +.icloudapple.cn
     - +.icloudapple.cn
     - +.icloudbox.net
     - +.icloudbrowser.net

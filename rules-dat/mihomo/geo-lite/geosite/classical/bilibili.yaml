@@ -21,6 +21,7 @@ payload:
     - DOMAIN-SUFFIX,bilibili.com
     - DOMAIN-SUFFIX,bilibili.net
     - DOMAIN-SUFFIX,bilibili.tv
+    - DOMAIN-SUFFIX,bilibili.tv
     - DOMAIN-SUFFIX,bilibiligame.cn
     - DOMAIN-SUFFIX,bilibiligame.co
     - DOMAIN-SUFFIX,bilibiligame.net
@@ -40,11 +41,13 @@ payload:
     - DOMAIN-SUFFIX,biliimg.com
     - DOMAIN-SUFFIX,biliintl.co
     - DOMAIN-SUFFIX,biliintl.com
+    - DOMAIN-SUFFIX,biliintl.com
     - DOMAIN-SUFFIX,biliplus.com
     - DOMAIN-SUFFIX,bilivideo.cn
     - DOMAIN-SUFFIX,bilivideo.com
     - DOMAIN-SUFFIX,bilivideo.net
     - DOMAIN-SUFFIX,corari.com
+    - DOMAIN-SUFFIX,dreamcast.hk
     - DOMAIN-SUFFIX,dreamcast.hk
     - DOMAIN-SUFFIX,dyhgames.com
     - DOMAIN-SUFFIX,hdslb.com
@@ -114,3 +117,4 @@ payload:
     - DOMAIN,p.bstarstatic.com
     - DOMAIN,upos-bstar-mirrorakam.akamaized.net
     - DOMAIN,upos-bstar1-mirrorakam.akamaized.net
+    - DOMAIN,upos-hz-mirrorakam.akamaized.net

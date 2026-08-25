@@ -1,4 +1,14 @@
 payload:
+    - +.apple.www.letv.com
+    - +.ark.letv.com
+    - +.dc.letv.com
+    - +.g3.letv.com
+    - +.click.hunantv.com
+    - +.da.hunantv.com
+    - +.da.mgtv.com
+    - +.log.hunantv.com
+    - +.log.v2.hunantv.com
+    - +.res.hunantv.com
     - +.click.gamersky.com
     - +.ja.gamersky.com
     - +.ja1.gamersky.com
@@ -27,10 +37,6 @@ payload:
     - log-sdk.gifshow.com
     - wlog.kuaishou.com
     - apilog-web.acfun.cn
-    - +.apple.www.letv.com
-    - +.ark.letv.com
-    - +.dc.letv.com
-    - +.g3.letv.com
     - +.log-upload.mihoyo.com
     - +.ad.tencentmusic.com
     - +.adstats.tencentmusic.com
@@ -39,15 +45,9 @@ payload:
     - +.stat.y.qq.com
     - +.tmead.y.qq.com
     - +.tmeadcomm.y.qq.com
-    - +.ads.service.kugou.com
-    - +.adserviceretry.kglink.cn
-    - +.adserviceretry.kugou.com
     - +.adbehavior.ximalaya.com
     - +.adse.wsa.ximalaya.com
     - +.adse.ximalaya.com
-    - +.click.hunantv.com
-    - +.da.hunantv.com
-    - +.da.mgtv.com
-    - +.log.hunantv.com
-    - +.log.v2.hunantv.com
-    - +.res.hunantv.com
+    - +.ads.service.kugou.com
+    - +.adserviceretry.kglink.cn
+    - +.adserviceretry.kugou.com
