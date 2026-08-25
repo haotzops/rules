@@ -1,0 +1,280 @@
+name: Update rules
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-rules
+  cancel-in-progress: false
+
+env:
+  MIHOMO_VERSION: "1.19.30"
+  GOTOOLCHAIN: auto
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Go
+        uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6.5.0
+        with:
+          go-version: "1.24.6"
+          cache: false
+          check-latest: false
+
+      # setup-go v6 默认写入 GOTOOLCHAIN=local，会阻止 go 按上游 go.mod 自动下载工具链；
+      # 重新写入 GITHUB_ENV 以覆盖（后写优先），允许按需下载。
+      - name: Enable Go toolchain auto-download
+        run: echo "GOTOOLCHAIN=auto" >> "$GITHUB_ENV"
+
+      - name: Test converter
+        run: go test ./...
+
+      - name: Prepare release worktree
+        run: |
+          set -euo pipefail
+
+          release_work="$RUNNER_TEMP/release-work"
+          echo "RELEASE_WORK=$release_work" >> "$GITHUB_ENV"
+
+          if git fetch origin release --depth=1; then
+            git worktree add --detach "$release_work" origin/release
+          else
+            echo "remote branch 'release' not found, initializing an orphan release worktree"
+            git worktree add --orphan -b release "$release_work"
+          fi
+
+          git -C "$release_work" rm -r --ignore-unmatch . || true
+          mkdir -p \
+            "$release_work/oisd" \
+            "$release_work/hagezi" \
+            "$release_work/rules-dat/geo" \
+            "$release_work/rules-dat/mihomo" \
+            "$release_work/rules-dat/sing-box"
+
+      - name: Checkout Geo build dependencies
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          repository: Loyalsoldier/domain-list-custom
+          path: custom
+          persist-credentials: false
+
+      - name: Checkout domain-list-community
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          repository: v2fly/domain-list-community
+          path: community
+          persist-credentials: false
+
+      - name: Checkout meta-rules-converter
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          repository: MetaCubeX/meta-rules-converter
+          path: convert
+          persist-credentials: false
+
+      - name: Checkout gfwlist2dnsmasq
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          repository: cokebar/gfwlist2dnsmasq
+          path: gfwlist2dnsmasq
+          persist-credentials: false
+
+      - name: Download sources
+        run: |
+          set -euo pipefail
+
+          mkdir -p "$RUNNER_TEMP/sources/oisd" "$RUNNER_TEMP/sources/hagezi"
+
+          download() {
+            local url="$1"
+            local out="$2"
+            local tmp="${out}.tmp"
+
+            curl \
+              --fail \
+              --show-error \
+              --silent \
+              --location \
+              --retry 3 \
+              --retry-delay 2 \
+              --retry-all-errors \
+              --proto '=https' \
+              --tlsv1.2 \
+              "$url" \
+              --output "$tmp"
+
+            test -s "$tmp"
+            mv "$tmp" "$out"
+          }
+
+          while IFS='|' read -r name url _title _min _max; do
+            download "$url" "$RUNNER_TEMP/sources/oisd/$name.txt"
+          done < <(grep -vE '^[[:space:]]*(#|$)' oisd/sources.conf)
+
+          while IFS='|' read -r name url _title _min _max; do
+            download "$url" "$RUNNER_TEMP/sources/hagezi/$name.txt"
+          done < <(grep -vE '^[[:space:]]*(#|$)' hagezi/sources.conf)
+
+      - name: Convert OISD
+        run: |
+          set -euo pipefail
+
+          while IFS='|' read -r name url expected_title min_entries max_entries; do
+            args=(
+              -input "$RUNNER_TEMP/sources/oisd/$name.txt"
+              -output "$RELEASE_WORK/oisd/oisd-$name.yaml"
+              -source-url "$url"
+              -min "$min_entries"
+              -max "$max_entries"
+              -max-change 0
+            )
+
+            if [ -n "$expected_title" ]; then
+              args+=( -expected-title "$expected_title" )
+            fi
+
+            go run ./oisd "${args[@]}"
+          done < <(grep -vE '^[[:space:]]*(#|$)' oisd/sources.conf)
+
+      - name: Convert HaGeZi
+        run: |
+          set -euo pipefail
+
+          while IFS='|' read -r name url expected_title min_entries max_entries; do
+            args=(
+              -input "$RUNNER_TEMP/sources/hagezi/$name.txt"
+              -output "$RELEASE_WORK/hagezi/hagezi-$name.yaml"
+              -source-url "$url"
+              -min "$min_entries"
+              -max "$max_entries"
+              -max-change 0
+            )
+
+            if [ -n "$expected_title" ]; then
+              args+=( -expected-title "$expected_title" )
+            fi
+
+            go run ./hagezi "${args[@]}"
+          done < <(grep -vE '^[[:space:]]*(#|$)' hagezi/sources.conf)
+
+      - name: Download HaGeZi README
+        run: |
+          set -euo pipefail
+
+          curl \
+            --fail \
+            --show-error \
+            --silent \
+            --location \
+            --retry 3 \
+            --retry-delay 2 \
+            --retry-all-errors \
+            --proto '=https' \
+            --tlsv1.2 \
+            "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/README.md" \
+            --output "$RELEASE_WORK/hagezi/README.md.tmp"
+
+          test -s "$RELEASE_WORK/hagezi/README.md.tmp"
+          mv "$RELEASE_WORK/hagezi/README.md.tmp" "$RELEASE_WORK/hagezi/README.md"
+
+      - name: Install Geo build dependencies
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full
+
+      - name: Build MetaCubeX Geo data and rulesets
+        env:
+          CUSTOM_DIR: ${{ github.workspace }}/custom
+          COMMUNITY_DIR: ${{ github.workspace }}/community
+          CONVERTER_DIR: ${{ github.workspace }}/convert
+          GFWLIST_DIR: ${{ github.workspace }}/gfwlist2dnsmasq
+        run: |
+          set -euo pipefail
+          chmod +x rules-dat/build.sh rules-dat/build-geosite-lite.sh
+          chmod +x rules-dat/resouces/*.sh rules-dat/resouces/*.py
+          rules-dat/build.sh
+
+      - name: Install Mihomo
+        run: |
+          set -euo pipefail
+
+          archive="$RUNNER_TEMP/mihomo.gz"
+          binary="$RUNNER_TEMP/mihomo"
+          url="https://github.com/MetaCubeX/mihomo/releases/download/v${MIHOMO_VERSION}/mihomo-linux-amd64-v1-v${MIHOMO_VERSION}.gz"
+
+          curl \
+            --fail \
+            --show-error \
+            --silent \
+            --location \
+            --retry 3 \
+            --retry-delay 2 \
+            --retry-all-errors \
+            --proto '=https' \
+            --tlsv1.2 \
+            "$url" \
+            --output "$archive"
+
+          gzip -dc "$archive" > "$binary"
+          chmod 755 "$binary"
+          "$binary" -v
+          echo "MIHOMO_BIN=$binary" >> "$GITHUB_ENV"
+
+      - name: Build MRS files
+        run: |
+          set -euo pipefail
+
+          find "$RELEASE_WORK/oisd" "$RELEASE_WORK/hagezi" -type f -name '*.yaml' -print0 |
+            while IFS= read -r -d '' input; do
+              output="${input%.yaml}.mrs"
+              "$MIHOMO_BIN" convert-ruleset domain yaml "$input" "$output"
+              echo "generated $output"
+            done
+
+      - name: Write checksums
+        run: |
+          set -euo pipefail
+
+          (
+            cd "$RELEASE_WORK"
+            find oisd hagezi rules-dat -type f ! -name '*.sha256sum' -print0 |
+              sort -z |
+              xargs -0 sha256sum
+          ) > "$RELEASE_WORK/SHA256SUMS"
+
+          cat "$RELEASE_WORK/SHA256SUMS"
+
+      - name: Publish release branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          git -C "$RELEASE_WORK" config user.name "github-actions[bot]"
+          git -C "$RELEASE_WORK" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$RELEASE_WORK" add -A
+
+          if git -C "$RELEASE_WORK" diff --cached --quiet; then
+            echo "No rule changes."
+            exit 0
+          fi
+
+          git -C "$RELEASE_WORK" commit -m "update: generated rules"
+          git -C "$RELEASE_WORK" remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git -C "$RELEASE_WORK" push origin HEAD:release
