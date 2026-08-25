@@ -52,13 +52,15 @@ jobs:
           echo "RELEASE_WORK=$release_work" >> "$GITHUB_ENV"
 
           if git fetch origin release --depth=1; then
-            git worktree add --detach "$release_work" origin/release
+            # The release branch contains hundreds of thousands of generated
+            # files. Keep the commit as the parent, but do not materialize its
+            # tree only to delete it before generating the next release.
+            git worktree add --detach --no-checkout "$release_work" origin/release
           else
             echo "remote branch 'release' not found, initializing an orphan release worktree"
             git worktree add --orphan -b release "$release_work"
           fi
 
-          git -C "$release_work" rm -r --ignore-unmatch . || true
           mkdir -p \
             "$release_work/oisd" \
             "$release_work/hagezi" \
@@ -268,7 +270,10 @@ jobs:
 
           git -C "$RELEASE_WORK" config user.name "github-actions[bot]"
           git -C "$RELEASE_WORK" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C "$RELEASE_WORK" add -A
+          # The no-checkout worktree has an intentionally empty index. Add
+          # only the generated output; the resulting tree replaces the old
+          # release tree without scanning every deleted file.
+          git -C "$RELEASE_WORK" add oisd hagezi rules-dat SHA256SUMS
 
           if git -C "$RELEASE_WORK" diff --cached --quiet; then
             echo "No rule changes."
