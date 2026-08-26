@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "csis-prod.s3.amazonaws.com",
         "a.ppy.sh",
         "assets.ppy.sh",
         "c.ppy.sh",
@@ -11,8 +12,7 @@
         "lazer.ppy.sh",
         "notify.ppy.sh",
         "sentry.ppy.sh",
-        "spectator.ppy.sh",
-        "csis-prod.s3.amazonaws.com"
+        "spectator.ppy.sh"
       ],
       "domain_suffix": [
         "aomedia.org",
@@ -30,23 +30,6 @@
         "who.int",
         "wi-fi.org",
         "wto.org",
-        "acousticbrainz.org",
-        "bookbrainz.org",
-        "coverartarchive.org",
-        "critiquebrainz.org",
-        "listenbrainz.org",
-        "messybrainz.org",
-        "metabrainz.org",
-        "musicbrainz.org",
-        "nist.gov",
-        "time.gov",
-        "ppy.sh",
-        "rolfoundation.org",
-        "rolsociety.org",
-        "ccstatic.org",
-        "creativecommons.org",
-        "creativecommons.engineering",
-        "licensebuttons.net",
         "csis.org",
         "emojipedia.org",
         "worldemojiawards.com",
@@ -72,6 +55,22 @@
         "grapheneos.social",
         "seamlessupdate.app",
         "vanadium.app",
+        "acousticbrainz.org",
+        "bookbrainz.org",
+        "coverartarchive.org",
+        "critiquebrainz.org",
+        "listenbrainz.org",
+        "messybrainz.org",
+        "metabrainz.org",
+        "musicbrainz.org",
+        "nist.gov",
+        "time.gov",
+        "rolfoundation.org",
+        "rolsociety.org",
+        "ccstatic.org",
+        "creativecommons.org",
+        "creativecommons.engineering",
+        "licensebuttons.net",
         "ieee.org",
         "ieee.tv",
         "tryengineering.org",
@@ -135,7 +134,8 @@
         "osmfoundation.org",
         "stateofthemap.com",
         "stateofthemap.org",
-        "paskoocheh.com"
+        "paskoocheh.com",
+        "ppy.sh"
       ]
     }
   ]

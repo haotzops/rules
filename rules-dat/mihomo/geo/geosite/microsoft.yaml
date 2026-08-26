@@ -72,7 +72,7 @@ payload:
     - +.onedrive
     - +.bing
     - +.azure-devices-int.net
-    - +.doom.com
+    - +.asobostudio.com
     - +.microsoft.cl
     - +.microsoft.com
     - +.azure.net
@@ -306,8 +306,8 @@ payload:
     - +.winhec.net
     - +.yammer.com
     - +.aadrm.com
-    - +.mojang.com
-    - +.minecraftshop.com
+    - +.forzarc.com
+    - +.forzaracingchampionship.com
     - +.azure-api.net
     - +.microsoft.cat
     - +.azure-devices.net
@@ -394,10 +394,10 @@ payload:
     - +.sprinklesapp.com
     - +.copilot-stg.com
     - +.copilot.com
-    - +.minecraftservices.com
-    - +.minecraft.net
-    - +.minecraft-services.net
-    - +.callersbane.com
+    - +.forzamotorsport.net
+    - +.forza.net
+    - +.elderscrolls.com
+    - +.doom.com
     - +.atom.io
     - +.dependabot.com
     - +.gh.io
@@ -482,7 +482,7 @@ payload:
     - +.vscodeedu.app
     - +.vscodeedu.com
     - +.xamarin.com
-    - +.forzarc.com
+    - +.bethsoft.com
     - +.msocsp.com
     - +.microsoftnews.cc
     - +.microsoftnews.com
@@ -507,13 +507,13 @@ payload:
     - +.sharepoint.cn
     - +.livefilestore.com
     - +.1drv.com
-    - +.forzaracingchampionship.com
-    - +.forzamotorsport.net
-    - +.forza.net
-    - +.elderscrolls.com
-    - +.azurecomcdn.net
-    - +.bethsoft.com
     - +.bethesdagamestudios.com
+    - +.bethesda.net
+    - +.beth.games
+    - +.flightsimulator.com
+    - +.azurecomcdn.net
+    - +.mojang.com
+    - +.minecraftshop.com
     - +.microsoft.az
     - +.gamepass.com
     - +.orithegame.com
@@ -538,10 +538,10 @@ payload:
     - +.xboxservices.com
     - +.xboxstudios.com
     - +.xbx.lv
-    - +.asobostudio.com
-    - +.flightsimulator.com
-    - +.beth.games
-    - +.bethesda.net
+    - +.callersbane.com
+    - +.minecraft-services.net
+    - +.minecraft.net
+    - +.minecraftservices.com
     - +.microsoftstore.com.hk
     - +.live.com.au
     - +.visualstudio.co.uk

@@ -3,7 +3,7 @@ payload:
     - opencourse.pku.edu.cn
     - study.163.com
     - +.llsserver.com
-    - +.hugecore.net
+    - +.cnmooc.org
     - +.edu.cn
     - +.xuetangx.com
     - +.smartedu.cn
@@ -14,32 +14,32 @@ payload:
     - +.chesicc.com
     - +.chesicc.net
     - +.chsi.cn
-    - +.pmphmooc.com
-    - +.openlearning.com
-    - +.mooc.cn
-    - +.icourses.cn
-    - +.icourse163.org
-    - +.cnmooc.org
-    - +.chinesemooc.org
-    - +.yuketang.cn
-    - +.rainclassroom.com
-    - +.shanbay.com
-    - +.gfbzb.cn
-    - +.gfbzb.com
-    - +.baydn.com
+    - +.tongxuepie.com
+    - +.schoopia.com
     - +.yeshj.com
-    - +.gfbzb.net
-    - +.ncss.cn
     - +.hujiang.com
     - +.hjfile.cn
     - +.hjapi.com
-    - +.qgzb.net
     - +.cctalk.com
+    - +.mojidict.com
+    - +.shareintelli.com
+    - +.hugecore.net
+    - +.gfbzb.cn
+    - +.gfbzb.com
+    - +.17zuoye.net
+    - +.17zuoye.com
+    - +.gfbzb.net
+    - +.ncss.cn
+    - +.17zuoye.cn
+    - +.pmphmooc.com
+    - +.openlearning.com
+    - +.qgzb.net
+    - +.mooc.cn
     - +.zbbm.net
     - +.neea.cn
-    - +.mojidict.com
+    - +.icourses.cn
     - +.mypep.cn
-    - +.shareintelli.com
+    - +.icourse163.org
     - +.magedu.com
     - +.21cnjy.com
     - +.91yunxiao.com
@@ -81,7 +81,7 @@ payload:
     - +.sydw8.com
     - +.ictbda.cn
     - +.ictbda.com
-    - +.applysquare.net
+    - +.chinesemooc.org
     - +.xir.cn
     - +.j-test.com
     - +.nattest-china.com
@@ -106,7 +106,7 @@ payload:
     - +.qingtingai.net
     - +.quyixian.com
     - +.rongdeji.cn
-    - +.applysquare.com
+    - +.zuowen.com
     - +.saduck.top
     - +.tesoon.com
     - +.unipus.cn
@@ -133,26 +133,6 @@ payload:
     - +.qianxuecloud.com
     - +.qianxueyunke.com
     - +.zhixingyunke.com
-    - +.17zuoye.cn
-    - +.17zuoye.com
-    - +.17zuoye.net
-    - +.koocdn.com
-    - +.koolearn.com
-    - +.koopass.com
-    - +.schoopia.com
-    - +.tongxuepie.com
-    - +.100tal.com
-    - +.aoshu.com
-    - +.eduu.com
-    - +.eduuu.com
-    - +.gaokao.com
-    - +.speiyou.com
-    - +.tal.com
-    - +.xesimg.com
-    - +.xueersi.com
-    - +.youjiao.com
-    - +.zhongkao.com
-    - +.zuowen.com
     - +.banmaaike.com
     - +.xiaoyuankousuan.com
     - +.ybccode.com
@@ -165,19 +145,40 @@ payload:
     - +.fenbike.com
     - +.fenbilantian.cn
     - +.fenbilantian.com
+    - +.rainclassroom.com
+    - +.yuketang.cn
+    - +.applysquare.com
+    - +.applysquare.net
+    - +.koocdn.com
+    - +.koolearn.com
+    - +.koopass.com
+    - +.baydn.com
+    - +.shanbay.com
+    - +.100tal.com
+    - +.aoshu.com
+    - +.eduu.com
+    - +.eduuu.com
+    - +.gaokao.com
+    - +.speiyou.com
+    - +.tal.com
+    - +.xesimg.com
+    - +.xueersi.com
+    - +.youjiao.com
+    - +.zhongkao.com
     - +.qgzb.com.cn
     - +.qgzb.gov.cn
     - +.pep.com.cn
     - +.peeavp.com.cn
     - +.hep.com.cn
     - +.zbbm.gov.cn
-    - +.gatzs.com.cn
     - +.gfbzb.com.cn
-    - +.ncss.org.cn
-    - +.chsi.com.cn
-    - +.modex.com.cn
     - +.gfbzb.gov.cn
+    - +.icve.com.cn
+    - +.gatzs.com.cn
+    - +.modex.com.cn
+    - +.ncss.org.cn
     - +.rudder.com.cn
+    - +.chsi.com.cn
     - +.chinayz.com.cn
     - +.chesicc.org.cn
     - +.chesicc.net.cn
@@ -186,4 +187,3 @@ payload:
     - +.chdi.com.cn
     - +.cedf.org.cn
     - +.cbern.com.cn
-    - +.icve.com.cn

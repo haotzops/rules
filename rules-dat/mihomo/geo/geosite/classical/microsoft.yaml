@@ -72,7 +72,7 @@ payload:
     - DOMAIN-SUFFIX,onedrive
     - DOMAIN-SUFFIX,bing
     - DOMAIN-SUFFIX,azure-devices-int.net
-    - DOMAIN-SUFFIX,doom.com
+    - DOMAIN-SUFFIX,asobostudio.com
     - DOMAIN-SUFFIX,microsoft.cl
     - DOMAIN-SUFFIX,microsoft.com
     - DOMAIN-SUFFIX,azure.net
@@ -306,8 +306,8 @@ payload:
     - DOMAIN-SUFFIX,winhec.net
     - DOMAIN-SUFFIX,yammer.com
     - DOMAIN-SUFFIX,aadrm.com
-    - DOMAIN-SUFFIX,mojang.com
-    - DOMAIN-SUFFIX,minecraftshop.com
+    - DOMAIN-SUFFIX,forzarc.com
+    - DOMAIN-SUFFIX,forzaracingchampionship.com
     - DOMAIN-SUFFIX,azure-api.net
     - DOMAIN-SUFFIX,microsoft.cat
     - DOMAIN-SUFFIX,azure-devices.net
@@ -394,10 +394,10 @@ payload:
     - DOMAIN-SUFFIX,sprinklesapp.com
     - DOMAIN-SUFFIX,copilot-stg.com
     - DOMAIN-SUFFIX,copilot.com
-    - DOMAIN-SUFFIX,minecraftservices.com
-    - DOMAIN-SUFFIX,minecraft.net
-    - DOMAIN-SUFFIX,minecraft-services.net
-    - DOMAIN-SUFFIX,callersbane.com
+    - DOMAIN-SUFFIX,forzamotorsport.net
+    - DOMAIN-SUFFIX,forza.net
+    - DOMAIN-SUFFIX,elderscrolls.com
+    - DOMAIN-SUFFIX,doom.com
     - DOMAIN-SUFFIX,atom.io
     - DOMAIN-SUFFIX,dependabot.com
     - DOMAIN-SUFFIX,gh.io
@@ -482,7 +482,7 @@ payload:
     - DOMAIN-SUFFIX,vscodeedu.app
     - DOMAIN-SUFFIX,vscodeedu.com
     - DOMAIN-SUFFIX,xamarin.com
-    - DOMAIN-SUFFIX,forzarc.com
+    - DOMAIN-SUFFIX,bethsoft.com
     - DOMAIN-SUFFIX,msocsp.com
     - DOMAIN-SUFFIX,microsoftnews.cc
     - DOMAIN-SUFFIX,microsoftnews.com
@@ -507,13 +507,13 @@ payload:
     - DOMAIN-SUFFIX,sharepoint.cn
     - DOMAIN-SUFFIX,livefilestore.com
     - DOMAIN-SUFFIX,1drv.com
-    - DOMAIN-SUFFIX,forzaracingchampionship.com
-    - DOMAIN-SUFFIX,forzamotorsport.net
-    - DOMAIN-SUFFIX,forza.net
-    - DOMAIN-SUFFIX,elderscrolls.com
-    - DOMAIN-SUFFIX,azurecomcdn.net
-    - DOMAIN-SUFFIX,bethsoft.com
     - DOMAIN-SUFFIX,bethesdagamestudios.com
+    - DOMAIN-SUFFIX,bethesda.net
+    - DOMAIN-SUFFIX,beth.games
+    - DOMAIN-SUFFIX,flightsimulator.com
+    - DOMAIN-SUFFIX,azurecomcdn.net
+    - DOMAIN-SUFFIX,mojang.com
+    - DOMAIN-SUFFIX,minecraftshop.com
     - DOMAIN-SUFFIX,microsoft.az
     - DOMAIN-SUFFIX,gamepass.com
     - DOMAIN-SUFFIX,orithegame.com
@@ -538,10 +538,10 @@ payload:
     - DOMAIN-SUFFIX,xboxservices.com
     - DOMAIN-SUFFIX,xboxstudios.com
     - DOMAIN-SUFFIX,xbx.lv
-    - DOMAIN-SUFFIX,asobostudio.com
-    - DOMAIN-SUFFIX,flightsimulator.com
-    - DOMAIN-SUFFIX,beth.games
-    - DOMAIN-SUFFIX,bethesda.net
+    - DOMAIN-SUFFIX,callersbane.com
+    - DOMAIN-SUFFIX,minecraft-services.net
+    - DOMAIN-SUFFIX,minecraft.net
+    - DOMAIN-SUFFIX,minecraftservices.com
     - DOMAIN-SUFFIX,microsoftstore.com.hk
     - DOMAIN-SUFFIX,live.com.au
     - DOMAIN-SUFFIX,visualstudio.co.uk
