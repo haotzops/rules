@@ -1,17 +1,12 @@
 payload:
-    - +.onedrive
-    - +.onedriveupdater
-    - +.sharepointonline.com
-    - +.microsoftpersonalcontent.com
-    - +.onedrive.com
-    - +.sharepoint.cn
-    - +.livefilestore.com
-    - +.sharepoint.com
     - +.1drv.com
-    - +.storage.msn.com
-    - +.spoprod-a.akamaihd.net
-    - +.storage.live.com
-    - +.oneclient.sfx.ms
-    - +.photos.live.com
+    - +.1drv.ms
+    - +.livefilestore.com
+    - +.onedrive.co
+    - +.onedrive.com
+    - +.onedrive.eu
+    - +.onedrive.net
+    - +.onedrive.org
+    - +.onedrive.co.uk
     - +.onedrive.live.com
-    - +.skydrive.wns.windows.com
+    - +.storage.live.com

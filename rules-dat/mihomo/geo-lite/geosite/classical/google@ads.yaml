@@ -3,7 +3,6 @@ payload:
     - DOMAIN-SUFFIX,2mdn.net
     - DOMAIN-SUFFIX,admob-cn.com
     - DOMAIN-SUFFIX,admob.com
-    - DOMAIN-SUFFIX,ads.youtube.com
     - DOMAIN-SUFFIX,adsense.com
     - DOMAIN-SUFFIX,adsensecustomsearchads.com
     - DOMAIN-SUFFIX,adsenseformobileapps.com
@@ -16,8 +15,8 @@ payload:
     - DOMAIN-SUFFIX,adwordsexpress.com
     - DOMAIN-SUFFIX,analytics-alv.google.com
     - DOMAIN-SUFFIX,app-ads-services.com
-    - DOMAIN-SUFFIX,app-analytics-services-att.com
     - DOMAIN-SUFFIX,app-analytics-services.com
+    - DOMAIN-SUFFIX,app-analytics-services-att.com
     - DOMAIN-SUFFIX,app-measurement-cn.com
     - DOMAIN-SUFFIX,app-measurement.com
     - DOMAIN-SUFFIX,doubleclick-cn.net
@@ -47,9 +46,10 @@ payload:
     - DOMAIN-SUFFIX,googletraveladservices.com
     - DOMAIN-SUFFIX,googlevads-cn.com
     - DOMAIN-SUFFIX,mail-ads.google.com
-    - DOMAIN-SUFFIX,marketingplatform.google.com
     - DOMAIN-SUFFIX,mobileads.google.com
+    - DOMAIN-SUFFIX,marketingplatform.google.com
     - DOMAIN-SUFFIX,pagead.l.google.com
     - DOMAIN-SUFFIX,partnerad.l.google.com
     - DOMAIN-SUFFIX,urchin.com
     - DOMAIN,analytics.google.com
+    - DOMAIN-SUFFIX,ads.youtube.com

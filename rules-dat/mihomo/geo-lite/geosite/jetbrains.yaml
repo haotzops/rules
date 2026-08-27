@@ -1,15 +1,11 @@
 payload:
-    - +.cdn.jetbrains.com
     - +.datalore.io
-    - +.grazie.ai
     - +.intellij.com
     - +.intellij.net
     - +.intellij.org
     - +.jb.gg
-    - +.jetbrains.ai
     - +.jetbrains.cloud
     - +.jetbrains.com
-    - +.jetbrains.com.cn
     - +.jetbrains.dev
     - +.jetbrains.net
     - +.jetbrains.org
@@ -23,3 +19,7 @@ payload:
     - +.myjetbrains.com
     - +.talkingkotlin.com
     - +.youtrack.cloud
+    - +.grazie.ai
+    - +.jetbrains.ai
+    - +.jetbrains.com.cn
+    - +.cdn.jetbrains.com

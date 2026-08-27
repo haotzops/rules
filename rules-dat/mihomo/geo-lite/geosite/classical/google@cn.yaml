@@ -1,14 +1,17 @@
 payload:
-    - DOMAIN-SUFFIX,265.com
-    - DOMAIN-SUFFIX,g.cn
-    - DOMAIN-SUFFIX,ggpht.cn
-    - DOMAIN-SUFFIX,gkecnapps.cn
     - DOMAIN-SUFFIX,google.cn
+    - DOMAIN-SUFFIX,g.cn
+    - DOMAIN-SUFFIX,gkecnapps.cn
     - DOMAIN-SUFFIX,googlecnapps.cn
     - DOMAIN-SUFFIX,gstatic.cn
     - DOMAIN-SUFFIX,gstaticcnapps.cn
+    - DOMAIN-SUFFIX,265.com
     - DOMAIN-SUFFIX,gvt1-cn.com
     - DOMAIN-SUFFIX,gvt2-cn.com
+    - DOMAIN,recaptcha-cn.net
+    - DOMAIN,recaptcha.net
+    - DOMAIN,www.recaptcha-cn.net
+    - DOMAIN,www.recaptcha.net
     - DOMAIN,2mdn-cn.net
     - DOMAIN,2mdn.net
     - DOMAIN,admob-cn.com
@@ -24,7 +27,6 @@ payload:
     - DOMAIN,beacons3.gvt2.com
     - DOMAIN,c.admob.com
     - DOMAIN,c.android.clients.google.com
-    - DOMAIN,c.pki.goog
     - DOMAIN,cache-management-prod.google.com
     - DOMAIN,cache.pack.google.com
     - DOMAIN,checkin.gstatic.com
@@ -34,9 +36,6 @@ payload:
     - DOMAIN,clientservices.googleapis.com
     - DOMAIN,cn.widevine.com
     - DOMAIN,connectivitycheck.gstatic.com
-    - DOMAIN,crashlyticsreports-pa.googleapis.com
-    - DOMAIN,crl.pki.goog
-    - DOMAIN,crls.pki.goog
     - DOMAIN,csi.gstatic.com
     - DOMAIN,dartsearch-cn.net
     - DOMAIN,dg-meta.video.google.com
@@ -46,7 +45,6 @@ payload:
     - DOMAIN,doubleclick.net
     - DOMAIN,download.mlcc.google.com
     - DOMAIN,download.tensorflow.google.com
-    - DOMAIN,firebase-settings.crashlytics.com
     - DOMAIN,fontfiles.googleapis.com
     - DOMAIN,fonts.googleapis.com
     - DOMAIN,fonts.gstatic.com
@@ -78,25 +76,18 @@ payload:
     - DOMAIN,gstatic-cn.com
     - DOMAIN,gstaticadssl.l.google.com
     - DOMAIN,gtm.oasisfeng.com
-    - DOMAIN,i.pki.goog
     - DOMAIN,imasdk.googleapis.com
-    - DOMAIN,o.pki.goog
-    - DOMAIN,ocsp.pki.goog
     - DOMAIN,pagead-googlehosted.l.google.com
     - DOMAIN,performanceparameters.googleapis.com
-    - DOMAIN,pki-goog.l.google.com
     - DOMAIN,prod-controlbe.floonet.goog
     - DOMAIN,prod-databe.floonet.goog
     - DOMAIN,prod.databe.floonet.goog
     - DOMAIN,qiao-cn.com
     - DOMAIN,qpx.googleflights.net
-    - DOMAIN,recaptcha-cn.net
-    - DOMAIN,recaptcha.net
     - DOMAIN,redirector.bdn.dev
     - DOMAIN,redirector.c.chat.google.com
     - DOMAIN,redirector.c.mail.google.com
     - DOMAIN,redirector.c.pack.google.com
-    - DOMAIN,redirector.c.play.google.com
     - DOMAIN,redirector.c.youtubeeducation.com
     - DOMAIN,redirector.gcpcdn.gvt1.com
     - DOMAIN,redirector.gvt1.com
@@ -113,7 +104,6 @@ payload:
     - DOMAIN,staging.databe.floonet.goog
     - DOMAIN,tac.googleapis.com
     - DOMAIN,tools.google.com
-    - DOMAIN,update.crashlytics.com
     - DOMAIN,update.googleapis.com
     - DOMAIN,wear.googleapis.com
     - DOMAIN,www-google-analytics.l.google.com
@@ -121,7 +111,17 @@ payload:
     - DOMAIN,www.destinationurl.com
     - DOMAIN,www.gstatic.com
     - DOMAIN,www.pxcc.com
-    - DOMAIN,www.recaptcha-cn.net
-    - DOMAIN,www.recaptcha.net
-    - DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$
     - DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.xn--ngstr-lra8j\.com$
+    - DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$
+    - DOMAIN,redirector.c.play.google.com
+    - DOMAIN,pki-goog.l.google.com
+    - DOMAIN,c.pki.goog
+    - DOMAIN,i.pki.goog
+    - DOMAIN,o.pki.goog
+    - DOMAIN,crl.pki.goog
+    - DOMAIN,crls.pki.goog
+    - DOMAIN,ocsp.pki.goog
+    - DOMAIN-SUFFIX,ggpht.cn
+    - DOMAIN,crashlyticsreports-pa.googleapis.com
+    - DOMAIN,firebase-settings.crashlytics.com
+    - DOMAIN,update.crashlytics.com

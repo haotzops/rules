@@ -5,8 +5,8 @@
       "domain_suffix": [
         "advertising.apple.com",
         "api-adservices.apple.com",
-        "iad.apple.com",
         "iadsdk.apple.com",
+        "iad.apple.com",
         "qwapi.com"
       ]
     }

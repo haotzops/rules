@@ -7,14 +7,14 @@
         "copilot-telemetry.githubusercontent.com"
       ],
       "domain_suffix": [
-        "bingads.com",
-        "browser.events.data.msn.cn",
-        "browser.events.data.msn.com",
         "clarity.ms",
-        "collector.github.com",
         "microsoftads.com",
         "msads.net",
-        "nelreports.net"
+        "nelreports.net",
+        "browser.events.data.msn.cn",
+        "browser.events.data.msn.com",
+        "bingads.com",
+        "collector.github.com"
       ]
     }
   ]

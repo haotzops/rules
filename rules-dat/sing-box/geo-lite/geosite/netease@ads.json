@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "youdaoads.com",
         "a.youdao.com",
         "admusicpic.music.126.net",
         "ads.music.126.net",
@@ -14,8 +15,7 @@
         "iadmatapk.nosdn.127.net",
         "iadmusicmat.music.126.net",
         "iadmusicmatvideo.music.126.net",
-        "sentry.music.163.com",
-        "youdaoads.com"
+        "sentry.music.163.com"
       ]
     }
   ]

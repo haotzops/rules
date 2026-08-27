@@ -8,7 +8,6 @@
         "2mdn.net",
         "admob-cn.com",
         "admob.com",
-        "ads.youtube.com",
         "adsense.com",
         "adsensecustomsearchads.com",
         "adsenseformobileapps.com",
@@ -21,8 +20,8 @@
         "adwordsexpress.com",
         "analytics-alv.google.com",
         "app-ads-services.com",
-        "app-analytics-services-att.com",
         "app-analytics-services.com",
+        "app-analytics-services-att.com",
         "app-measurement-cn.com",
         "app-measurement.com",
         "doubleclick-cn.net",
@@ -52,11 +51,12 @@
         "googletraveladservices.com",
         "googlevads-cn.com",
         "mail-ads.google.com",
-        "marketingplatform.google.com",
         "mobileads.google.com",
+        "marketingplatform.google.com",
         "pagead.l.google.com",
         "partnerad.l.google.com",
-        "urchin.com"
+        "urchin.com",
+        "ads.youtube.com"
       ]
     }
   ]

@@ -1,4 +1,5 @@
 payload:
+    - 1password.drift.click
     - +.1infra.net
     - +.1password.ca
     - +.1password.co
@@ -12,4 +13,3 @@ payload:
     - +.1passwordusercontent.eu
     - +.agilebits.com
     - +.passage.id
-    - 1password.drift.click

@@ -1,21 +1,17 @@
 payload:
-    - +.ads-twitter.com
-    - +.ads-twitter.com
-    - +.cms-twdigitalassets.com
-    - +.grok.com
-    - +.periscope.tv
+    - +.twitter.jp
+    - +.twitter.biz
     - +.pscp.tv
     - +.t.co
     - +.tellapart.com
     - +.tweetdeck.com
-    - +.twimg.co
     - +.twimg.com
-    - +.twimg.org
-    - +.twitpic.com
-    - +.twitter.biz
-    - +.twitter.com
-    - +.twitter.jp
     - +.twittercommunity.com
+    - +.x.com
+    - +.twitter.com
+    - +.periscope.tv
+    - +.cms-twdigitalassets.com
+    - +.twitpic.com
     - +.twitterflightschool.com
     - +.twitterinc.com
     - +.twitteroauth.com
@@ -25,4 +21,5 @@ payload:
     - +.twttr.net
     - +.twvid.com
     - +.vine.co
-    - +.x.com
+    - +.twitter.map.fastly.net
+    - +.ads-twitter.com

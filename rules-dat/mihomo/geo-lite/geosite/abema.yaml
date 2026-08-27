@@ -1,23 +1,22 @@
 payload:
-    - +.abema-tv.com
-    - +.abema.io
-    - +.abema.tv
-    - +.abematv.akamaized.net
-    - +.adx.promo
-    - +.ameba.jp
-    - +.amebame.com
-    - +.amebaownd.com
+    - abematv.akamaized.net
+    - ds-linear-abematv.akamaized.net
+    - ds-vod-abematv.akamaized.net
+    - linear-abematv.akamaized.net
+    - vod-abematv.akamaized.net
     - +.amebaowndme.com
     - +.ameblo.jp
+    - +.abema-tv.com
+    - +.winticket.jp
+    - +.adx.promo
+    - +.ameba.jp
+    - +.abema.tv
+    - +.amebame.com
+    - +.abema.io
+    - +.amebaownd.com
     - +.bucketeer.jp
-    - +.d1otoma47x30pg.cloudfront.net
-    - +.d2wy8f7a9ursnm.cloudfront.net
     - +.dokusho-ojikan.jp
-    - +.ds-linear-abematv.akamaized.net
-    - +.ds-vod-abematv.akamaized.net
     - +.hayabusa.dev
     - +.hayabusa.io
     - +.hayabusa.media
-    - +.linear-abematv.akamaized.net
-    - +.vod-abematv.akamaized.net
-    - +.winticket.jp
+    - +.abematv.co.jp

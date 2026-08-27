@@ -2,10 +2,7 @@
   "version": 2,
   "rules": [
     {
-      "domain_suffix": [
-        "kurogames-ads.com",
-        "log-upload.mihoyo.com"
-      ]
+      "domain_suffix": "log-upload.mihoyo.com"
     }
   ]
 }

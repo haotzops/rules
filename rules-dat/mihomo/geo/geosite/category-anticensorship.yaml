@@ -5,8 +5,8 @@ payload:
     - throneproj.github.io
     - trojan-gfw.github.io
     - xtls.github.io
-    - +.whonix.org
-    - +.torproject.org
+    - +.2dust.link
+    - +.ahmia.fi
     - +.akasha.world
     - +.amnezia.org
     - +.browserleaks.com
@@ -63,15 +63,12 @@ payload:
     - +.vpnrouter.homes
     - +.vuvuzela.io
     - +.wgtunnel.com
-    - +.ahmia.fi
-    - +.2dust.link
-    - +.vpngate.net
+    - +.whonix.org
+    - +.wikileaks.org
+    - +.wireguard.com
     - +.wiresock.net
     - +.zeronet.io
-    - +.ceno.app
-    - +.censorship.no
-    - +.citizenlab.ca
-    - +.citizenlab.org
+    - +.epicbrowser.com
     - +.applecensorship.com
     - +.freebrowser.org
     - +.freewechat.com
@@ -84,13 +81,20 @@ payload:
     - +.wikiunblocked.org
     - +.haveibeenpwned.com
     - +.pwnedpasswords.com
-    - +.wikileaks.org
+    - +.getlantern.org
+    - +.lantern.io
+    - +.softether.org
+    - +.softether-download.com
+    - +.torproject.org
+    - +.ceno.app
+    - +.censorship.no
+    - +.paskoocheh.com
     - +.v2ray.com
     - +.v2ray.cool
     - +.v2fly.org
     - +.opengw.net
     - +.vpngate.jp
-    - +.wireguard.com
+    - +.vpngate.net
     - +.docs.rw
     - +.log.rw
     - +.try.rw
@@ -107,17 +111,13 @@ payload:
     - +.c4rex.co
     - +.ipfs.io
     - +.ipfs.tech
-    - +.epicbrowser.com
-    - +.getlantern.org
-    - +.lantern.io
-    - +.paskoocheh.com
-    - +.softether-download.com
-    - +.softether.org
+    - +.citizenlab.ca
+    - +.citizenlab.org
+    - +.twister.net.co
+    - +.ipfs.runfission.com
     - +.ipfs.fleek.co
     - +.ipfs.lain.la
     - +.ipfs.eternum.io
-    - +.ipfs.runfission.com
-    - +.twister.net.co
     - +.ipfs.best-practice.se
     - +.ipfs.anonymize.com
     - +.gateway.pinata.cloud

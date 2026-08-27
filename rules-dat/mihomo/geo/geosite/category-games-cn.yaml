@@ -1,14 +1,14 @@
 payload:
     - end-api.shallow.ink
     - end.shallow.ink
-    - +.cdncl.net
+    - +.jiaoyimao.cn
     - +.37.com
     - +.37wanimg.com
     - +.7k7k.com
     - +.9xgame.com
     - +.arcaea.cn
     - +.astral-vector.com
-    - +.hero.com
+    - +.jiaoyimao.com
     - +.cgyouxi.com
     - +.duoyi.com
     - +.duoyigroup.cn
@@ -51,10 +51,21 @@ payload:
     - +.yysls.cn
     - +.tiancity.com
     - +.tiancitycdn.com
-    - +.vrzwk.cn
-    - +.herogame.com
-    - +.vrzwk.net
-    - +.vrzwk.top
+    - +.17173.com
+    - +.lingxigames.com
+    - +.changyou.com
+    - +.cy.com
+    - +.playcool.com
+    - +.yeyou.com
+    - +.yeyoucdn.com
+    - +.seasungames.cn
+    - +.seasungames.com
+    - +.seasunwbl.com
+    - +.xishanju.com
+    - +.xoyo.com
+    - +.xoyocdn.com
+    - +.cbjq.com
+    - +.testplus.cn
     - +.3304399.com
     - +.3304399.net
     - +.3839.com
@@ -120,23 +131,15 @@ payload:
     - +.yxhimg.com
     - +.9game.cn
     - +.aligames.com
-    - +.jiaoyimao.cn
-    - +.jiaoyimao.com
-    - +.lingxigames.com
+    - +.66rpg.com
+    - +.37wan.net
+    - +.17173cdn.com
     - +.bilibiligame.cn
     - +.bilibiligame.co
     - +.bilibiligame.net
     - +.biligame.co
     - +.biligame.com
     - +.biligame.net
-    - +.sl916.com
-    - +.cowlevel.net
-    - +.66rpg.com
-    - +.37wan.net
-    - +.vrzwk.com
-    - +.heroesports.com
-    - +.shyxhy.com
-    - +.yingxiong.com
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -152,14 +155,13 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - +.seasungames.cn
-    - +.seasungames.com
-    - +.seasunwbl.com
-    - +.xishanju.com
-    - +.xoyo.com
-    - +.xoyocdn.com
-    - +.cbjq.com
-    - +.testplus.cn
+    - +.vrzwk.cn
+    - +.vrzwk.com
+    - +.vrzwk.net
+    - +.vrzwk.top
+    - +.sl916.com
+    - +.cowlevel.net
+    - +.cdncl.net
     - +.videoxiaoyouxi.com
     - +.wegame.com
     - +.gameloop.com
@@ -240,20 +242,18 @@ payload:
     - +.scsentry.cn
     - +.supercellcommunity.cn
     - +.supercellsupport.cn
-    - +.17173.com
-    - +.17173cdn.com
-    - +.zhuoyou.com
-    - +.yokaverse.com
-    - +.xinwuji.com
-    - +.xhlsgs.com
-    - +.sanguosha.com
-    - +.langrenclub.com
-    - +.changyou.com
-    - +.cy.com
-    - +.playcool.com
-    - +.yeyou.com
-    - +.yeyoucdn.com
     - +.dobest.com
+    - +.langrenclub.com
+    - +.yingxiong.com
+    - +.shyxhy.com
+    - +.heroesports.com
+    - +.herogame.com
+    - +.hero.com
+    - +.zhuoyou.com
+    - +.sanguosha.com
+    - +.xhlsgs.com
+    - +.xinwuji.com
+    - +.yokaverse.com
     - +.roblox.qq.com
     - +.gouhuo.qq.com
     - +.wegame.com.cn

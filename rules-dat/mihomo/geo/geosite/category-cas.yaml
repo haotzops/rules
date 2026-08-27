@@ -9,9 +9,8 @@ payload:
     - oneocsp.microsoft.com
     - www.microsoft.com
     - +.godaddy
-    - +.ocsp-responder.com
-    - +.godaddy.com
-    - +.certsign.ro
+    - +.msocsp.com
+    - +.pki-post.ch
     - +.d-trust.net
     - +.e-szigno.hu
     - +.e-tugra.com
@@ -21,23 +20,67 @@ payload:
     - +.infocert.digital
     - +.infocert.it
     - +.managedpki.com
-    - +.ocsp-certum.com
+    - +.netlock.hu
     - +.trustcor.ca
     - +.trustcor.com
     - +.trustisfps.com
-    - +.globalsign.es
+    - +.vodafone.com
+    - +.vodafone.de
+    - +.vodafone.it
+    - +.vodafone.nl
+    - +.wisecoin.com
+    - +.wiseid.com
+    - +.wisekey.com
+    - +.amazontrust.com
+    - +.letsencrypt.org
+    - +.symcd.com
+    - +.symcb.com
+    - +.symauth.com
+    - +.omniroot.com
+    - +.ss2.us
+    - +.camerfirma.com
+    - +.godaddy.com
     - +.godaddy.net
     - +.wsimg.com
     - +.x.co
-    - +.identrust.com
+    - +.pki.goog
+    - +.entrust.cn
+    - +.entrust.com
+    - +.entrust.net
+    - +.entrustdatacard.com
+    - +.affirmtrust.com
+    - +.atos.net
+    - +.myatos.net
+    - +.certificat2.com
+    - +.trendmicro.com
+    - +.gandi.net
+    - +.globalsign.es
+    - +.globalsign.eu
+    - +.globalsign.ch
+    - +.globalsign.cloud
+    - +.globalsign.nl
+    - +.globalsign.fr
+    - +.globalsign-media.com
+    - +.globalsign.net
+    - +.globalsign.be
+    - +.certsign.ro
+    - +.public-trust.com
+    - +.quovadisglobal.com
+    - +.thawte.fr
+    - +.thawte.de
+    - +.thawte.com
+    - +.rapidssl.com
+    - +.accv.es
     - +.identrust.net
+    - +.geotrust.com
+    - +.ssl.com
     - +.digital-id.ch
     - +.digitalid.ch
     - +.managed-pki.ch
     - +.managed-pki.de
-    - +.pki-post.ch
+    - +.digicert.eu
     - +.pki-posta.ch
-    - +.pki-poste.ch
+    - +.secomtrust.net
     - +.root-signing.ch
     - +.rootsigning.com
     - +.ssl-certificate.ch
@@ -62,34 +105,21 @@ payload:
     - +.trustdoc.ch
     - +.trustsign.ch
     - +.zert.ch
-    - +.trustwave.com
-    - +.amazontrust.com
-    - +.awstrust.com
-    - +.ss2.us
-    - +.pki.goog
+    - +.telekom.com
+    - +.telekom.de
+    - +.telesec.de
+    - +.actalis.com
+    - +.actalis.it
+    - +.certum.pl
+    - +.ocsp-certum.com
+    - +.ocsp-responder.com
     - +.lencr.org
     - +.letsencrypt.com
-    - +.letsencrypt.org
-    - +.ssl.com
-    - +.wisecoin.com
-    - +.wiseid.com
-    - +.wisekey.com
-    - +.certum.pl
-    - +.trendmicro.com
-    - +.certificat2.com
-    - +.netlock.hu
-    - +.camerfirma.com
-    - +.entrustdatacard.com
-    - +.myatos.net
-    - +.atos.net
-    - +.affirmtrust.com
-    - +.gandi.net
-    - +.entrust.net
-    - +.entrust.com
-    - +.msocsp.com
-    - +.secomtrust.net
-    - +.entrust.cn
-    - +.starfieldtech.com
+    - +.awstrust.com
+    - +.identrust.com
+    - +.pki-poste.ch
+    - +.freessl.com
+    - +.digitalcertvalidation.com
     - +.enterprisessl.com
     - +.hackerguardian.com
     - +.instantssl.com
@@ -106,22 +136,8 @@ payload:
     - +.comodoca2.com
     - +.comodoca3.com
     - +.comodoca4.com
-    - +.telekom.com
-    - +.telekom.de
-    - +.telesec.de
-    - +.vodafone.com
-    - +.vodafone.de
-    - +.vodafone.it
-    - +.vodafone.nl
-    - +.globalsign.be
-    - +.globalsign.net
-    - +.globalsign-media.com
-    - +.accv.es
-    - +.globalsign.fr
-    - +.globalsign.nl
-    - +.globalsign.cloud
-    - +.actalis.com
-    - +.actalis.it
+    - +.starfieldtech.com
+    - +.trustwave.com
     - +.buypass-ssl.com
     - +.buypass.com
     - +.buypass.no
@@ -132,23 +148,23 @@ payload:
     - +.digicert-cn.com
     - +.digicert-validation.com
     - +.digicert.com
-    - +.digicert.eu
-    - +.digitalcertvalidation.com
-    - +.freessl.com
-    - +.geotrust.com
-    - +.rapidssl.com
-    - +.thawte.com
-    - +.thawte.de
-    - +.thawte.fr
-    - +.quovadisglobal.com
-    - +.public-trust.com
-    - +.omniroot.com
-    - +.symauth.com
-    - +.symcb.com
-    - +.symcd.com
-    - +.globalsign.ch
-    - +.globalsign.eu
+    - +.vodafone.com.tr
+    - +.managedpki.ne.jp
+    - +.secom.co.jp
+    - +.identrust.co.uk
+    - +.globalsign.co.uk
+    - +.globalsign.com.hk
+    - +.globalsign.com.au
+    - +.globalsign.com.br
+    - +.globalsign.com.sg
+    - +.wisekey.com.hk
     - +.vodafone.com.au
+    - +.vodafone.co.uk
+    - +.myvodafone.com.ws
+    - +.myvodafone.com.au
+    - +.digicert.co.jp
+    - +.cybertrust.co.jp
+    - +.cybertrust.ne.jp
     - +.adobe-crl.verisign.com
     - +.certipath-aia.verisign.com
     - +.certipath-crl.verisign.com
@@ -201,29 +217,13 @@ payload:
     - +.svrtrial-g2-crl.verisign.com
     - +.pki.symantec.com
     - +.ws.symantec.com
-    - +.cybertrust.ne.jp
-    - +.cybertrust.co.jp
-    - +.digicert.co.jp
-    - +.ecert.gov.hk
-    - +.hongkongpost.gov.hk
-    - +.vodafone.com.tr
-    - +.vodafone.co.uk
-    - +.myvodafone.com.ws
-    - +.myvodafone.com.au
-    - +.globalsign.com.sg
-    - +.globalsign.com.br
-    - +.globalsign.com.au
-    - +.globalsign.com.hk
-    - +.globalsign.co.uk
-    - +.managedpki.ne.jp
-    - +.secom.co.jp
-    - +.tls.hinet.net
-    - +.publicca.hinet.net
-    - +.pki.hinet.net
     - +.eca.hinet.net
-    - +.wisekey.com.hk
+    - +.pki.hinet.net
+    - +.publicca.hinet.net
+    - +.tls.hinet.net
+    - +.hongkongpost.gov.hk
+    - +.ecert.gov.hk
     - +.twca.com.tw
-    - +.identrust.co.uk
     - +.gtlsca.nat.gov.tw
     - pki-goog.l.google.com
     - c.pki.goog
@@ -232,12 +232,6 @@ payload:
     - crl.pki.goog
     - crls.pki.goog
     - ocsp.pki.goog
-    - +.sslcom.cn
-    - +.oemssl.cn
-    - +.oemssl.cn.cdn.cloudflare.net
-    - +.sectigochina.com
-    - +.sectigochina.com.cdn.cloudflare.net
-    - +.trust-provider.cn
     - certs-lb.apple.com.akadns.net
     - certs.apple.com
     - crl-lb.apple.com.akadns.net
@@ -246,8 +240,7 @@ payload:
     - ocsp2.apple.com
     - valid.apple.com
     - valid.origin-apple.com.akadns.net
-    - +.dcocsp.cn
-    - +.digicert.cn
+    - www.entrust.cn
     - +.alphassl.com
     - +.easy-signing.com
     - +.globalsign.cn
@@ -255,4 +248,11 @@ payload:
     - +.globalsigncdn.com
     - cdn.globalsigncdn.com.cdn.cloudflare.net
     - crl.globalsign.net
-    - www.entrust.cn
+    - +.sslcom.cn
+    - +.oemssl.cn
+    - +.oemssl.cn.cdn.cloudflare.net
+    - +.sectigochina.com
+    - +.sectigochina.com.cdn.cloudflare.net
+    - +.trust-provider.cn
+    - +.dcocsp.cn
+    - +.digicert.cn
