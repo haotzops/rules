@@ -18,8 +18,13 @@
 
 `geoip-lite.dat` 同样从上游 `geoip.dat` 提取，仅包含 `CN`、`JP`、`US` 三个国家/地区分类。
 
-## 输出格式
+## 输出结构
 
-- `geo/`：上游原始 `geosite.dat`、`geoip.dat`、`Country.mmdb`，以及转换后的 `.db`、`.metadb` 和 lite 版本。
-- `mihomo/`：Mihomo `.mrs` / `.txt` ruleset，按完整集合和 lite 集合分目录。
-- `sing-box/`：sing-box `.srs` / `.json` ruleset，按完整集合和 lite 集合分目录。
+- `geo/`：上游原始 `geosite.dat`、`geoip.dat`、`Country.mmdb`，以及转换后的 `.db`、`.metadb` 和 lite 数据库版本。
+- `clash/domain/`：完整 geosite 分类的 domain behavior `.yaml` / `.txt`，作为 Mihomo `.mrs` 的构建输入。
+- `clash/ipcidr/`：完整 geoip 分类的 ipcidr behavior `.yaml` / `.txt`，作为 Mihomo `.mrs` 的构建输入。
+- `mihomo/geosite/`：完整 geosite 分类的 classical behavior `.yaml` / `.txt`，以及从 `clash/domain/` 构建的 `.mrs`。
+- `mihomo/geoip/`：完整 geoip 分类的 classical behavior `.yaml` / `.txt`，以及从 `clash/ipcidr/` 构建的 `.mrs`。
+- `sing-box/geosite/` 和 `sing-box/geoip/`：完整分类的 `.srs` / `.json` ruleset。
+
+规则集按分类拆分，Mihomo 和 sing-box 不再额外发布 lite 目录；需要精简整体数据库时使用 `geo/` 下的 lite 数据库文件。
