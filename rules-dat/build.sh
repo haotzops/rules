@@ -8,13 +8,25 @@ CONVERTER_DIR="${CONVERTER_DIR:-$ROOT_DIR/convert}"
 BUILD_DIR="${RUNNER_TEMP:-/tmp}/v2ray-rules-dat-build"
 RULES_DAT_DIR="$RELEASE_WORK/rules-dat"
 GEO_DIR="$RULES_DAT_DIR/geo"
-MIHOMO_DIR="$RULES_DAT_DIR/mihomo"
-SING_BOX_DIR="$RULES_DAT_DIR/sing-box"
+CLASH_DOMAIN_DIR="$RULES_DAT_DIR/clash/domain"
+CLASH_IPCIDR_DIR="$RULES_DAT_DIR/clash/ipcidr"
+MIHOMO_GEOSITE_DIR="$RULES_DAT_DIR/mihomo/geosite"
+MIHOMO_GEOIP_DIR="$RULES_DAT_DIR/mihomo/geoip"
+SING_BOX_GEOSITE_DIR="$RULES_DAT_DIR/sing-box/geosite"
+SING_BOX_GEOIP_DIR="$RULES_DAT_DIR/sing-box/geoip"
 GEOSITE_UPSTREAM_URL="${V2RAY_RULES_DAT_URL:-https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release}"
 GEOIP_UPSTREAM_URL="${LOYALSOLDIER_GEOIP_URL:-https://raw.githubusercontent.com/Loyalsoldier/geoip/release}"
 
 rm -rf "$BUILD_DIR"
-mkdir -p "$BUILD_DIR" "$GEO_DIR" "$MIHOMO_DIR" "$SING_BOX_DIR"
+mkdir -p \
+  "$BUILD_DIR" \
+  "$GEO_DIR" \
+  "$CLASH_DOMAIN_DIR" \
+  "$CLASH_IPCIDR_DIR" \
+  "$MIHOMO_GEOSITE_DIR" \
+  "$MIHOMO_GEOIP_DIR" \
+  "$SING_BOX_GEOSITE_DIR" \
+  "$SING_BOX_GEOIP_DIR"
 
 fetch() {
   local url="$1"
@@ -55,14 +67,11 @@ export NO_SKIP=true
 GOBIN="$BUILD_DIR/bin" go install -trimpath -ldflags='-s -w -buildid=' github.com/metacubex/geo/cmd/geo@master
 GEO_BIN="$BUILD_DIR/bin/geo"
 
-mkdir -p "$BUILD_DIR/meta-rule/geo/geosite" \
+mkdir -p \
+  "$BUILD_DIR/meta-rule/geo/geosite" \
   "$BUILD_DIR/meta-rule/geo/geoip" \
-  "$BUILD_DIR/meta-rule/geo-lite/geosite" \
-  "$BUILD_DIR/meta-rule/geo-lite/geoip" \
   "$BUILD_DIR/sing-rule/geo/geosite" \
-  "$BUILD_DIR/sing-rule/geo/geoip" \
-  "$BUILD_DIR/sing-rule/geo-lite/geosite" \
-  "$BUILD_DIR/sing-rule/geo-lite/geoip"
+  "$BUILD_DIR/sing-rule/geo/geoip"
 
 "$GEO_BIN" convert site -i v2ray -o sing -f "$BUILD_DIR/geosite.db" "$BUILD_DIR/geosite.dat"
 "$GEO_BIN" convert site -i v2ray -o sing -f "$BUILD_DIR/geosite-lite.db" "$BUILD_DIR/geosite-lite.dat"
@@ -75,12 +84,8 @@ mkdir -p "$BUILD_DIR/meta-rule/geo/geosite" \
   cd "$CONVERTER_DIR"
   go run ./ geosite -f "$BUILD_DIR/geosite.dat" -o "$BUILD_DIR/sing-rule/geo/geosite" -t sing-box
   go run ./ geoip -f "$BUILD_DIR/geoip.dat" -o "$BUILD_DIR/sing-rule/geo/geoip" -t sing-box
-  go run ./ geosite -f "$BUILD_DIR/geosite-lite.dat" -o "$BUILD_DIR/sing-rule/geo-lite/geosite" -t sing-box
-  go run ./ geoip -f "$BUILD_DIR/geoip-lite.dat" -o "$BUILD_DIR/sing-rule/geo-lite/geoip" -t sing-box
   go run ./ geosite -f "$BUILD_DIR/geosite.dat" -o "$BUILD_DIR/meta-rule/geo/geosite"
   go run ./ geoip -f "$BUILD_DIR/geoip.dat" -o "$BUILD_DIR/meta-rule/geo/geoip"
-  go run ./ geosite -f "$BUILD_DIR/geosite-lite.dat" -o "$BUILD_DIR/meta-rule/geo-lite/geosite"
-  go run ./ geoip -f "$BUILD_DIR/geoip-lite.dat" -o "$BUILD_DIR/meta-rule/geo-lite/geoip"
 )
 
 while IFS= read -r -d '' file; do
@@ -98,10 +103,28 @@ cp "$BUILD_DIR/geoip-lite.db" "$GEO_DIR/"
 cp "$BUILD_DIR/geoip.metadb" "$GEO_DIR/"
 cp "$BUILD_DIR/geoip-lite.metadb" "$GEO_DIR/"
 cp "$BUILD_DIR/Country.mmdb" "$GEO_DIR/"
-cp -a "$BUILD_DIR/meta-rule/." "$MIHOMO_DIR/"
-cp -a "$BUILD_DIR/sing-rule/." "$SING_BOX_DIR/"
+
+copy_rule_files() {
+  local input_dir="$1"
+  local output_dir="$2"
+
+  find "$input_dir" -maxdepth 1 -type f \( -name '*.yaml' -o -name '*.txt' \) -exec cp {} "$output_dir/" \;
+}
+
+# Domain/IP-CIDR files are the source formats used to build Mihomo MRS files.
+copy_rule_files "$BUILD_DIR/meta-rule/geo/geosite" "$CLASH_DOMAIN_DIR"
+copy_rule_files "$BUILD_DIR/meta-rule/geo/geoip" "$CLASH_IPCIDR_DIR"
+
+# Mihomo's readable rules use classical syntax. MRS is generated separately
+# from the domain/IP-CIDR sources because Mihomo does not support classical MRS.
+copy_rule_files "$BUILD_DIR/meta-rule/geo/geosite/classical" "$MIHOMO_GEOSITE_DIR"
+copy_rule_files "$BUILD_DIR/meta-rule/geo/geoip/classical" "$MIHOMO_GEOIP_DIR"
+
+cp -a "$BUILD_DIR/sing-rule/geo/geosite/." "$SING_BOX_GEOSITE_DIR/"
+cp -a "$BUILD_DIR/sing-rule/geo/geoip/." "$SING_BOX_GEOIP_DIR/"
 cp "$ROOT_DIR/rules-dat/README_base.md" "$RULES_DAT_DIR/README_base.md"
 cp "$ROOT_DIR/rules-dat/README.md" "$RULES_DAT_DIR/README.md"
+cp "$ROOT_DIR/rules-dat/geosite-lite.txt" "$RULES_DAT_DIR/geosite-lite.txt"
 
 while IFS= read -r -d '' file; do
   sha256sum "$file" > "$file.sha256sum"

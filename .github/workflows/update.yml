@@ -65,8 +65,12 @@ jobs:
             "$release_work/oisd" \
             "$release_work/hagezi" \
             "$release_work/rules-dat/geo" \
-            "$release_work/rules-dat/mihomo" \
-            "$release_work/rules-dat/sing-box"
+            "$release_work/rules-dat/clash/domain" \
+            "$release_work/rules-dat/clash/ipcidr" \
+            "$release_work/rules-dat/mihomo/geosite" \
+            "$release_work/rules-dat/mihomo/geoip" \
+            "$release_work/rules-dat/sing-box/geosite" \
+            "$release_work/rules-dat/sing-box/geoip"
 
       - name: Checkout meta-rules-converter
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
@@ -245,6 +249,30 @@ jobs:
       - name: Build MRS files
         run: |
           set -euo pipefail
+
+          build_mrs() {
+            local behavior="$1"
+            local input_dir="$2"
+            local output_dir="$3"
+
+            find "$input_dir" -maxdepth 1 -type f -name '*.yaml' -print0 |
+              while IFS= read -r -d '' input; do
+                local name
+                name="$(basename "$input" .yaml)"
+                local output="$output_dir/$name.mrs"
+                "$MIHOMO_BIN" convert-ruleset "$behavior" yaml "$input" "$output"
+                echo "generated $output"
+              done
+          }
+
+          build_mrs \
+            domain \
+            "$RELEASE_WORK/rules-dat/clash/domain" \
+            "$RELEASE_WORK/rules-dat/mihomo/geosite"
+          build_mrs \
+            ipcidr \
+            "$RELEASE_WORK/rules-dat/clash/ipcidr" \
+            "$RELEASE_WORK/rules-dat/mihomo/geoip"
 
           find "$RELEASE_WORK/oisd" "$RELEASE_WORK/hagezi" -type f -name '*.yaml' -print0 |
             while IFS= read -r -d '' input; do

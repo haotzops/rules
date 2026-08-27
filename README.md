@@ -55,11 +55,14 @@ HaGeZi 介绍：[`HaGeZi 的 README.md`](https://raw.githubusercontent.com/haotz
 | `geoip.metadb` | [下载](https://raw.githubusercontent.com/haotzops/rules/release/rules-dat/geo/geoip.metadb) | [下载](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/geo/geoip.metadb) | [下载](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/geo/geoip.metadb) |
 | `geoip-lite.metadb` | [下载](https://raw.githubusercontent.com/haotzops/rules/release/rules-dat/geo/geoip-lite.metadb) | [下载](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/geo/geoip-lite.metadb) | [下载](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/geo/geoip-lite.metadb) |
 | `Country.mmdb` | [下载](https://raw.githubusercontent.com/haotzops/rules/release/rules-dat/geo/Country.mmdb) | [下载](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/geo/Country.mmdb) | [下载](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/geo/Country.mmdb) |
-| Mihomo ruleset（mrs/txt，按分类分文件） | [`rules-dat/mihomo`](https://github.com/haotzops/rules/tree/release/rules-dat/mihomo) | [目录](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/mihomo/) | [目录](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/mihomo/) |
-| sing-box ruleset（srs/json，按分类分文件） | [`rules-dat/sing-box`](https://github.com/haotzops/rules/tree/release/rules-dat/sing-box) | [目录](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/sing-box/) | [目录](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/sing-box/) |
+| Mihomo ruleset（mrs/yaml/txt，按 geosite/geoip 分类分文件） | [`rules-dat/mihomo`](https://github.com/haotzops/rules/tree/release/rules-dat/mihomo) | [目录](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/mihomo/) | [目录](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/mihomo/) |
+| Mihomo MRS 构建输入（domain/ipcidr，yaml/txt） | [`rules-dat/clash`](https://github.com/haotzops/rules/tree/release/rules-dat/clash) | [目录](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/clash/) | [目录](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/clash/) |
+| sing-box ruleset（srs/json，按 geosite/geoip 分类分文件） | [`rules-dat/sing-box`](https://github.com/haotzops/rules/tree/release/rules-dat/sing-box) | [目录](https://cdn.jsdelivr.net/gh/haotzops/rules@release/rules-dat/sing-box/) | [目录](https://testingcf.jsdelivr.net/gh/haotzops/rules@release/rules-dat/sing-box/) |
 
-geosite-lite 集合说明：[`rules-dat/README.md`](https://raw.githubusercontent.com/haotzops/rules/release/rules-dat/README.md)
+Geo 规则集说明：[`rules-dat/README.md`](https://raw.githubusercontent.com/haotzops/rules/release/rules-dat/README.md)
 上游 README 参考：[`rules-dat/README_base.md`](https://raw.githubusercontent.com/haotzops/rules/release/rules-dat/README_base.md)
+
+Mihomo 的 `.yaml` / `.txt` 使用 classical 规则格式，`.mrs` 由 `rules-dat/clash/domain` 或 `rules-dat/clash/ipcidr` 的 domain/ipcidr 格式构建；使用 `.mrs` 时对应的 `behavior` 应设置为 `domain` 或 `ipcidr`，使用 `.yaml` / `.txt` 时应设置为 `classical`。
 
 ## 配置示例
 
