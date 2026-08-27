@@ -104,12 +104,42 @@ cp "$BUILD_DIR/geoip.metadb" "$GEO_DIR/"
 cp "$BUILD_DIR/geoip-lite.metadb" "$GEO_DIR/"
 cp "$BUILD_DIR/Country.mmdb" "$GEO_DIR/"
 
+prune_empty_rules() {
+  local input_dir="$1"
+
+  while IFS= read -r -d '' yaml_file; do
+    local txt_file="${yaml_file%.yaml}.txt"
+    if [[ ! -s "$txt_file" ]]; then
+      rm -f "$yaml_file" "$txt_file" "${yaml_file%.yaml}.mrs"
+    fi
+  done < <(find "$input_dir" -maxdepth 1 -type f -name '*.yaml' -print0)
+}
+
 copy_rule_files() {
   local input_dir="$1"
   local output_dir="$2"
 
   find "$input_dir" -maxdepth 1 -type f \( -name '*.yaml' -o -name '*.txt' \) -exec cp {} "$output_dir/" \;
 }
+
+copy_sing_rule_files() {
+  local input_dir="$1"
+  local output_dir="$2"
+  local source_dir="$3"
+
+  while IFS= read -r -d '' txt_file; do
+    local name
+    name="$(basename "$txt_file" .txt)"
+    cp "$input_dir/$name.json" "$output_dir/"
+    cp "$input_dir/$name.srs" "$output_dir/"
+  done < <(find "$source_dir" -maxdepth 1 -type f -name '*.txt' -print0)
+}
+
+# Empty upstream categories produce payload: [] files. Do not publish them.
+prune_empty_rules "$BUILD_DIR/meta-rule/geo/geosite"
+prune_empty_rules "$BUILD_DIR/meta-rule/geo/geoip"
+prune_empty_rules "$BUILD_DIR/meta-rule/geo/geosite/classical"
+prune_empty_rules "$BUILD_DIR/meta-rule/geo/geoip/classical"
 
 # Domain/IP-CIDR files are the source formats used to build Mihomo MRS files.
 copy_rule_files "$BUILD_DIR/meta-rule/geo/geosite" "$CLASH_DOMAIN_DIR"
@@ -120,8 +150,14 @@ copy_rule_files "$BUILD_DIR/meta-rule/geo/geoip" "$CLASH_IPCIDR_DIR"
 copy_rule_files "$BUILD_DIR/meta-rule/geo/geosite/classical" "$MIHOMO_GEOSITE_DIR"
 copy_rule_files "$BUILD_DIR/meta-rule/geo/geoip/classical" "$MIHOMO_GEOIP_DIR"
 
-cp -a "$BUILD_DIR/sing-rule/geo/geosite/." "$SING_BOX_GEOSITE_DIR/"
-cp -a "$BUILD_DIR/sing-rule/geo/geoip/." "$SING_BOX_GEOIP_DIR/"
+copy_sing_rule_files \
+  "$BUILD_DIR/sing-rule/geo/geosite" \
+  "$SING_BOX_GEOSITE_DIR" \
+  "$BUILD_DIR/meta-rule/geo/geosite"
+copy_sing_rule_files \
+  "$BUILD_DIR/sing-rule/geo/geoip" \
+  "$SING_BOX_GEOIP_DIR" \
+  "$BUILD_DIR/meta-rule/geo/geoip"
 cp "$ROOT_DIR/rules-dat/README_base.md" "$RULES_DAT_DIR/README_base.md"
 cp "$ROOT_DIR/rules-dat/README.md" "$RULES_DAT_DIR/README.md"
 cp "$ROOT_DIR/rules-dat/geosite-lite.txt" "$RULES_DAT_DIR/geosite-lite.txt"

@@ -259,6 +259,11 @@ jobs:
               while IFS= read -r -d '' input; do
                 local name
                 name="$(basename "$input" .yaml)"
+                local source_txt="$input_dir/$name.txt"
+                if [[ ! -s "$source_txt" ]]; then
+                  echo "skipped empty rule $input"
+                  continue
+                fi
                 local output="$output_dir/$name.mrs"
                 "$MIHOMO_BIN" convert-ruleset "$behavior" yaml "$input" "$output"
                 echo "generated $output"
