@@ -68,32 +68,11 @@ jobs:
             "$release_work/rules-dat/mihomo" \
             "$release_work/rules-dat/sing-box"
 
-      - name: Checkout Geo build dependencies
-        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
-        with:
-          repository: Loyalsoldier/domain-list-custom
-          path: custom
-          persist-credentials: false
-
-      - name: Checkout domain-list-community
-        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
-        with:
-          repository: v2fly/domain-list-community
-          path: community
-          persist-credentials: false
-
       - name: Checkout meta-rules-converter
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
         with:
           repository: MetaCubeX/meta-rules-converter
           path: convert
-          persist-credentials: false
-
-      - name: Checkout gfwlist2dnsmasq
-        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
-        with:
-          repository: cokebar/gfwlist2dnsmasq
-          path: gfwlist2dnsmasq
           persist-credentials: false
 
       - name: Download sources
@@ -137,10 +116,12 @@ jobs:
           set -euo pipefail
 
           while IFS='|' read -r name url expected_title min_entries max_entries; do
+            txt="$RELEASE_WORK/oisd/oisd-$name.txt"
+            cp "$RUNNER_TEMP/sources/oisd/$name.txt" "$txt"
+
             args=(
-              -input "$RUNNER_TEMP/sources/oisd/$name.txt"
-              -output "$RELEASE_WORK/oisd/oisd-$name.yaml"
-              -source-url "$url"
+              -input "$txt"
+              -output "${txt%.txt}.yaml"
               -min "$min_entries"
               -max "$max_entries"
               -max-change 0
@@ -160,7 +141,8 @@ jobs:
           while IFS='|' read -r name url expected_title min_entries max_entries; do
             args=(
               -input "$RUNNER_TEMP/sources/hagezi/$name.txt"
-              -output "$RELEASE_WORK/hagezi/hagezi-$name.yaml"
+              -output "$RELEASE_WORK/hagezi/hagezi-$name.txt"
+              -yaml-output "$RELEASE_WORK/hagezi/hagezi-$name.yaml"
               -source-url "$url"
               -min "$min_entries"
               -max "$max_entries"
@@ -173,6 +155,38 @@ jobs:
 
             go run ./hagezi "${args[@]}"
           done < <(grep -vE '^[[:space:]]*(#|$)' hagezi/sources.conf)
+
+      - name: Convert OISD and HaGeZi to sing-box rulesets
+        working-directory: convert
+        run: |
+          set -euo pipefail
+
+          convert_directory() {
+            local input_dir="$1"
+            local output_dir="$2"
+
+            rm -rf "$output_dir"
+            mkdir -p "$output_dir"
+            go run ./ clash -f "$input_dir" -o "$output_dir" -t sing-box
+
+            while IFS= read -r -d '' yaml_file; do
+              local name
+              name="$(basename "$yaml_file" .yaml)"
+              local generated_dir="$output_dir/$name"
+
+              test -s "$generated_dir/domain.json"
+              test -s "$generated_dir/domain.srs"
+              cp "$generated_dir/domain.json" "${yaml_file%.yaml}.json"
+              cp "$generated_dir/domain.srs" "${yaml_file%.yaml}.srs"
+            done < <(find "$input_dir" -maxdepth 1 -type f -name '*.yaml' -print0)
+          }
+
+          convert_directory \
+            "$RELEASE_WORK/oisd" \
+            "$RUNNER_TEMP/sing-box-rules/oisd"
+          convert_directory \
+            "$RELEASE_WORK/hagezi" \
+            "$RUNNER_TEMP/sing-box-rules/hagezi"
 
       - name: Download HaGeZi README
         run: |
@@ -194,22 +208,12 @@ jobs:
           test -s "$RELEASE_WORK/hagezi/README.md.tmp"
           mv "$RELEASE_WORK/hagezi/README.md.tmp" "$RELEASE_WORK/hagezi/README.md"
 
-      - name: Install Geo build dependencies
-        run: |
-          set -euo pipefail
-          sudo apt-get update
-          sudo apt-get install -y p7zip-full
-
-      - name: Build MetaCubeX Geo data and rulesets
+      - name: Build Loyalsoldier Geo data and rulesets
         env:
-          CUSTOM_DIR: ${{ github.workspace }}/custom
-          COMMUNITY_DIR: ${{ github.workspace }}/community
           CONVERTER_DIR: ${{ github.workspace }}/convert
-          GFWLIST_DIR: ${{ github.workspace }}/gfwlist2dnsmasq
         run: |
           set -euo pipefail
-          chmod +x rules-dat/build.sh rules-dat/build-geosite-lite.sh
-          chmod +x rules-dat/resouces/*.sh rules-dat/resouces/*.py
+          chmod +x rules-dat/build.sh
           rules-dat/build.sh
 
       - name: Install Mihomo
