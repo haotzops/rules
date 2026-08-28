@@ -27,9 +27,9 @@ lv.queniujq.cn
 xz.pphimalayanrt.com
 +.steamchina.com
 +.gstore.val.manlaxy.com
-+.leagueoflegends.cn
-+.lpl.com.cn
++.bluearchive-cn.com
++.xboxlive.cn
 +.yostar.cn
 gog.qtlglb.com
-+.xboxlive.cn
-+.bluearchive-cn.com
++.leagueoflegends.cn
++.lpl.com.cn

@@ -35,11 +35,11 @@
         "steamstatic.com.8686c.com",
         "steamchina.com",
         "gstore.val.manlaxy.com",
-        "leagueoflegends.cn",
-        "lpl.com.cn",
-        "yostar.cn",
+        "bluearchive-cn.com",
         "xboxlive.cn",
-        "bluearchive-cn.com"
+        "yostar.cn",
+        "leagueoflegends.cn",
+        "lpl.com.cn"
       ],
       "domain_regex": [
         "^cdn\\d-epicgames-\\d+\\.file\\.myqcloud\\.com$",
