@@ -356,20 +356,20 @@ payload:
     - +.chatdrama.net
     - +.chatdrama.cn
     - +.aireads.cn
-    - +.koowo.com
-    - +.koowo.cn
-    - +.kugouyouth.com
-    - +.kugouvoice.com
-    - +.kugoustore.com
     - +.kugousenior.com
     - +.kugouringtone.com
     - +.kugouliveshow.com
     - +.kugoukid.com
     - +.kugouipv6.com
     - +.kugouaudio.com
+    - +.kugou.net
+    - +.kugou.com
     - +.kugoo.com
-    - +.97ting.com
     - +.ktv.com
+    - +.kglink.cn
+    - +.xmcdn.com
+    - +.97ting.com
+    - +.ximalaya.com
     - +.sogoucdndl.com
     - +.sogouimecdn.com
     - +.ggowan.com
@@ -401,7 +401,7 @@ payload:
     - +.yeyousg.com
     - +.yidianliulan.cn
     - +.tencentmusic.com
-    - +.kglink.cn
+    - +.kuwo.cn
     - +.openmidas.com
     - +.qq.design
     - +.qqgamedesign.com
@@ -495,17 +495,17 @@ payload:
     - +.scsentry.cn
     - +.supercellcommunity.cn
     - +.supercellsupport.cn
-    - +.kgimg.com
-    - +.fanxingliveshow.com
+    - +.koowo.com
+    - +.koowo.cn
     - +.ultimatemusic.cn
     - +.tingmall.com
     - +.qqmusic.com
     - +.wting.info
-    - +.kugou.com
-    - +.kugou.net
-    - +.xmcdn.com
-    - +.ximalaya.com
-    - +.kuwo.cn
+    - +.fanxingliveshow.com
+    - +.kgimg.com
+    - +.kugouyouth.com
+    - +.kugouvoice.com
+    - +.kugoustore.com
     - +.lrts.me
     - +.mting.info
     - +.tdnsdl5.com.cn
@@ -670,10 +670,10 @@ payload:
     - +.stat.y.qq.com
     - +.tmead.y.qq.com
     - +.tmeadcomm.y.qq.com
-    - +.ads.service.kugou.com
-    - +.adserviceretry.kglink.cn
-    - +.adserviceretry.kugou.com
     - +.adbehavior.ximalaya.com
     - +.adse.wsa.ximalaya.com
     - +.adse.ximalaya.com
+    - +.ads.service.kugou.com
+    - +.adserviceretry.kglink.cn
+    - +.adserviceretry.kugou.com
     - +.webnovel.com
