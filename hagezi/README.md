@@ -4,13 +4,13 @@
 
 ### Built with :heartbeat: for a safer, cleaner internet. It always looks impossible until someone just goes ahead and does it.
 
+**What this is:** a set of DNS blocklists that block ads, trackers, telemetry, phishing, malware, scams, and other unwanted domains network-wide. They work for any region and with every common DNS server, ad blocker, and content blocker.
+
 Privacy isn't a crime, so go protect yours. It's what lets you decide who you are and who you want to be :bangbang:
 
 Like this project? If it's helped you out, drop a :star: (top right) and join the stargazers club! Every star genuinely helps.
 
-**What this is:** a set of DNS blocklists that block ads, trackers, telemetry, phishing, malware, scams, and other unwanted domains network-wide. They work for any region and with every common DNS server, ad blocker, and content blocker.
-
-**New here?** Start with [Multi PRO](#pro) plus the [Threat Intelligence Feeds](#tif) list, pick the format that matches your tool, and follow the [quick setup guide](FAQ.md#quicksetup). Unsure which version fits you? See [which list version should I use](FAQ.md#whatshouldiuse).
+**New here?** Start with [Multi PRO](#pro) plus the [Threat Intelligence Feeds](#tif) list, pick the [format that matches](#formatguide) your tool, and follow the [quick setup guide](FAQ.md#quicksetup). Unsure which version fits you? See [which list version should I use](FAQ.md#whatshouldiuse).
 
 ---
 
@@ -53,7 +53,7 @@ Like this project? If it's helped you out, drop a :star: (top right) and join th
 
 ### :books: **Multi, cleans up the internet and protects your privacy!** <a name="overview"></a>
 
-This is an all-in-one DNS blocklist that comes in **several versions (light, normal, pro, pro++, and ultimate)**. You can run it standalone, and it works for any region. It blocks ads, affiliate links, trackers, metrics, telemetry, fake sites, phishing, malware, scams, cryptojacking, and other junk. It's built on [various source blocklists](sources.md), but that doesn't mean it's just a pile of lists glued together. Everything here has been optimized and extended so it actually cleans up the internet across the board.
+This is an all-in-one DNS blocklist that comes in **several versions (light, normal, pro, pro++, and ultimate)**. You can run it standalone, and it works for any region. It blocks ads, trackers, metrics, telemetry, fake sites, phishing, malware, scams, cryptojacking, and other junk. It's built on [various source blocklists](sources.md), but that doesn't mean it's just a pile of lists glued together. Everything here has been optimized and extended so it actually cleans up the internet across the board.
 
 Curious about the sources? Check out: [Which sources are used for the lists and how are they compiled?](FAQ.md#sources)
 
@@ -61,11 +61,11 @@ Curious about the sources? Check out: [Which sources are used for the lists and 
 
 | Version | Entries | Light | Normal | Pro | Pro++ | [Fake](#fake) | [TIF](#tif) | [Nat<br>ive](#native) | [PopUp<br>Ads](#popupads) | Error<br>Tracker |
 |:--------|---:|:----:|:----:|:-----:|:------:|:---:|:------:|:----------:|:----:|:----:|
-| :green_book:[Light](#light)             | 41865     | :green_circle:  |   |  |  |  | |  :yellow_square: | :yellow_square: | |
-| :blue_book:[Normal](#normal)       | 190873     | :green_circle: | :green_circle: |  |  | :green_circle: | :yellow_square: | :yellow_square: | :yellow_square: | |
-| :ledger:[Pro](#pro)              | 226870         | :green_circle: | :green_circle: | :green_circle: |  | :green_circle: | :yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
-| :orange_book:[Pro++](#proplus)    | 251363 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |:yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
-| :closed_book:[Ultimate](#ultimate)    | 271045 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle:  | :yellow_square: | :green_circle: | :green_circle: | :green_circle: |
+| :green_book:[Light](#light)             | 41442     | :green_circle:  |   |  |  |  | |  :yellow_square: | :yellow_square: | |
+| :blue_book:[Normal](#normal)       | 191135     | :green_circle: | :green_circle: |  |  | :green_circle: | :yellow_square: | :yellow_square: | :yellow_square: | |
+| :ledger:[Pro](#pro)              | 227114         | :green_circle: | :green_circle: | :green_circle: |  | :green_circle: | :yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
+| :orange_book:[Pro++](#proplus)    | 251194 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |:yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
+| :closed_book:[Ultimate](#ultimate)    | 277629 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle:  | :yellow_square: | :green_circle: | :green_circle: | :green_circle: |
 
 - :green_circle: fully includes the list named in the column header
 - :yellow_square: partially includes the list named in the column header
@@ -108,7 +108,7 @@ The legacy Subdomains and Hosts formats live in a [separate repository](https://
 
 ### :green_book: **Multi LIGHT**, **basic protection** <a name="light"></a>
 
-Hand brush edition. Cleans up the internet and protects your privacy without going overboard. Blocks ads, trackers, metrics, and some badware. Basically a size-optimized version of Multi NORMAL, built only from domains that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop). That's also why the [Fake](#fake) list isn't part of Light: fake shops and fake streaming sites generally don't rank on those lists in the first place.
+Hand brush edition. Cleans up the internet and protects your privacy without going overboard. Blocks ads, trackers, metrics, and some badware. Basically a size-optimized version of Multi NORMAL, built only from domains that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
 > [!NOTE]
 > This version shouldn't cause any real restrictions. Great if there's no admin around to unblock stuff for you, or if your ad blocker chokes on big lists.
@@ -116,7 +116,7 @@ Hand brush edition. Cleans up the internet and protects your privacy without goi
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 41865
+**Entries:** 41442
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -126,7 +126,7 @@ Hand brush edition. Cleans up the internet and protects your privacy without goi
 
 ### :blue_book: **Multi NORMAL**, **all-round protection** <a name="normal"></a>
 
-Broom edition. Cleans up the internet and protects your privacy. Blocks ads, affiliate links, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
+Broom edition. Cleans up the internet and protects your privacy. Blocks ads, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
 
 > [!NOTE]
 > This one mostly won't cause restrictions either. Good pick if you don't have an admin handy to unblock anything.
@@ -134,7 +134,7 @@ Broom edition. Cleans up the internet and protects your privacy. Blocks ads, aff
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 190873
+**Entries:** 191135
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -144,7 +144,7 @@ Broom edition. Cleans up the internet and protects your privacy. Blocks ads, aff
 
 ### :ledger: **Multi PRO**, **extended protection (recommended)** <a name="pro"></a>
 
-Big broom edition. Cleans up the internet and protects your privacy. Blocks ads, affiliate links, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
+Big broom edition. Cleans up the internet and protects your privacy. Blocks ads, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
 
 > [!NOTE]
 > Restrictions here are rare. Works best if you've got an admin nearby who can unblock something if needed. This is my personal go-to recommendation for solid ad blocking with good privacy without much hassle.
@@ -153,7 +153,7 @@ Big broom edition. Cleans up the internet and protects your privacy. Blocks ads,
 > **Referral domains (affiliate and tracking links):**
 > Most referral domains are still allowed here, but a handful get blocked anyway, mainly ones that double as regular trackers or are commonly tied to scam and spam links. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 226870
+**Entries:** 227114
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -163,7 +163,7 @@ Big broom edition. Cleans up the internet and protects your privacy. Blocks ads,
 
 A size-optimized version made for DNS or browser blockers, like devices with limited RAM. This only contains domains from the full Pro list that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 56926
+**Entries:** 55883
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -173,16 +173,16 @@ A size-optimized version made for DNS or browser blockers, like devices with lim
 
 ### :orange_book: **Multi PRO++**, **maximum protection** <a name="proplus"></a>
 
-Sweeper edition. This one cleans up the internet aggressively and protects your privacy hard. Blocks ads, affiliate links, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
+Sweeper edition. This one cleans up the internet aggressively and protects your privacy hard. Blocks ads, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
 
-> [!NOTE]
+> [!WARNING]
 > This is the more aggressive sibling of Multi PRO. It might block a few legit domains by mistake, so it's best for experienced users. Ideally have an admin ready to unblock things that break.
 
 > [!WARNING]
 > **Referral domains (affiliate and tracking links):**
 > More referral domains get blocked than in Pro, specifically the ones that aren't used exclusively for link tracking. The bulk of the category still stays allowed. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 251363
+**Entries:** 251194
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -192,7 +192,7 @@ Sweeper edition. This one cleans up the internet aggressively and protects your 
 
 Built the same way as [Pro mini](#promini), but from the full Pro++ list: only its domains that appear on the Top 1M/10M lists make the cut. For DNS or browser blockers on limited hardware.
 
-**Entries:** 68533
+**Entries:** 67144
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -202,9 +202,9 @@ Built the same way as [Pro mini](#promini), but from the full Pro++ list: only i
 
 ### :closed_book: **Multi ULTIMATE**, **aggressive protection** <a name="ultimate"></a>
 
-Ultimate sweeper edition. Strictly cleans up the internet and locks down your privacy. Blocks ads, affiliate links, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
+Ultimate sweeper edition. Strictly cleans up the internet and locks down your privacy. Blocks ads, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
 
-> [!NOTE]
+> [!CAUTION]
 > This is a stricter version of Multi PRO++. It contains domains that can limit app or website functionality, including some popular trackers that will cause hiccups. Only use this if you know what you're doing, and make sure someone can unblock things when needed.
 
 > [!WARNING]
@@ -223,7 +223,7 @@ Ultimate sweeper edition. Strictly cleans up the internet and locks down your pr
 > **Anything else:**
 > More known quirks are listed [here](share/ultimate-known-issues.txt).
 
-**Entries:** 271045
+**Entries:** 277629
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -233,7 +233,7 @@ Ultimate sweeper edition. Strictly cleans up the internet and locks down your pr
 
 Built the same way as [Pro mini](#promini), but from the full Ultimate list: only its domains that appear on the Top 1M/10M lists make the cut. For DNS or browser blockers on limited hardware.
 
-**Entries:** 79658
+**Entries:** 83098
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -257,7 +257,7 @@ This blocklist targets fake stores, fake streaming sites, rip-offs, subscription
 
 Targets pop-up ads that range from annoying to outright malicious.
 
-**Entries:** 54178
+**Entries:** 54181
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -274,7 +274,7 @@ This blocklist targets malware, cryptojacking, scams, spam, and phishing. It blo
 > It's too big for the iOS AdGuard mobile app, and AdGuard Home needs at least 2 GB RAM.
 > The RPZ version had to be split into two files because of its size, you need both.
 
-**Entries:** 2167242
+**Entries:** 2178585
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ<br>(split) |
 |:---:|:---:|:---:|:---:|:---:|
@@ -287,7 +287,7 @@ A medium-sized version of the TIF list, built for ad blockers that struggle with
 > [!WARNING]
 > Too big for the iOS AdGuard mobile app. AdGuard Home needs at least 1 GB RAM.
 
-**Entries:** 331321
+**Entries:** 340547
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -297,7 +297,7 @@ A medium-sized version of the TIF list, built for ad blockers that struggle with
 
 A size-optimized version of the TIF Medium list, for ad blockers that even struggle with that one.
 
-**Entries:** 176834
+**Entries:** 177622
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -332,17 +332,17 @@ There are two variants:
 > Stamus Labs doesn't promise daily updates, so the data can sometimes lag by a few days.
 >
 > Current status of the data:
-> - Stamus Labs: :green_circle: - Sat, 29 Aug 2026 04:25:59 UTC / 10888781 domains
+> - Stamus Labs: :green_circle: - Sun, 30 Aug 2026 04:17:15 UTC / 10954842 domains
 
 #### :new: **NRDs:** all newly registered domains, unfiltered
 
 | Time<br>period | Entries | Format<br>Adblock | Format<br>Domains |
 |:--------------:|:--------|:-----------------:|:-----------------:|
-| 7 days ago to yesterday    | 2708008 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
-| 14 days ago to 8 days ago  | 2930214 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
-| 21 days ago to 15 days ago | 2703429 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
-| 28 days ago to 22 days ago | 2864733 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
-| 35 days ago to 29 days ago | 2370684 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
+| 7 days ago to yesterday    | 2658527 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
+| 14 days ago to 8 days ago  | 3002984 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
+| 21 days ago to 15 days ago | 2664960 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
+| 28 days ago to 22 days ago | 2886962 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
+| 35 days ago to 29 days ago | 2338791 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
 
 > [!NOTE]
 > The five files are non-overlapping bands, so stack them for wider coverage: `nrd7` plus `nrd14-8` covers the last 14 days, add `nrd21-15` for 21 days, and so on.
@@ -358,9 +358,9 @@ There are two variants:
 
 | Time<br>period | Entries | Format<br>Adblock | Format<br>Domains |
 |:--------------:|:--------|:-----------------:|:-----------------:|
-| Past 7 days    | 517158 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
-| Past 14 days   | 1088259 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
-| Past 30 days   | 2455768 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
+| Past 7 days    | 539737 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
+| Past 14 days   | 1111871 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
+| Past 30 days   | 2474423 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
 
 ---
 
@@ -375,7 +375,7 @@ Blocks common ways to bypass your DNS setup.
 
 #### :outbox_tray: **Complete edition: encrypted DNS servers, VPN, TOR, proxies** <a name="bypass_all"></a>
 
-**Entries:** 16718
+**Entries:** 16709
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -507,7 +507,7 @@ DNS Rebind Protection stops attackers from messing with DNS responses to make a 
 
 Blocks sites and services mainly used for illegally distributing copyrighted content.
 
-**Entries:** 45775
+**Entries:** 46132
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -519,7 +519,7 @@ Blocks sites and services mainly used for illegally distributing copyrighted con
 
 Blocks gambling-related sites.
 
-**Entries:** 472115
+**Entries:** 472331
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -529,7 +529,7 @@ Blocks gambling-related sites.
 
 A medium-sized version for ad blockers that have trouble with the full gambling list.
 
-**Entries:** 152312
+**Entries:** 152017
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -539,7 +539,7 @@ A medium-sized version for ad blockers that have trouble with the full gambling 
 
 A size-optimized version of the Gambling Medium list. Only contains domains that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 99165
+**Entries:** 95720
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -566,7 +566,7 @@ Blocks social networks like Facebook, Instagram, TikTok, X (formerly Twitter), S
 
 Blocks adult content.
 
-**Entries:** 114339
+**Entries:** 114126
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -625,30 +625,8 @@ Check out Yokoffing's [Recommended Filters for uBlock Origin](https://github.com
 
 Don't run your own DNS server at home, or want extra protection for your phone when it's off your home network? These DNS services have you covered.
 
-**Which lists are available where:** <a name="availablelists"></a>
-
-The services in this matrix let you pick individual lists. The ones further down (HaGeZi DNS, DNSBUNKER.org, Public RDNS, RobinGroppe.de, OpenBLD.net) run fixed list combinations instead, so they aren't part of it.
-
-| List | AdGuard DNS | ControlD | RethinkDNS | DNSwarden |
-|:---|:---:|:---:|:---:|:---:|
-| Light | :x: | :green_circle: | :green_circle: | :green_circle: |
-| Normal | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| Pro | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| Pro++ | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| Ultimate | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| TIF | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| Bypass | :green_circle: | :yellow_square: | :green_circle: | :x: |
-| Dynamic DNS | :green_circle: | :yellow_square: | :green_circle: | :x: |
-| Badware Hoster | :green_circle: | :notebook: | :green_circle: | :x: |
-| Most Abused TLDs | :green_circle: | :notebook: | :x: | :x: |
-| Anti Piracy | :green_circle: | :yellow_square: | :x: | :x: |
-| Gambling | :green_circle: | :yellow_square: | :x: | :x: |
-| All other lists | :green_circle: | :x: | :x: | :x: |
-
-- :green_circle: Fully available as a native list on that service.
-- :x: Not available.
-- :yellow_square: Included as part of ControlD's native category lists, no separate list needed.
-- :notebook: Available as a separate [ControlD folder](https://github.com/hagezi/dns-blocklists/tree/main/controld).
+> [!TIP]
+> [Which lists are available on which DNS services?](FAQ.md#availablelists)
 
 #### :department_store: **AdGuardDNS, limited free / unlimited trial / paid** <a name="adguarddns"></a>
 
