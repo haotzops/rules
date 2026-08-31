@@ -12,6 +12,9 @@ Like this project? If it's helped you out, drop a :star: (top right) and join th
 
 **New here?** Start with [Multi PRO](#pro) plus the [Threat Intelligence Feeds](#tif) list, pick the [format that matches](#formatguide) your tool, and follow the [quick setup guide](FAQ.md#quicksetup). Unsure which version fits you? See [which list version should I use](FAQ.md#whatshouldiuse).
 
+> [!NOTE]
+> **About the cleaning tools below.** The five Multi versions are named after cleaning tools, and you'll see that wording throughout this page: Light is the hand brush, Normal the broom, Pro the big broom, Pro++ the sweeper, and Ultimate the ultimate sweeper. The bigger the tool, the more thoroughly it cleans, and the more likely it is to sweep up something you wanted to keep.
+
 ---
 
 ### :bookmark_tabs: Table of Contents <a name="toc"></a>
@@ -20,8 +23,8 @@ Like this project? If it's helped you out, drop a :star: (top right) and join th
 2. [Multi LIGHT](#light), hand brush: basic protection
 3. [Multi NORMAL](#normal), broom: all-round protection
 4. [Multi PRO](#pro), big broom: extended protection (recommended): [Full](#pro) - [Mini](#promini)
-5. [Multi PRO++](#proplus), sweeper: maximum protection (more aggressive): [Full](#proplus) - [Mini](#proplusmini)
-6. [Multi ULTIMATE](#ultimate), ultimate sweeper: aggressive protection: [Full](#ultimate) - [Mini](#ultimatemini)
+5. [Multi PRO++](#proplus), sweeper: advanced protection (more aggressive): [Full](#proplus) - [Mini](#proplusmini)
+6. [Multi ULTIMATE](#ultimate), ultimate sweeper: maximum protection (most aggressive): [Full](#ultimate) - [Mini](#ultimatemini)
 7. [Fake](#fake), block scams, traps, and fake sites!
 8. [Pop-Up Ads](#popupads), stop annoying and malicious pop-ups!
 9. [Threat Intelligence Feeds](#tif), a serious security boost (recommended): [Full](#tif) - [Medium](#tifmedium) - [Mini](#tifmini) - [IPs](#tifips)
@@ -61,17 +64,21 @@ Curious about the sources? Check out: [Which sources are used for the lists and 
 
 | Version | Entries | Light | Normal | Pro | Pro++ | [Fake](#fake) | [TIF](#tif) | [Nat<br>ive](#native) | [PopUp<br>Ads](#popupads) | Error<br>Tracker |
 |:--------|---:|:----:|:----:|:-----:|:------:|:---:|:------:|:----------:|:----:|:----:|
-| :green_book:[Light](#light)             | 41442     | :green_circle:  |   |  |  |  | |  :yellow_square: | :yellow_square: | |
-| :blue_book:[Normal](#normal)       | 191135     | :green_circle: | :green_circle: |  |  | :green_circle: | :yellow_square: | :yellow_square: | :yellow_square: | |
-| :ledger:[Pro](#pro)              | 227114         | :green_circle: | :green_circle: | :green_circle: |  | :green_circle: | :yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
-| :orange_book:[Pro++](#proplus)    | 251194 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |:yellow_square: | :yellow_square: | :green_circle: | :green_circle: |
-| :closed_book:[Ultimate](#ultimate)    | 277629 | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle:  | :yellow_square: | :green_circle: | :green_circle: | :green_circle: |
+| :green_book:[Light](#light)             | 41274     | :white_check_mark: | -- | -- | -- | :x: | :x: | :orange_circle: | :orange_circle: | :x: |
+| :blue_book:[Normal](#normal)       | 191539     | :white_check_mark: | :white_check_mark: | -- | -- | :white_check_mark: | :orange_circle: | :orange_circle: | :yellow_circle: | :x: |
+| :ledger:[Pro](#pro)              | 227702         | :white_check_mark: | :white_check_mark: | :white_check_mark: | -- | :white_check_mark: | :orange_circle: | :yellow_circle: | :white_check_mark: | :white_check_mark: |
+| :orange_book:[Pro++](#proplus)    | 251788 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :yellow_circle: | :green_circle: | :white_check_mark: | :white_check_mark: |
+| :closed_book:[Ultimate](#ultimate)    | 278246 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :yellow_circle: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-- :green_circle: fully includes the list named in the column header
-- :yellow_square: partially includes the list named in the column header
-- (empty cell) does not include the list named in the column header
+**Legend.** It's a five-step scale, listed here from the least coverage to the most:
 
-Ultimate has no column of its own, since it's the top tier and no other version contains it.
+1. :x: **not included**, none of it is in this tier
+2. :orange_circle: **partially included, step 1 of 3**, the smallest share
+3. :yellow_circle: **partially included, step 2 of 3**
+4. :green_circle: **partially included, step 3 of 3**, the largest share
+5. :white_check_mark: **fully included**, all of it
+
+`--` means not applicable.
 
 For a full inclusion matrix that also covers the standalone lists, see the [Cheat Sheet](CHEATSHEET.md#inclusionmatrix).
 
@@ -85,22 +92,22 @@ For a full inclusion matrix that also covers the standalone lists, see the [Chea
 | :orange_book:[Pro++](#proplus)     | Balanced/Aggressive | Moderate         |
 | :closed_book:[Ultimate](#ultimate) | Aggressive          | High             |
 
-Each version is named after a cleaning tool, which is where the "hand brush", "broom", and "sweeper" wording in the sections below comes from: Light is the hand brush, Normal the broom, Pro the big broom, Pro++ the sweeper, and Ultimate the ultimate sweeper. The bigger the tool, the more thoroughly it cleans, and the more likely it is to sweep up something you wanted to keep.
-
 > [!TIP]
 > :information_desk_person: [Not sure which version fits you? Check this out.](FAQ.md#whatshouldiuse)
 
 #### **Which format do I need?** <a name="formatguide"></a>
 
-Every list below is published in the same five formats. Pick the row that matches your tool, the content is identical, only the structure differs.
+Most lists below are published in the same five standard formats. Pick the row that matches your tool. Within these five, the blocked domains are the same, only the way they're written down changes.
 
 | Format | Use it with |
 |:-------|:------------|
 | Adblock | Pi-hole, AdGuard, AdGuard Home, eBlocker, uBlock Origin, Brave (aggressive mode only), AdBlock-Fast, AdNauseam, Little Snitch Mini (smaller lists only) |
-| DNSMasq | DNSMasq (v2.86+), Diversion (v5+) |
-| Wildcard Asterisk | Blocky (v0.23+), Nebulo, NetDuma, OPNsense, YogaDNS |
-| Wildcard Domains | DNSCloak, DNSCrypt, FRITZ!Box (FRITZ!OS >= v8.40), TechnitiumDNS, adblock-lean, PersonalDNSfilter, InviZible Pro |
-| RPZ | Response Policy Zone, Bind, Knot, PowerDNS, Unbound |
+| DNSMasq | DNSMasq (v2.86 or newer), Diversion (v5 or newer) |
+| Wildcard Asterisk | Blocky (v0.23 or newer), Nebulo, NetDuma, OPNsense, YogaDNS |
+| Wildcard Domains | DNSCloak, DNSCrypt, FRITZ!Box (FRITZ!OS v8.40 or newer), TechnitiumDNS, adblock-lean, PersonalDNSfilter, InviZible Pro |
+| RPZ | Bind, Knot, PowerDNS, Unbound, and other software supporting Response Policy Zones |
+
+A handful of lists don't follow this pattern, because their content or their exclusion rules can't be expressed the same way in every format. Those are [Most Abused TLDs](#tlds) (its own set of format variants), [DNS Rebind Protection](#dnsrebind) (AdGuard only), [NRD/DGA](#nrd) (Adblock and plain domains only), and the IP lists for [TIF](#tifips) and [DoH](#bypass_ips). Each of those sections spells out what's available.
 
 The legacy Subdomains and Hosts formats live in a [separate repository](https://github.com/hagezi/dns-blocklists-legacy). For the complete format-to-tool breakdown, see the [FAQ](FAQ.md#formats).
 
@@ -108,7 +115,7 @@ The legacy Subdomains and Hosts formats live in a [separate repository](https://
 
 ### :green_book: **Multi LIGHT**, **basic protection** <a name="light"></a>
 
-Hand brush edition. Cleans up the internet and protects your privacy without going overboard. Blocks ads, trackers, metrics, and some badware. Basically a size-optimized version of Multi NORMAL, built only from domains that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
+Hand brush edition. Cleans up the internet and protects your privacy without going overboard. Blocks ads, trackers, metrics, telemetry, and some badware. Basically a size-optimized version of Multi NORMAL, built only from domains that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
 > [!NOTE]
 > This version shouldn't cause any real restrictions. Great if there's no admin around to unblock stuff for you, or if your ad blocker chokes on big lists.
@@ -116,7 +123,7 @@ Hand brush edition. Cleans up the internet and protects your privacy without goi
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 41442
+**Entries:** 41274
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -134,7 +141,7 @@ Broom edition. Cleans up the internet and protects your privacy. Blocks ads, tra
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 191135
+**Entries:** 191539
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -153,7 +160,7 @@ Big broom edition. Cleans up the internet and protects your privacy. Blocks ads,
 > **Referral domains (affiliate and tracking links):**
 > Most referral domains are still allowed here, but a handful get blocked anyway, mainly ones that double as regular trackers or are commonly tied to scam and spam links. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 227114
+**Entries:** 227702
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -163,7 +170,7 @@ Big broom edition. Cleans up the internet and protects your privacy. Blocks ads,
 
 A size-optimized version made for DNS or browser blockers, like devices with limited RAM. This only contains domains from the full Pro list that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 55883
+**Entries:** 55712
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -171,7 +178,7 @@ A size-optimized version made for DNS or browser blockers, like devices with lim
 
 ---
 
-### :orange_book: **Multi PRO++**, **maximum protection** <a name="proplus"></a>
+### :orange_book: **Multi PRO++**, **advanced protection (more aggressive)** <a name="proplus"></a>
 
 Sweeper edition. This one cleans up the internet aggressively and protects your privacy hard. Blocks ads, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
 
@@ -182,7 +189,7 @@ Sweeper edition. This one cleans up the internet aggressively and protects your 
 > **Referral domains (affiliate and tracking links):**
 > More referral domains get blocked than in Pro, specifically the ones that aren't used exclusively for link tracking. The bulk of the category still stays allowed. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 251194
+**Entries:** 251788
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -192,7 +199,7 @@ Sweeper edition. This one cleans up the internet aggressively and protects your 
 
 Built the same way as [Pro mini](#promini), but from the full Pro++ list: only its domains that appear on the Top 1M/10M lists make the cut. For DNS or browser blockers on limited hardware.
 
-**Entries:** 67144
+**Entries:** 66914
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -200,7 +207,7 @@ Built the same way as [Pro mini](#promini), but from the full Pro++ list: only i
 
 ---
 
-### :closed_book: **Multi ULTIMATE**, **aggressive protection** <a name="ultimate"></a>
+### :closed_book: **Multi ULTIMATE**, **maximum protection (most aggressive)** <a name="ultimate"></a>
 
 Ultimate sweeper edition. Strictly cleans up the internet and locks down your privacy. Blocks ads, trackers, metrics, telemetry, phishing, malware, scams, fakes, cryptojacking, and other junk.
 
@@ -223,7 +230,7 @@ Ultimate sweeper edition. Strictly cleans up the internet and locks down your pr
 > **Anything else:**
 > More known quirks are listed [here](share/ultimate-known-issues.txt).
 
-**Entries:** 277629
+**Entries:** 278246
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -233,7 +240,7 @@ Ultimate sweeper edition. Strictly cleans up the internet and locks down your pr
 
 Built the same way as [Pro mini](#promini), but from the full Ultimate list: only its domains that appear on the Top 1M/10M lists make the cut. For DNS or browser blockers on limited hardware.
 
-**Entries:** 83098
+**Entries:** 82831
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -245,7 +252,7 @@ Built the same way as [Pro mini](#promini), but from the full Ultimate list: onl
 
 This blocklist targets fake stores, fake streaming sites, rip-offs, subscription traps, and similar scams.
 
-**Entries:** 17284
+**Entries:** 17283
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -257,7 +264,7 @@ This blocklist targets fake stores, fake streaming sites, rip-offs, subscription
 
 Targets pop-up ads that range from annoying to outright malicious.
 
-**Entries:** 54181
+**Entries:** 54190
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -274,7 +281,7 @@ This blocklist targets malware, cryptojacking, scams, spam, and phishing. It blo
 > It's too big for the iOS AdGuard mobile app, and AdGuard Home needs at least 2 GB RAM.
 > The RPZ version had to be split into two files because of its size, you need both.
 
-**Entries:** 2178585
+**Entries:** 2191531
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ<br>(split) |
 |:---:|:---:|:---:|:---:|:---:|
@@ -287,7 +294,7 @@ A medium-sized version of the TIF list, built for ad blockers that struggle with
 > [!WARNING]
 > Too big for the iOS AdGuard mobile app. AdGuard Home needs at least 1 GB RAM.
 
-**Entries:** 340547
+**Entries:** 336091
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -297,7 +304,7 @@ A medium-sized version of the TIF list, built for ad blockers that struggle with
 
 A size-optimized version of the TIF Medium list, for ad blockers that even struggle with that one.
 
-**Entries:** 177622
+**Entries:** 177567
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -332,17 +339,17 @@ There are two variants:
 > Stamus Labs doesn't promise daily updates, so the data can sometimes lag by a few days.
 >
 > Current status of the data:
-> - Stamus Labs: :green_circle: - Sun, 30 Aug 2026 04:17:15 UTC / 10954842 domains
+> - Stamus Labs: :green_circle: - Mon, 31 Aug 2026 04:22:09 UTC / 10870462 domains
 
 #### :new: **NRDs:** all newly registered domains, unfiltered
 
 | Time<br>period | Entries | Format<br>Adblock | Format<br>Domains |
 |:--------------:|:--------|:-----------------:|:-----------------:|
-| 7 days ago to yesterday    | 2658527 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
-| 14 days ago to 8 days ago  | 3002984 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
-| 21 days ago to 15 days ago | 2664960 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
-| 28 days ago to 22 days ago | 2886962 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
-| 35 days ago to 29 days ago | 2338791 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
+| 7 days ago to yesterday    | 2590193 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
+| 14 days ago to 8 days ago  | 2954830 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
+| 21 days ago to 15 days ago | 2659196 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
+| 28 days ago to 22 days ago | 2952310 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
+| 35 days ago to 29 days ago | 2313477 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
 
 > [!NOTE]
 > The five files are non-overlapping bands, so stack them for wider coverage: `nrd7` plus `nrd14-8` covers the last 14 days, add `nrd21-15` for 21 days, and so on.
@@ -358,9 +365,9 @@ There are two variants:
 
 | Time<br>period | Entries | Format<br>Adblock | Format<br>Domains |
 |:--------------:|:--------|:-----------------:|:-----------------:|
-| Past 7 days    | 539737 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
-| Past 14 days   | 1111871 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
-| Past 30 days   | 2474423 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
+| Past 7 days    | 541226 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
+| Past 14 days   | 1104259 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
+| Past 30 days   | 2449876 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
 
 ---
 
@@ -375,7 +382,7 @@ Blocks common ways to bypass your DNS setup.
 
 #### :outbox_tray: **Complete edition: encrypted DNS servers, VPN, TOR, proxies** <a name="bypass_all"></a>
 
-**Entries:** 16709
+**Entries:** 16696
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -467,7 +474,7 @@ Blocks the most abused top-level domains, combining data from Cloudflare Radar, 
 > [!WARNING]
 > This list blocks entire top-level domains (like *.top, *.shop, *.gdn) that have a bad reputation overall. Yes, that means some legit sites get caught in the crossfire too, but it's really effective against spam, scams, phishing, malware, and other garbage. Know what you're signing up for.
 >
-> Only well-known, reputable domains that show up on major top lists (Umbrella, Cloudflare, Tranco, Chrome, DomCop, etc.) or are essential for popular apps get considered for exclusion. Illegal domains, including piracy sites, stay blocked no matter what. Anything that doesn't clearly qualify gets reviewed case by case, and if there's no good reason to unblock it, it stays blocked. If you need access to something specific, add it to your personal allowlist.
+> Only well-known, reputable domains that show up on the supported top lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop) or are essential for popular apps get considered for exclusion. Illegal domains, including piracy sites, stay blocked no matter what. Anything that doesn't clearly qualify gets reviewed case by case, and if there's no good reason to unblock it, it stays blocked. If you need access to something specific, add it to your personal allowlist.
 >
 > This selective approach exists because AdGuard and uBlock Origin have technical limits on rule length when using denyallow/domain modifiers. Trying to exclude every legit domain would eventually break important rules, so exclusions have to stay limited and carefully picked.
 
@@ -507,7 +514,7 @@ DNS Rebind Protection stops attackers from messing with DNS responses to make a 
 
 Blocks sites and services mainly used for illegally distributing copyrighted content.
 
-**Entries:** 46132
+**Entries:** 46599
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -519,7 +526,7 @@ Blocks sites and services mainly used for illegally distributing copyrighted con
 
 Blocks gambling-related sites.
 
-**Entries:** 472331
+**Entries:** 444729
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -529,7 +536,7 @@ Blocks gambling-related sites.
 
 A medium-sized version for ad blockers that have trouble with the full gambling list.
 
-**Entries:** 152017
+**Entries:** 123853
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -539,7 +546,7 @@ A medium-sized version for ad blockers that have trouble with the full gambling 
 
 A size-optimized version of the Gambling Medium list. Only contains domains that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 95720
+**Entries:** 78641
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -566,7 +573,7 @@ Blocks social networks like Facebook, Instagram, TikTok, X (formerly Twitter), S
 
 Blocks adult content.
 
-**Entries:** 114126
+**Entries:** 113903
 
 | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
 |:---:|:---:|:---:|:---:|:---:|
@@ -579,10 +586,11 @@ Blocks adult content.
 Blocks the native trackers baked into devices, services, and operating systems that quietly track what you do.
 
 > [!IMPORTANT]
-> Native tracker lists cover everything used to monitor user activity, which can occasionally limit functionality too. They're integrated across all the standard tiers (Light, Normal, Pro, Pro++, Ultimate), each at a different blocking level:
+> Native tracker lists cover everything used to monitor user activity, which can occasionally limit functionality too. They're integrated across all the standard tiers (Light, Normal, Pro, Pro++, Ultimate) at four increasing blocking levels:
 >
-> - Light through Pro: only block native trackers that won't break functionality, for a smooth experience.
-> - Pro++ (aggressive): blocks extra native trackers that might cause some restrictions or limit certain features.
+> - Light and Normal: the baseline. Only native trackers that won't break functionality, for a smooth experience.
+> - Pro: blocks more than the baseline, while still staying out of your way.
+> - Pro++ (aggressive): blocks nearly all of them, which might cause some restrictions or limit certain features.
 > - Ultimate: the most thorough option, blocking all native trackers for max privacy.
 >
 > Pick whichever tier matches how aggressive you want to be about native tracker blocking.
@@ -793,17 +801,20 @@ See: [Getting help and reporting issues](FAQ.md#support)
 
 ### :floppy_disk: Update Interval/Official Mirrors <a name="mirrors"></a>
 
-The primary source for all lists is the GitHub repository. The GitHub repository and its two full mirrors, GitLab and Codeberg, are updated in sync, once a day:
+The lists are rebuilt several times a day, but not every source publishes every build. There are two kinds of sources here, and the difference is only how often a finished build shows up:
 
-| Source | Update frequency |
-|:---|:---|
-| GitHub/jsDelivr (primary) | Once a day |
-| [gitlab.com/hagezi/mirror](https://gitlab.com/hagezi/mirror) | Once a day, in sync with GitHub |
-| [codeberg.org/hagezi/mirror2](https://codeberg.org/hagezi/mirror2) | Once a day, in sync with GitHub |
-| [hagezi-mirror.dnsbunker.org](https://hagezi-mirror.dnsbunker.org) | Every 4 to 8 hours |
+- **Repository sources.** GitHub is the reference repository, and GitLab and Codeberg are its full repository mirrors. All three publish one build per day, in sync with each other.
+- **Build mirror.** [hagezi-mirror.dnsbunker.org](https://hagezi-mirror.dnsbunker.org) is connected directly to the build system and publishes every build as soon as it finishes, which works out to a new version roughly every 4 to 8 hours.
+
+| Source | What it is | Publishes |
+|:---|:---|:---|
+| [GitHub/jsDelivr](https://github.com/hagezi/dns-blocklists) | Reference repository | Once a day |
+| [gitlab.com/hagezi/mirror](https://gitlab.com/hagezi/mirror) | Repository mirror | Once a day, in sync with GitHub |
+| [codeberg.org/hagezi/mirror2](https://codeberg.org/hagezi/mirror2) | Repository mirror | Once a day, in sync with GitHub |
+| [hagezi-mirror.dnsbunker.org](https://hagezi-mirror.dnsbunker.org) | Build mirror | Every build, roughly every 4 to 8 hours |
 
 > [!TIP]
-> If you need the freshest possible data, use [hagezi-mirror.dnsbunker.org](https://hagezi-mirror.dnsbunker.org). It's connected directly to the build system and receives each new list version as soon as it's built, ahead of the daily GitHub, GitLab, and Codeberg update.
+> All four sources serve the same lists, so pick by how fresh you need the data. Once a day is plenty for most setups. If you want every build the moment it exists, use the build mirror at [hagezi-mirror.dnsbunker.org](https://hagezi-mirror.dnsbunker.org).
 
 ---
 
