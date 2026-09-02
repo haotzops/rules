@@ -6,9 +6,13 @@
 
 **What this is:** a set of DNS blocklists that block ads, trackers, telemetry, phishing, malware, scams, and other unwanted domains network-wide. They work for any region and with every common DNS server, ad blocker, and content blocker.
 
-Privacy isn't a crime, so go protect yours. It's what lets you decide who you are and who you want to be :bangbang:
-
 Like this project? If it's helped you out, drop a :star: (top right) and join the stargazers club! Every star genuinely helps.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://hagezi-mirror.dnsbunker.org/assets/images/dark/hagezi-dns-blocklists.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://hagezi-mirror.dnsbunker.org/assets/images/light/hagezi-dns-blocklists.svg">
+  <img src="https://hagezi-mirror.dnsbunker.org/assets/images/light/hagezi-dns-blocklists.svg">
+</picture>
 
 **New here?** Start with [Multi PRO](#pro) plus the [Threat Intelligence Feeds](#tif) list, pick the [format that matches](#formatguide) your tool, and follow the [quick setup guide](FAQ.md#quicksetup). Unsure which version fits you? See [which list version should I use](FAQ.md#whatshouldiuse).
 
@@ -29,28 +33,29 @@ Like this project? If it's helped you out, drop a :star: (top right) and join th
 8. [Pop-Up Ads](#popupads), stop annoying and malicious pop-ups!
 9. [Threat Intelligence Feeds](#tif), a serious security boost (recommended): [Full](#tif) - [Medium](#tifmedium) - [Mini](#tifmini) - [IPs](#tifips)
 10. [Newly Registered Domains (NRD/DGA)](#nrd), a favorite tool of threat actors for launching attacks!
-11. [DoH/VPN/TOR/Proxy Bypass](#bypass), stop people from sneaking around your DNS: [Full](#bypass_all) - [DoH only](#bypass_dns) - [DoH IPs](#bypass_ips)
-12. [Safesearch not supported](#safesearch), block search engines that skip Safesearch!
-13. [Dynamic DNS (DynDNS)](#dyndns), guard against dynamic DNS abuse!
-14. [Badware Hoster](#hoster), guard against malicious hosting services!
-15. [URL Shortener](#urlshortener), block link shorteners!
-16. [Most Abused TLDs](#tlds), block known shady top-level domains!
-17. [DNS Rebind Protection](#dnsrebind), stop attackers from pointing domains at your local network!
+11. [Dynamic DNS (DynDNS)](#dyndns), guard against dynamic DNS abuse!
+12. [Badware Hoster](#hoster), guard against malicious hosting services!
+13. [Most Abused TLDs](#tlds), block known shady top-level domains!
+14. [DNS Rebind Protection](#dnsrebind), stop attackers from pointing domains at your local network!
+15. [DoH/VPN/TOR/Proxy Bypass](#bypass), stop people from sneaking around your DNS: [Full](#bypass_all) - [DoH only](#bypass_dns) - [DoH IPs](#bypass_ips)
+16. [Safesearch not supported](#safesearch), block search engines that skip Safesearch!
+17. [URL Shortener](#urlshortener), block link shorteners!
 18. [Anti Piracy](#piracy), block piracy sites!
 19. [Gambling](#gambling), block gambling content: [Full](#gambling) - [Medium](#gamblingmedium) - [Mini](#gamblingmini)
 20. [Social Networks](#social), block access to social networks!
 21. [NSFW](#nsfw), block adult content!
 22. [Native Tracker](#native), block built-in trackers from devices, apps, and OSes!
-23. [Blocklists Cheat Sheet](CHEATSHEET.md), quick reference table for every list at a glance
-24. [Recommendation](#recommendation): [Which list version should I actually use?](FAQ.md#whatshouldiuse)
-25. [Online DNS Services](#dnsservices): [HaGeZi DNS](#hagezidns) - [DNS Bunker](#dnsbunker)
-26. [About](#about): [Repository](#repository) - [Referral Domains](#referral) - [Support](#support)
-27. [FAQ](FAQ.md), frequently asked questions, including the [quick setup guide](FAQ.md#quicksetup) and the [glossary](FAQ.md#glossary)
-28. [Discussions](https://github.com/hagezi/dns-blocklists/discussions)
-29. [Update Interval/Official Mirrors](#mirrors)
-30. [Sources](sources.md)
-31. [Disclaimer](#disclaimer)
-32. [Contact](#contact)
+23. [Blocklist Lookup](#listlookup), check any domain against every list!
+24. [Blocklists Cheat Sheet](CHEATSHEET.md), quick reference table for every list at a glance
+25. [Recommendation](#recommendation): [Which list version should I actually use?](FAQ.md#whatshouldiuse)
+26. [Online DNS Services](#dnsservices): [HaGeZi DNS](#hagezidns) - [DNS Bunker](#dnsbunker)
+27. [About](#about): [Repository](#repository) - [Referral Domains](#referral) - [Support](#support)
+28. [FAQ](FAQ.md), frequently asked questions, including the [quick setup guide](FAQ.md#quicksetup) and the [glossary](FAQ.md#glossary)
+29. [Discussions](https://github.com/hagezi/dns-blocklists/discussions)
+30. [Update Interval/Official Mirrors](#mirrors)
+31. [Sources](sources.md)
+32. [Disclaimer](#disclaimer)
+33. [Contact](#contact)
 
 ---
 
@@ -60,37 +65,28 @@ This is an all-in-one DNS blocklist that comes in **several versions (light, nor
 
 Curious about the sources? Check out: [Which sources are used for the lists and how are they compiled?](FAQ.md#sources)
 
-#### **Blocklist versions and sizes at a glance:**
+#### **Blocklist versions at a glance:** <a name="inclusion-matrix"></a>
 
-| Version | Entries | Light | Normal | Pro | Pro++ | [Fake](#fake) | [TIF](#tif) | [Nat<br>ive](#native) | [PopUp<br>Ads](#popupads) | Error<br>Tracker |
-|:--------|---:|:----:|:----:|:-----:|:------:|:---:|:------:|:----------:|:----:|:----:|
-| :green_book:[Light](#light)             | 41274     | :white_check_mark: | -- | -- | -- | :x: | :x: | :orange_circle: | :orange_circle: | :x: |
-| :blue_book:[Normal](#normal)       | 191539     | :white_check_mark: | :white_check_mark: | -- | -- | :white_check_mark: | :orange_circle: | :orange_circle: | :yellow_circle: | :x: |
-| :ledger:[Pro](#pro)              | 227702         | :white_check_mark: | :white_check_mark: | :white_check_mark: | -- | :white_check_mark: | :orange_circle: | :yellow_circle: | :white_check_mark: | :white_check_mark: |
-| :orange_book:[Pro++](#proplus)    | 251788 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :yellow_circle: | :green_circle: | :white_check_mark: | :white_check_mark: |
-| :closed_book:[Ultimate](#ultimate)    | 278246 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :yellow_circle: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-
-**Legend.** It's a five-step scale, listed here from the least coverage to the most:
-
-1. :x: **not included**, none of it is in this tier
-2. :orange_circle: **partially included, step 1 of 3**, the smallest share
-3. :yellow_circle: **partially included, step 2 of 3**
-4. :green_circle: **partially included, step 3 of 3**, the largest share
-5. :white_check_mark: **fully included**, all of it
-
-`--` means not applicable.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://hagezi-mirror.dnsbunker.org/assets/images/dark/inclusion-matrix.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://hagezi-mirror.dnsbunker.org/assets/images/light/inclusion-matrix.svg">
+  <img src="https://hagezi-mirror.dnsbunker.org/assets/images/light/inclusion-matrix.svg">
+</picture>
 
 For a full inclusion matrix that also covers the standalone lists, see the [Cheat Sheet](CHEATSHEET.md#inclusionmatrix).
 
-#### **Blocking intensity:**
+#### **Main lists at a glance:** <a name="blocking-intensity"></a>
 
-| Version | Blocking type | Risk of breakage |
-|:--------|:--------------|:-----------------|
-| :green_book:[Light](#light)        | Relaxed             | Minimal          |
-| :blue_book:[Normal](#normal)       | Relaxed/Balanced    | Low              |
-| :ledger:[Pro](#pro)                | Balanced            | Low to moderate  |
-| :orange_book:[Pro++](#proplus)     | Balanced/Aggressive | Moderate         |
-| :closed_book:[Ultimate](#ultimate) | Aggressive          | High             |
+| List | Blocking type | Risk of breakage | Entries | Size-optimized<br>version |
+|:--------|:--------------|:-----------------|--------:|-----------------------:|
+| :green_book:[Light](#light)        | Relaxed             | Minimal          | 41538    | - |
+| :blue_book:[Normal](#normal)       | Relaxed/Balanced    | Low              | 190309    | Light: 41538 |
+| :ledger:[Pro](#pro)                | Balanced            | Low to moderate  | 224974      | Mini: 56197 |
+| :orange_book:[Pro++](#proplus)     | Balanced/Aggressive | Moderate         | 249394  | Mini: 67562 |
+| :closed_book:[Ultimate](#ultimate) | Aggressive          | High             | 275587 | Mini: 83072 |
+| :closed_lock_with_key:[TIF](#tif)  | Threats only        | Low              | 2100753      | Medium: 317797<br>Mini: 176245 |
+
+The first five build on each other, so pick exactly one of them. TIF works differently: it's an add-on covering malware, phishing, and other live threats, and it's worth running alongside any tier. The size-optimized versions are alternatives to their full list, never something you add on top. Entry counts change with every build.
 
 > [!TIP]
 > :information_desk_person: [Not sure which version fits you? Check this out.](FAQ.md#whatshouldiuse)
@@ -123,11 +119,9 @@ Hand brush edition. Cleans up the internet and protects your privacy without goi
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 41274
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/light.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/light.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 41538 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/light.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/light.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/light.txt) |
 
 ---
 
@@ -141,11 +135,9 @@ Broom edition. Cleans up the internet and protects your privacy. Blocks ads, tra
 > [!IMPORTANT]
 > Doesn't block error trackers like Bugsnag, Crashlytics, Firebase, Instabug, Sentry, and similar app crash reporters. Those only get blocked starting with the Pro version.
 
-**Entries:** 191539
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/multi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/multi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/multi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/multi-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/multi.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 190309 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/multi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/multi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/multi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/multi-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/multi.txt) |
 
 ---
 
@@ -160,21 +152,17 @@ Big broom edition. Cleans up the internet and protects your privacy. Blocks ads,
 > **Referral domains (affiliate and tracking links):**
 > Most referral domains are still allowed here, but a handful get blocked anyway, mainly ones that double as regular trackers or are commonly tied to scam and spam links. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 227702
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 224974 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.txt) |
 
 #### :ledger: **Multi PRO mini (best for browser/mobile ad blockers)** <a name="promini"></a>
 
 A size-optimized version made for DNS or browser blockers, like devices with limited RAM. This only contains domains from the full Pro list that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 55712
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.mini.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 56197 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.mini.txt) |
 
 ---
 
@@ -189,21 +177,17 @@ Sweeper edition. This one cleans up the internet aggressively and protects your 
 > **Referral domains (affiliate and tracking links):**
 > More referral domains get blocked than in Pro, specifically the ones that aren't used exclusively for link tracking. The bulk of the category still stays allowed. Details: [Referral domains](FAQ.md#referral)
 
-**Entries:** 251788
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.plus.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.plus.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 249394 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.plus.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.plus.txt) |
 
 #### :orange_book: **Multi PRO++ mini** <a name="proplusmini"></a>
 
 Built the same way as [Pro mini](#promini), but from the full Pro++ list: only its domains that appear on the Top 1M/10M lists make the cut. For DNS or browser blockers on limited hardware.
 
-**Entries:** 66914
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.plus.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.plus.mini.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 67562 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/pro.plus.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/pro.plus.mini.txt) |
 
 ---
 
@@ -230,21 +214,17 @@ Ultimate sweeper edition. Strictly cleans up the internet and locks down your pr
 > **Anything else:**
 > More known quirks are listed [here](share/ultimate-known-issues.txt).
 
-**Entries:** 278246
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/ultimate.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/ultimate.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/ultimate.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 275587 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/ultimate.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/ultimate.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/ultimate.txt) |
 
 #### :closed_book: **Multi ULTIMATE mini** <a name="ultimatemini"></a>
 
 Built the same way as [Pro mini](#promini), but from the full Ultimate list: only its domains that appear on the Top 1M/10M lists make the cut. For DNS or browser blockers on limited hardware.
 
-**Entries:** 82831
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/ultimate.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/ultimate.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/ultimate.mini.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 83072 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/ultimate.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/ultimate.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/ultimate.mini.txt) |
 
 ---
 
@@ -252,11 +232,9 @@ Built the same way as [Pro mini](#promini), but from the full Ultimate list: onl
 
 This blocklist targets fake stores, fake streaming sites, rip-offs, subscription traps, and similar scams.
 
-**Entries:** 17283
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/fake.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/fake.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/fake.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 17018 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/fake.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/fake.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/fake.txt) |
 
 ---
 
@@ -264,11 +242,9 @@ This blocklist targets fake stores, fake streaming sites, rip-offs, subscription
 
 Targets pop-up ads that range from annoying to outright malicious.
 
-**Entries:** 54190
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/popupads.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/popupads.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/popupads-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/popupads.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 51282 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/popupads.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/popupads.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/popupads-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/popupads.txt) |
 
 ---
 
@@ -281,11 +257,9 @@ This blocklist targets malware, cryptojacking, scams, spam, and phishing. It blo
 > It's too big for the iOS AdGuard mobile app, and AdGuard Home needs at least 2 GB RAM.
 > The RPZ version had to be split into two files because of its size, you need both.
 
-**Entries:** 2191531
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ<br>(split) |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/tif.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt) | :one: [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif-1.txt)<br>:two: [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif-2.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ<br>(split) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 2100753 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/tif.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt) | :one: [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif-1.txt)<br>:two: [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif-2.txt) |
 
 #### :closed_lock_with_key: **Threat Intelligence Feeds, medium version (best for browser/mobile ad blockers)** <a name="tifmedium"></a>
 
@@ -294,21 +268,17 @@ A medium-sized version of the TIF list, built for ad blockers that struggle with
 > [!WARNING]
 > Too big for the iOS AdGuard mobile app. AdGuard Home needs at least 1 GB RAM.
 
-**Entries:** 336091
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/tif.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.medium-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif.medium.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 317797 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/tif.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.medium-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif.medium.txt) |
 
 #### :closed_lock_with_key: **Threat Intelligence Feeds, mini version** <a name="tifmini"></a>
 
 A size-optimized version of the TIF Medium list, for ad blockers that even struggle with that one.
 
-**Entries:** 177567
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/tif.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif.mini.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 176245 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/tif.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif.mini.txt) |
 
 #### :closed_lock_with_key: **Threat Intelligence Feeds, IPs** <a name="tifips"></a>
 
@@ -339,17 +309,17 @@ There are two variants:
 > Stamus Labs doesn't promise daily updates, so the data can sometimes lag by a few days.
 >
 > Current status of the data:
-> - Stamus Labs: :green_circle: - Mon, 31 Aug 2026 04:22:09 UTC / 10870462 domains
+> - Stamus Labs: :green_circle: - Tue, 01 Sep 2026 04:29:20 UTC / 10817492 domains
 
 #### :new: **NRDs:** all newly registered domains, unfiltered
 
 | Time<br>period | Entries | Format<br>Adblock | Format<br>Domains |
-|:--------------:|:--------|:-----------------:|:-----------------:|
-| 7 days ago to yesterday    | 2590193 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
-| 14 days ago to 8 days ago  | 2954830 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
-| 21 days ago to 15 days ago | 2659196 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
-| 28 days ago to 22 days ago | 2952310 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
-| 35 days ago to 29 days ago | 2313477 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
+|:--------------:|--------:|:-----------------:|:-----------------:|
+| 7 days ago to yesterday    | 2567968 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd7.txt) |
+| 14 days ago to 8 days ago  | 2830133 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd14-8.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd14-8.txt) |
+| 21 days ago to 15 days ago | 2695140 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd21-15.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd21-15.txt) |
+| 28 days ago to 22 days ago | 3043231 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd28-22.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd28-22.txt) |
+| 35 days ago to 29 days ago | 2339215 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/nrd35-29.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/nrd35-29.txt) |
 
 > [!NOTE]
 > The five files are non-overlapping bands, so stack them for wider coverage: `nrd7` plus `nrd14-8` covers the last 14 days, add `nrd21-15` for 21 days, and so on.
@@ -364,57 +334,10 @@ There are two variants:
 > These domains are already part of the full NRD list, just filtered down.
 
 | Time<br>period | Entries | Format<br>Adblock | Format<br>Domains |
-|:--------------:|:--------|:-----------------:|:-----------------:|
-| Past 7 days    | 541226 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
-| Past 14 days   | 1104259 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
-| Past 30 days   | 2449876 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
-
----
-
-### :outbox_tray: **DoH/VPN/TOR/Proxy Bypass, stop people from sneaking around your DNS!** <a name="bypass"></a>
-
-Blocks common ways to bypass your DNS setup.
-
-> [!NOTE]
-> To make sure your DNS server is actually the one being used, you'll need to redirect or block standard DNS traffic (TCP/UDP 53) and also block DNS over TLS/QUIC (TCP/UDP 853) outbound.
-
-**This list comes in two flavors:**
-
-#### :outbox_tray: **Complete edition: encrypted DNS servers, VPN, TOR, proxies** <a name="bypass_all"></a>
-
-**Entries:** 16696
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/doh-vpn-proxy-bypass.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh-vpn-proxy-bypass.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh-vpn-proxy-bypass-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/doh-vpn-proxy-bypass.txt) |
-
-#### :outbox_tray: **Encrypted DNS servers only** <a name="bypass_dns"></a>
-
-**Entries:** 3367
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/doh.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/doh.txt) |
-
-#### :outbox_tray: **Encrypted DNS server IPs** <a name="bypass_ips"></a>
-
-There's also an IPv4 version in [plain IP format](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/doh.txt) for firewalls, and an [AdGuard Home format](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-ips.txt).
-
-> [!TIP]
-> If you use the IP list in AdGuard Home, it'll block any domain that resolves to a blocked IP. To stop domains from slipping through via IPv6, turn off IPv6 resolution in AdGuard Home:
-> `Settings > DNS settings > DNS server configuration > Disable resolving of IPv6 addresses`
-
----
-
-### :mag: **Safesearch not supported, blocks search engines that skip Safesearch!** <a name="safesearch"></a>
-
-Blocks search engines that don't support Safesearch.
-
-**Entries:** 205
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nosafesearch.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/nosafesearch.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nosafesearch.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nosafesearch-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/nosafesearch.txt) |
+|:--------------:|--------:|:-----------------:|:-----------------:|
+| Past 7 days    | 532005 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga7.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga7.txt) |
+| Past 14 days   | 1099086 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga14.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga14.txt) |
+| Past 30 days   | 2431912 | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/adblock/dga30.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/nrd@latest/domains/dga30.txt) |
 
 ---
 
@@ -422,11 +345,9 @@ Blocks search engines that don't support Safesearch.
 
 Blocks dynamic DNS services that get abused for phishing campaigns and other shady activity.
 
-**Entries:** 1540
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/dyndns.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/dyndns.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/dyndns.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/dyndns-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/dyndns.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1535 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/dyndns.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/dyndns.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/dyndns.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/dyndns-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/dyndns.txt) |
 
 ---
 
@@ -442,28 +363,9 @@ Blocks known hosting providers that repeatedly host badware through user-uploade
 > [!CAUTION]
 > Blocking whole hosting providers is overkill for most setups and can break legit services. In high-security environments though, that trade-off might make sense.
 
-**Entries:** 1238
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ | ControlD |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/hoster.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/hoster.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/hoster.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/hoster-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/hoster.txt) | [Link](https://github.com/hagezi/dns-blocklists/blob/main/controld/badware-hoster-folder.json) |
-
----
-
-### :link: **URL Shortener, blocks link shorteners!** <a name="urlshortener"></a>
-
-Blocks every known URL/link shortener out there.
-
-> [!WARNING]
-> Not really meant for everyday setups. Blocking all URL shorteners makes the most sense in high-security environments, since shorteners can hide where a link actually leads and help enable attacks. In lower-risk settings, keeping an eye on things or just being careful usually does the job.
->
-> If you use this list, you're on your own for unblocking any domains you actually need.
-
-**Entries:** 9922
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/urlshortener.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/urlshortener.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/urlshortener.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/urlshortener-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/urlshortener.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ | ControlD |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1237 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/hoster.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/hoster.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/hoster.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/hoster-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/hoster.txt) | [Link](https://github.com/hagezi/dns-blocklists/blob/main/controld/badware-hoster-folder.json) |
 
 ---
 
@@ -510,15 +412,69 @@ DNS Rebind Protection stops attackers from messing with DNS responses to make a 
 
 ---
 
+### :outbox_tray: **DoH/VPN/TOR/Proxy Bypass, stop people from sneaking around your DNS!** <a name="bypass"></a>
+
+Blocks common ways to bypass your DNS setup.
+
+> [!NOTE]
+> To make sure your DNS server is actually the one being used, you'll need to redirect or block standard DNS traffic (TCP/UDP 53) and also block DNS over TLS/QUIC (TCP/UDP 853) outbound.
+
+**This list comes in two flavors:**
+
+#### :outbox_tray: **Complete edition: encrypted DNS servers, VPN, TOR, proxies** <a name="bypass_all"></a>
+
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 16607 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/doh-vpn-proxy-bypass.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh-vpn-proxy-bypass.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh-vpn-proxy-bypass-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/doh-vpn-proxy-bypass.txt) |
+
+#### :outbox_tray: **Encrypted DNS servers only** <a name="bypass_dns"></a>
+
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 3353 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/doh.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/doh-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/doh.txt) |
+
+#### :outbox_tray: **Encrypted DNS server IPs** <a name="bypass_ips"></a>
+
+There's also an IPv4 version in [plain IP format](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/doh.txt) for firewalls, and an [AdGuard Home format](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-ips.txt).
+
+> [!TIP]
+> If you use the IP list in AdGuard Home, it'll block any domain that resolves to a blocked IP. To stop domains from slipping through via IPv6, turn off IPv6 resolution in AdGuard Home:
+> `Settings > DNS settings > DNS server configuration > Disable resolving of IPv6 addresses`
+
+---
+
+### :mag: **Safesearch not supported, blocks search engines that skip Safesearch!** <a name="safesearch"></a>
+
+Blocks search engines that don't support Safesearch.
+
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 205 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nosafesearch.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/nosafesearch.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nosafesearch.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nosafesearch-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/nosafesearch.txt) |
+
+---
+
+### :link: **URL Shortener, blocks link shorteners!** <a name="urlshortener"></a>
+
+Blocks every known URL/link shortener out there.
+
+> [!WARNING]
+> Not really meant for everyday setups. Blocking all URL shorteners makes the most sense in high-security environments, since shorteners can hide where a link actually leads and help enable attacks. In lower-risk settings, keeping an eye on things or just being careful usually does the job.
+>
+> If you use this list, you're on your own for unblocking any domains you actually need.
+
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 9874 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/urlshortener.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/urlshortener.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/urlshortener.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/urlshortener-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/urlshortener.txt) |
+
+---
+
 ### :skull: **Anti Piracy, blocks piracy sites!** <a name="piracy"></a>
 
 Blocks sites and services mainly used for illegally distributing copyrighted content.
 
-**Entries:** 46599
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/anti.piracy.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/anti.piracy.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/anti.piracy-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/anti.piracy.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 46883 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/anti.piracy.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/anti.piracy.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/anti.piracy-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/anti.piracy.txt) |
 
 ---
 
@@ -526,31 +482,25 @@ Blocks sites and services mainly used for illegally distributing copyrighted con
 
 Blocks gambling-related sites.
 
-**Entries:** 444729
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/gambling.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/gambling.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 447267 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/gambling.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/gambling.txt) |
 
 #### :slot_machine: **Gambling, medium version** <a name="gamblingmedium"></a>
 
 A medium-sized version for ad blockers that have trouble with the full gambling list.
 
-**Entries:** 123853
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/gambling.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.medium-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/gambling.medium.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 128673 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/gambling.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.medium.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.medium-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/gambling.medium.txt) |
 
 #### :slot_machine: **Gambling, mini version** <a name="gamblingmini"></a>
 
 A size-optimized version of the Gambling Medium list. Only contains domains that appear on Top 1M/10M lists (Umbrella, Cloudflare, Tranco, Chrome, BuiltWith, Majestic, DomCop).
 
-**Entries:** 78641
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/gambling.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/gambling.mini.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 80899 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/gambling.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/gambling.mini.txt) |
 
 ---
 
@@ -561,11 +511,9 @@ Blocks social networks like Facebook, Instagram, TikTok, X (formerly Twitter), S
 > [!NOTE]
 > This list won't block messaging apps like WhatsApp or streaming platforms like Twitch. It's strictly aimed at classic social networking sites.
 
-**Entries:** 902
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/social.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/social.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/social.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/social-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/social.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 902 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/social.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/social.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/social.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/social-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/social.txt) |
 
 ---
 
@@ -573,11 +521,9 @@ Blocks social networks like Facebook, Instagram, TikTok, X (formerly Twitter), S
 
 Blocks adult content.
 
-**Entries:** 113903
-
-| Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
-|:---:|:---:|:---:|:---:|:---:|
-| [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/nsfw.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/nsfw.txt) |
+| Entries | Adblock | DNSMasq | Wildcard<br>Asterisk | Wildcard<br>Domains | RPZ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 120720 | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/nsfw.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/nsfw.txt) |
 
 ---
 
@@ -611,6 +557,21 @@ Blocks the native trackers baked into devices, services, and operating systems t
 | Vivo | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/native.vivo.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/native.vivo.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/native.vivo.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/native.vivo-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/native.vivo.txt) |
 | OPPO/Realme | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/native.oppo-realme.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/native.oppo-realme.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/native.oppo-realme.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/native.oppo-realme-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/native.oppo-realme.txt) |
 | Xiaomi | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/native.xiaomi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/dnsmasq/native.xiaomi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/native.xiaomi.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/native.xiaomi-onlydomains.txt) | [Link](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/native.xiaomi.txt) |
+
+---
+
+### :mag_right: **Blocklist Lookup, check any domain against every list!** <a name="listlookup"></a>
+
+Not sure whether a domain is blocked, or which list is responsible for it? The **Blocklist Lookup** answers both: [hagezi-mirror.dnsbunker.org/listseek.php](https://hagezi-mirror.dnsbunker.org/listseek.php)
+
+Paste in one domain or a whole batch, one per line, hit Search, and you get a table per domain listing every list that blocks it along with the exact rule. It streams the published lists live from the build mirror, so the results always reflect the newest build.
+
+It's subdomain-aware too: look up `region1.app-measurement.com` and you'll see the match comes from `||app-measurement.com^`, a wildcard on the parent domain, not an entry for that exact hostname.
+
+Handy for hunting down a false positive, comparing what happens to a domain across tiers before you switch, or checking whether something is covered at all before you report it.
+
+> [!NOTE]
+> The Lookup reads the published lists, not your own setup, and it doesn't judge whether a domain is harmful. Your local allowlist, extra lists from other projects, or a copy that hasn't refreshed yet can all make your network behave differently. More detail in the [FAQ](FAQ.md#listlookup).
 
 ---
 
@@ -777,7 +738,7 @@ Here's how each version performed against that same 10,000-page set, which is al
 | **Light**    | 299646        | 92576           | 30.90     |                |
 | **----**     | 299646        | 67888           | 22.66     | -8.24          |
 
-Give it a try, share your feedback, and [report anything that should (or shouldn't) be blocked](https://github.com/hagezi/dns-blocklists/issues).
+Give it a try, share your feedback, and [report anything that should (or shouldn't) be blocked](https://github.com/hagezi/dns-blocklists/issues). Want to check a specific domain first? Use the [Blocklist Lookup](#listlookup).
 
 #### :octocat: Repository <a name="repository"></a>
 
@@ -792,6 +753,8 @@ Wondering how referral domains (affiliate and tracking links) are handled? Here'
 This project only exists because of a genuinely supportive community. It's free for everyone and stays up to date thanks to ongoing care, updates, and contributions from people who actually want to make things better.
 
 Feedback, ideas, domain reports, false-positive reports, whatever you've got, it's all appreciated. Every bit of help, big or small, makes the internet a little safer and cleaner for everyone.
+
+Before you report a domain, run it through the [Blocklist Lookup](#listlookup). A report that names the exact list and rule is a lot quicker to act on.
 
 See: [Getting help and reporting issues](FAQ.md#support)
 
@@ -821,17 +784,23 @@ The lists are rebuilt several times a day, but not every source publishes every 
 ### :warning: Disclaimer <a name="disclaimer"></a>
 
 > [!IMPORTANT]
-> **Scope.** This disclaimer applies only to these DNS blocklists ("the Lists"). It does not extend to any other services the Provider may separately operate (e.g., public DNS resolvers), which may be subject to their own terms.
+> **Scope.** This disclaimer applies to these DNS blocklists and to the related lists published by the project, including the NRD/DGA lists and the legacy format lists (together, "the Lists"). The Lists are created and maintained by HaGeZi ("the Provider"). This disclaimer does not extend to any other service the Provider may separately operate (e.g., public DNS resolvers or the Blocklist Lookup), which may be subject to its own terms.
 >
-> **No warranty.** The Lists are provided free of charge, "as is" and "as available," with no warranty of any kind, express, implied, or statutory. The creator/operator of the Lists ("the Provider") makes no promises about accuracy, completeness, timeliness, reliability, or fitness for any particular purpose. There's no guarantee that every malicious or unwanted domain is covered, and no guarantee that legitimate domains won't get blocked by mistake. The Lists are compiled in part from third-party sources; the Provider does not control and is not responsible for errors originating in those sources.
+> **No warranty.** The Lists are provided free of charge, "as is" and "as available," with no warranty of any kind, express, implied, or statutory. The Provider makes no promises about accuracy, completeness, timeliness, reliability, or fitness for any particular purpose. There's no guarantee that every malicious or unwanted domain is covered, and no guarantee that legitimate domains won't get blocked by mistake. The Lists are compiled in part from third-party sources; the Provider does not control and is not responsible for errors originating in those sources.
 >
-> **Assumption of risk.** Using the Lists is entirely at your own risk. The Provider disclaims any and all direct, indirect, incidental, or consequential liability for damages arising from using, misusing, or being unable to use the Lists, except where such damages result from willful misconduct or gross negligence on the Provider's part, or from death or personal injury caused by the Provider's negligence.
+> **No accusation, no endorsement.** A domain showing up on a list is a technical filtering decision, not a legal finding and not a claim that whoever operates it did anything wrong. Categorization is based on third-party threat data, public rankings, and observed behavior, and any of that can be outdated or simply wrong. Brand names, domain names, and trademarks mentioned in the Lists or in this documentation belong to their respective owners and are used for identification only. If you operate a domain and think it's listed by mistake, ask for a review through the [issue tracker](https://github.com/hagezi/dns-blocklists/issues) or by mail at [support@hagezi.org](mailto:support@hagezi.org). Review and removal requests are handled on a best-effort basis, with no guaranteed response time.
 >
-> **A supplement, not a substitute.** The Lists are meant to be one part of a broader defense-in-depth strategy, not the whole thing. They don't replace your own responsibility to do due diligence, run your own risk assessments, or use additional protections (firewalls, antivirus/EDR, IDS/IPS, etc.). There's no guarantee of compatibility with any specific system, platform, or setup.
+> **Assumption of risk.** Using the Lists is entirely at your own risk. The Provider disclaims any and all direct, indirect, incidental, or consequential liability for damages arising from using, misusing, or being unable to use the Lists, except where such damages result from willful misconduct or gross negligence on the Provider's part, or from death or personal injury caused by the Provider's negligence. Mandatory statutory liability that can't be excluded by agreement stays unaffected, whatever the wording above says.
+>
+> **A supplement, not a substitute.** The Lists are meant to be one part of a broader defense-in-depth strategy, not the whole thing. They don't replace your own responsibility to do due diligence, run your own risk assessments, or use additional protections (firewalls, antivirus/EDR, IDS/IPS, etc.). There's no guarantee of compatibility with any specific system, platform, or setup. Nothing in the Lists or in the surrounding documentation is legal advice or professional security advice.
+>
+> **Your setup, your responsibility.** You're responsible for making sure the way you deploy the Lists is legal where you are. That matters most when you filter a network other people use (family, guests, employees, students, customers) and when you use lists that restrict access rather than block threats, such as NSFW, Social Networks, Gambling, Anti Piracy, or the DoH/VPN/TOR/Proxy Bypass list. Employment, telecommunications, and data-protection rules can all come into play. The Provider offers no guidance on this and takes no responsibility for how the Lists are deployed.
+>
+> **Third-party services and software.** DNS services, software, mirrors, and other projects linked or listed here are run by their respective operators, not by the Provider. Being mentioned is not an endorsement, and how those parties host, configure, delay, or modify the Lists is outside the Provider's control. Their own terms and privacy policies apply, including those of the platforms you download from (GitHub/jsDelivr, GitLab, Codeberg, and the build mirror).
 >
 > **No guarantee of availability, fair use.** The Lists are a free, personal/community project, made available internationally, and no one is automatically entitled to their continued availability. The Provider may modify, suspend, restrict, or discontinue the Lists (in whole or in part) at any time and for any reason, including excessive query volume or abusive or disproportionate use, without notice and without liability, and is under no obligation to maintain, update, or continue providing them. The Provider makes reasonable efforts to fix faults once discovered, but does not guarantee any particular response or resolution time.
 >
-> **Redistribution and licensing.** The Lists are published under the [GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.html). A copy of the license is also included in each repository or mirror distributing the Lists. You may redistribute, modify, and adapt the Lists only under the terms of that license. This disclaimer applies in addition to, and does not replace, the warranty and liability terms already contained in the GPL-3.0 (Sections 15 to 16). It's on you to read, understand, and follow the license terms before using or redistributing anything.
+> **Redistribution and licensing.** The Lists are published under the [GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.html). A copy of the license is included in this repository and has to accompany any redistribution. You may redistribute, modify, and adapt the Lists only under the terms of that license. This disclaimer applies in addition to, and does not replace, the warranty and liability terms already contained in the GPL-3.0 (Sections 15 to 17). Some inputs come from third-party sources with their own licenses or terms of use. GPL-3.0 covers the Lists as published here; it doesn't hand you any rights in the upstream data itself, so if you build on that data directly, checking those terms is on you. It's on you to read, understand, and follow the license terms before using or redistributing anything.
 >
 > **Governing law.** The Provider is based in Germany, and the Lists are made available for international use. This disclaimer is governed by the laws of Germany, without regard to conflict-of-law principles, to the extent permitted by applicable law. Nothing in this disclaimer limits any mandatory consumer-protection rights you may have under the law of your country of residence.
 >
