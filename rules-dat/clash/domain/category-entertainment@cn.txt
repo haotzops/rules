@@ -1,5 +1,7 @@
-+.shanghaidisneyresort.com
-gog.qtlglb.com
+amp-api.podcasts.apple.com
+podcasts.apple.com
++.ggpht.cn
++.yostar.cn
 +.legendofzelda.cn
 +.legendofzelda.com.cn
 +.miitomo.com.cn
@@ -12,8 +14,11 @@ gog.qtlglb.com
 +.mariokart.cn
 +.mariokart.com.cn
 +.supermariobros.com.cn
++.xboxlive.cn
++.bluearchive-cn.com
 +.leagueoflegends.cn
 +.lpl.com.cn
+gog.qtlglb.com
 +.csgo.com.cn
 +.csgo.wmsj.cn
 +.dota2.com.cn
@@ -31,9 +36,6 @@ lv.queniujq.cn
 xz.pphimalayanrt.com
 +.steamchina.com
 +.gstore.val.manlaxy.com
-+.xboxlive.cn
-+.bluearchive-cn.com
-+.yostar.cn
 amp-api-edge.music.apple.com
 amp-api.music.apple.com
 js-cdn.music.apple.com
@@ -41,7 +43,9 @@ music.apple.com
 musicstatus.music.apple.com
 play.music.apple.com
 speedysub.music.apple.com
-+.ggpht.cn
++.amazonprimevideo.cn
++.amazonprimevideo.com.cn
++.shanghaidisneyresort.com
 +.apple-itunes.cn
 +.itunes-apple.cn
 +.itunesapple.cn
@@ -92,7 +96,3 @@ itunes-apple.com.akadns.net
 itunes.apple.com
 itunesconnect.apple.com
 osxapps.itunes.g.aaplimg.com
-+.amazonprimevideo.cn
-+.amazonprimevideo.com.cn
-amp-api.podcasts.apple.com
-podcasts.apple.com
