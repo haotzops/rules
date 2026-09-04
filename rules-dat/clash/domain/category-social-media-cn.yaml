@@ -18,12 +18,8 @@ payload:
     - +.jike.city
     - +.jikecdn.com
     - +.tieba.com
-    - +.shihuo.cn
-    - +.izuiyou.com
-    - +.zhihu.com
-    - +.zhimg.com
-    - +.laiyagushi.com
     - +.vzuu.com
+    - +.izuiyou.com
     - +.coolapk.com
     - +.coolapkmarket.com
     - +.coolapkmarket.net
@@ -34,7 +30,11 @@ payload:
     - +.procg.cn
     - +.hupu.com
     - +.hupucdn.com
-    - +.tieba.baidu.com
+    - +.shihuo.cn
+    - +.laiyagushi.com
+    - +.zhihu.com
+    - +.zhimg.com
     - +.hoopchina.com.cn
+    - +.tieba.baidu.com
     - +.crash2.zhihu.com
     - +.zhihu-web-analytics.zhihu.com

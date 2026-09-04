@@ -5,8 +5,8 @@ payload:
     - throneproj.github.io
     - trojan-gfw.github.io
     - xtls.github.io
-    - +.2dust.link
-    - +.ahmia.fi
+    - +.whonix.org
+    - +.flowvy.io
     - +.akasha.world
     - +.amnezia.org
     - +.browserleaks.com
@@ -14,14 +14,14 @@ payload:
     - +.censorship.ai
     - +.clashmi.app
     - +.clashparty.org
-    - +.clashverge.dev
+    - +.wireguard.com
     - +.clashyun.com
     - +.dat.foundation
     - +.democracy.earth
     - +.eff.org
     - +.ffprofile.com
     - +.flclashx.app
-    - +.flowvy.io
+    - +.wikileaks.org
     - +.freenetproject.org
     - +.fteproxy.org
     - +.geti2p.net
@@ -59,28 +59,15 @@ payload:
     - +.tribler.org
     - +.tunsafe.com
     - +.turkeyblocks.org
-    - +.uproxy.org
+    - +.2dust.link
     - +.vpnrouter.homes
     - +.vuvuzela.io
     - +.wgtunnel.com
-    - +.whonix.org
-    - +.wikileaks.org
-    - +.wireguard.com
+    - +.uproxy.org
+    - +.ahmia.fi
+    - +.clashverge.dev
     - +.wiresock.net
     - +.zeronet.io
-    - +.citizenlab.ca
-    - +.citizenlab.org
-    - +.softether.org
-    - +.softether-download.com
-    - +.v2ray.com
-    - +.v2ray.cool
-    - +.v2fly.org
-    - +.opengw.net
-    - +.vpngate.jp
-    - +.vpngate.net
-    - +.ceno.app
-    - +.censorship.no
-    - +.epicbrowser.com
     - +.applecensorship.com
     - +.freebrowser.org
     - +.freewechat.com
@@ -96,11 +83,8 @@ payload:
     - +.getlantern.org
     - +.lantern.io
     - +.paskoocheh.com
-    - +.torproject.org
-    - +.docs.rw
-    - +.log.rw
-    - +.remna.st
-    - +.try.rw
+    - +.softether.org
+    - +.softether-download.com
     - +.ipns.co
     - +.jorropo.net
     - +.crustwebsites.net
@@ -114,11 +98,27 @@ payload:
     - +.c4rex.co
     - +.ipfs.io
     - +.ipfs.tech
-    - +.twister.net.co
-    - +.ipfs.runfission.com
-    - +.ipfs.fleek.co
-    - +.ipfs.lain.la
+    - +.torproject.org
+    - +.v2ray.com
+    - +.v2ray.cool
+    - +.v2fly.org
+    - +.epicbrowser.com
+    - +.citizenlab.org
+    - +.citizenlab.ca
+    - +.censorship.no
+    - +.ceno.app
+    - +.opengw.net
+    - +.vpngate.jp
+    - +.vpngate.net
+    - +.docs.rw
+    - +.log.rw
+    - +.remna.st
+    - +.try.rw
     - +.ipfs.eternum.io
+    - +.ipfs.lain.la
+    - +.ipfs.fleek.co
+    - +.ipfs.runfission.com
+    - +.twister.net.co
     - +.ipfs.best-practice.se
     - +.ipfs.anonymize.com
     - +.gateway.pinata.cloud
