@@ -3,7 +3,7 @@ payload:
     - opencourse.pku.edu.cn
     - study.163.com
     - +.llsserver.com
-    - +.fenbilantian.com
+    - +.fenbilantian.cn
     - +.edu.cn
     - +.xuetangx.com
     - +.smartedu.cn
@@ -14,32 +14,32 @@ payload:
     - +.chesicc.com
     - +.chesicc.net
     - +.chsi.cn
-    - +.koopass.com
-    - +.koolearn.com
-    - +.koocdn.com
+    - +.yuketang.cn
+    - +.rainclassroom.com
     - +.yeshj.com
     - +.hujiang.com
     - +.hjfile.cn
     - +.hjapi.com
     - +.cctalk.com
-    - +.17zuoye.net
-    - +.17zuoye.com
+    - +.mojidict.com
+    - +.shareintelli.com
+    - +.hugecore.net
     - +.gfbzb.cn
     - +.gfbzb.com
-    - +.17zuoye.cn
     - +.pmphmooc.com
+    - +.openlearning.com
     - +.gfbzb.net
     - +.ncss.cn
-    - +.openlearning.com
     - +.mooc.cn
     - +.icourses.cn
-    - +.qgzb.net
     - +.icourse163.org
+    - +.qgzb.net
+    - +.cnmooc.org
     - +.zbbm.net
     - +.neea.cn
-    - +.cnmooc.org
-    - +.mypep.cn
     - +.chinesemooc.org
+    - +.mypep.cn
+    - +.fenbilantian.com
     - +.magedu.com
     - +.21cnjy.com
     - +.91yunxiao.com
@@ -81,7 +81,7 @@ payload:
     - +.sydw8.com
     - +.ictbda.cn
     - +.ictbda.com
-    - +.fenbilantian.cn
+    - +.fenbike.com
     - +.xir.cn
     - +.j-test.com
     - +.nattest-china.com
@@ -106,7 +106,7 @@ payload:
     - +.qingtingai.net
     - +.quyixian.com
     - +.rongdeji.cn
-    - +.fenbike.com
+    - +.fenbike.cn
     - +.saduck.top
     - +.tesoon.com
     - +.unipus.cn
@@ -133,6 +133,14 @@ payload:
     - +.qianxuecloud.com
     - +.qianxueyunke.com
     - +.zhixingyunke.com
+    - +.17zuoye.cn
+    - +.17zuoye.com
+    - +.17zuoye.net
+    - +.applysquare.com
+    - +.applysquare.net
+    - +.koocdn.com
+    - +.koolearn.com
+    - +.koopass.com
     - +.schoopia.com
     - +.tongxuepie.com
     - +.baydn.com
@@ -149,13 +157,6 @@ payload:
     - +.youjiao.com
     - +.zhongkao.com
     - +.zuowen.com
-    - +.rainclassroom.com
-    - +.yuketang.cn
-    - +.applysquare.com
-    - +.applysquare.net
-    - +.hugecore.net
-    - +.shareintelli.com
-    - +.mojidict.com
     - +.banmaaike.com
     - +.xiaoyuankousuan.com
     - +.ybccode.com
@@ -164,15 +165,14 @@ payload:
     - +.yuantiku.com
     - +.fbstatic.cn
     - +.fenbi.com
-    - +.fenbike.cn
     - +.qgzb.com.cn
     - +.qgzb.gov.cn
     - +.pep.com.cn
     - +.peeavp.com.cn
     - +.hep.com.cn
     - +.zbbm.gov.cn
-    - +.gfbzb.com.cn
     - +.icve.com.cn
+    - +.gfbzb.com.cn
     - +.ncss.org.cn
     - +.gatzs.com.cn
     - +.modex.com.cn
