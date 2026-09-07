@@ -6,7 +6,7 @@
 
 `geosite-lite.dat` 从上游 `geosite.dat` 按本机 Mihomo 配置实际使用的分类提取生成。保留的分类由 [`geosite-lite.txt`](./geosite-lite.txt) 定义，并覆盖规则与 DNS `fake-ip-filter` 中引用的 geosite。
 
-当前保留的分类包括：`private`、`oppo`、`agilebits`、`netease`、`category-ai-!cn`、`github`、`jetbrains`、`linuxdo`、`instagram`、`bahamut`、`linkedin`、`pixiv`、`dlsite`、`faceit`、`onedrive`、`microsoft`、`telegram`、`apple`、`category-games-cn`、`cn`。
+当前保留的分类包括：`private`、`oppo`、`agilebits`、`netease`、`category-ai-!cn`、`github`、`google`、`jetbrains`、`linuxdo`、`instagram`、`bahamut`、`linkedin`、`pixiv`、`dlsite`、`faceit`、`onedrive`、`microsoft`、`telegram`、`apple`、`category-games-cn`、`cn`。
 
 提取过程会保留域名类型及 `@cn`、`@ads` 等 attribute。
 

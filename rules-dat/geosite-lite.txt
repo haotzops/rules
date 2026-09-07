@@ -5,6 +5,7 @@ agilebits
 netease
 category-ai-!cn
 github
+google
 jetbrains
 linuxdo
 instagram
