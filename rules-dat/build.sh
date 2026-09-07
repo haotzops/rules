@@ -61,7 +61,7 @@ go run ./rules-dat \
   --geosite-categories "$ROOT_DIR/rules-dat/geosite-lite.txt" \
   --geoip-input "$BUILD_DIR/geoip.dat" \
   --geoip-output "$BUILD_DIR/geoip-lite.dat" \
-  --geoip-countries CN,JP,US
+  --geoip-countries CN,JP,TW
 
 export NO_SKIP=true
 GOBIN="$BUILD_DIR/bin" go install -trimpath -ldflags='-s -w -buildid=' github.com/metacubex/geo/cmd/geo@master

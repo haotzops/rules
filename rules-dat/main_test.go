@@ -55,12 +55,12 @@ func TestExtractGeoIPSelectsCountries(t *testing.T) {
 	source := &router.GeoIPList{Entry: []*router.GeoIP{
 		{CountryCode: "cn", Cidr: []*router.CIDR{{Ip: []byte{192, 0, 2, 0}, Prefix: 24}}},
 		{CountryCode: "jp"},
-		{CountryCode: "us"},
+		{CountryCode: "tw"},
 		{CountryCode: "de"},
 	}}
 	writeProto(t, inputPath, source)
 
-	if err := extractGeoIP(inputPath, outputPath, "CN,JP,US"); err != nil {
+	if err := extractGeoIP(inputPath, outputPath, "CN,JP,TW"); err != nil {
 		t.Fatalf("extractGeoIP() error = %v", err)
 	}
 
@@ -69,7 +69,7 @@ func TestExtractGeoIPSelectsCountries(t *testing.T) {
 	if len(result.Entry) != 3 {
 		t.Fatalf("selected countries = %d, want 3", len(result.Entry))
 	}
-	for index, want := range []string{"cn", "jp", "us"} {
+	for index, want := range []string{"cn", "jp", "tw"} {
 		if got := result.Entry[index].GetCountryCode(); got != want {
 			t.Errorf("country[%d] = %q, want %q", index, got, want)
 		}
