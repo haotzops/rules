@@ -4,19 +4,15 @@
 
 ## geosite-lite 集合
 
-`geosite-lite.dat` 从上游 `geosite.dat` 按分类提取生成。保留的分类由 [`geosite-lite.txt`](./geosite-lite.txt) 定义，包含常用服务、地区、内网和开发者相关集合。
+`geosite-lite.dat` 从上游 `geosite.dat` 按本机 Mihomo 配置实际使用的分类提取生成。保留的分类由 [`geosite-lite.txt`](./geosite-lite.txt) 定义，并覆盖规则与 DNS `fake-ip-filter` 中引用的 geosite。
 
-当前保留的主要分类包括：
-
-- 服务：`abema`、`apple`、`apple-music`、`bilibili`、`bahamut`、`google`、`github`、`microsoft`、`netflix`、`openai`、`onedrive`、`pixiv`、`spotify`、`telegram`、`twitter`、`tiktok`、`youtube`、`icloud`、`instagram`、`linkedin`、`steam`、`epicgames`
-- 基础及地区：`cn`、`private`、`ehentai`
-- 开发者和分类集合：`category-forums`、`jetbrains`、`jetbrains-ai`、`category-ai-!cn`、`category-ai-cn`、`category-pt`、`agilebits`、`category-games-cn`、`netease`、`dlsite`、`faceit`
+当前保留的分类包括：`private`、`oppo`、`agilebits`、`netease`、`category-ai-!cn`、`github`、`jetbrains`、`linuxdo`、`instagram`、`bahamut`、`linkedin`、`pixiv`、`dlsite`、`faceit`、`onedrive`、`microsoft`、`telegram`、`apple`、`category-games-cn`、`cn`。
 
 提取过程会保留域名类型及 `@cn`、`@ads` 等 attribute。
 
 ## geoip-lite 集合
 
-`geoip-lite.dat` 同样从上游 `geoip.dat` 提取，仅包含 `CN`、`JP`、`US` 三个国家/地区分类。
+`geoip-lite.dat` 同样从上游 `geoip.dat` 提取，仅包含 `CN`、`JP`、`TW` 三个国家/地区分类。
 
 ## 输出结构
 
