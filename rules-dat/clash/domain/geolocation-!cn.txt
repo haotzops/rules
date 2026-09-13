@@ -818,8 +818,8 @@ zftksc.launches.appsflyersdk.com
 +.apple
 +.android
 +.amazon
-+.ruptly.tv
-+.familyds.org
++.rupress.org
++.appsto.re
 +.12diasderegalosdeitunes.pe
 +.12joursdecadeauxdeitunes.com
 +.12vpn.com
@@ -2954,7 +2954,7 @@ zftksc.launches.appsflyersdk.com
 +.appsocks.net
 +.appsonebay.net
 +.appspot.com
-+.appsto.re
++.jivara.global
 +.youversion.com
 +.appstore.hk
 +.appstore.my
@@ -9161,7 +9161,7 @@ zftksc.launches.appsflyersdk.com
 +.facerbook.com
 +.facesbooc.com
 +.facesofnyfw.com
-+.facesoftibetanselfimmolators.info
++.jiuse823.com
 +.facesounds.com
 +.facetime.net
 +.facetook.com
@@ -9223,7 +9223,7 @@ zftksc.launches.appsflyersdk.com
 +.xxu.mobi
 +.familyds.com
 +.familyds.net
-+.jivara.global
++.familyds.org
 +.xxnxx-sex.com
 +.xxnxx-porn.com
 +.familypies.net
@@ -12730,7 +12730,7 @@ zftksc.launches.appsflyersdk.com
 +.ifontcloud.com
 +.iframejav.com
 +.ifreewares.com
-+.ift.tt
++.jivo.chat
 +.ifuckedmy.mom
 +.ifuckedtheboss.com
 +.ig.me
@@ -13950,9 +13950,9 @@ zftksc.launches.appsflyersdk.com
 +.jiuse6666.com
 +.jiuse821.com
 +.jiuse822.com
-+.wistia.com
++.facesoftibetanselfimmolators.info
 +.12diasderegalosdeitunes.hn
-+.pinterest.ru
++.ift.tt
 +.jivo.ru
 +.xbox.org
 +.xbox.eu
@@ -16205,7 +16205,7 @@ zftksc.launches.appsflyersdk.com
 +.withgoogle.com
 +.wistia.net
 +.misskey.stream
-+.jiuse823.com
++.wistia.com
 +.misskeyusercontent.jp
 +.mistral.ai
 +.mistresskym.com
@@ -17562,6 +17562,7 @@ zftksc.launches.appsflyersdk.com
 +.nodequality.com
 +.nodereal.io
 +.nodeseek.com
++.nodeseek.org
 +.nodesource.com
 +.noisullifb.com
 +.nokiantyres.com
@@ -18888,7 +18889,7 @@ zftksc.launches.appsflyersdk.com
 +.pinterest.pe
 +.pinterest.ph
 +.pinterest.pt
-+.jivo.chat
++.pinterest.ru
 +.pinterest.se
 +.pinterest.th
 +.pinterest.tw
@@ -19807,6 +19808,7 @@ zftksc.launches.appsflyersdk.com
 +.qt-project.org
 +.qt.io
 +.qtrac.eu
++.quakemachinex.com
 +.qualcomm-email.com
 +.qualcomm-inc.com
 +.weebly.com
@@ -20497,9 +20499,9 @@ zftksc.launches.appsflyersdk.com
 +.runningnike.com
 +.runporn.com
 +.runwayescorts.com
-+.rupress.org
-+.ruptly.agency
 +.000webhost.com
++.ruptly.agency
++.ruptly.tv
 +.ruptly.video
 +.rurtnews.com
 +.rusfinance.ru

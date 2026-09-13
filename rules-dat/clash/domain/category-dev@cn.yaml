@@ -1,8 +1,4 @@
 payload:
-    - +.microsoftreactor.cn
-    - +.microsoftreactor.com.cn
-    - +.reactorms.com.cn
-    - download.visualstudio.microsoft.com
     - cdn.ampproject.org
     - +.jetbrains.com.cn
     - +.cdn.jetbrains.com
@@ -20,6 +16,10 @@ payload:
     - +.researchkit.com.cn
     - +.swiftui.cn
     - +.swiftui.com.cn
+    - +.microsoftreactor.cn
+    - +.microsoftreactor.com.cn
+    - +.reactorms.com.cn
+    - download.visualstudio.microsoft.com
     - crashlyticsreports-pa.googleapis.com
     - firebase-settings.crashlytics.com
     - update.crashlytics.com
