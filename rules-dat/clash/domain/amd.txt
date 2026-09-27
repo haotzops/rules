@@ -3,3 +3,4 @@
 +.amdgaming.com
 +.radeon.com
 +.amd.com.cn
+drivers.amd.com
