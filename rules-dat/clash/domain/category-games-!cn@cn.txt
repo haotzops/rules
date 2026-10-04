@@ -10,9 +10,10 @@
 +.mariokart.cn
 +.mariokart.com.cn
 +.supermariobros.com.cn
++.xboxlive.cn
 +.leagueoflegends.cn
 +.lpl.com.cn
-+.xboxlive.cn
+gog.qtlglb.com
 +.csgo.com.cn
 +.csgo.wmsj.cn
 +.dota2.com.cn
@@ -30,6 +31,5 @@ lv.queniujq.cn
 xz.pphimalayanrt.com
 +.steamchina.com
 +.gstore.val.manlaxy.com
-gog.qtlglb.com
 +.yostar.cn
 +.bluearchive-cn.com
