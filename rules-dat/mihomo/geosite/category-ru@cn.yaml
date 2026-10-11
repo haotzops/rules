@@ -96,3 +96,4 @@ payload:
     - DOMAIN,s17.upd.kaspersky.com
     - DOMAIN,s18.upd.kaspersky.com
     - DOMAIN,s19.upd.kaspersky.com
+    - DOMAIN-SUFFIX,yandex-ad.cn
