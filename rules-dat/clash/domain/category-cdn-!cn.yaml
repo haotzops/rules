@@ -1,12 +1,22 @@
 payload:
-    - +.fastly-edge.com
-    - +.akadns.net
-    - +.llnwi.net
+    - +.b-cdn.net
+    - +.bunny.net
+    - +.bunnycdn.com
     - +.cdnjs.com
     - +.esm.sh
     - +.gcdn.co
     - +.gcore.com
     - +.gcore.pro
+    - +.imgix.com
+    - +.imgix.net
+    - +.delvenetworks.com
+    - +.limelight.com
+    - +.lldns.net
+    - +.llnw-trials.com
+    - +.llnw.com
+    - +.llnw.net
+    - +.llnwd.net
+    - +.llnwi.net
     - +.pagecdn.com
     - +.pagecdn.io
     - +.quantil.com
@@ -18,7 +28,7 @@ payload:
     - +.akacrypto.net
     - +.akadeem.net
     - +.akadns.com
-    - +.b-cdn.net
+    - +.akadns.net
     - +.akadns6.net
     - +.akaeai.com
     - +.akafms.net
@@ -81,14 +91,6 @@ payload:
     - +.iamakamai.net
     - +.soasta-dswb.com
     - +.srtcdn.net
-    - +.bunnycdn.com
-    - +.bunny.net
-    - +.foundationdns.org
-    - +.fastly.com
-    - +.fastly.io
-    - +.fastly.net
-    - +.fastlylabs.com
-    - +.fastlylb.net
     - +.esm.run
     - +.jsdelivr.com
     - +.jsdelivr.net
@@ -141,7 +143,7 @@ payload:
     - +.every1dns.net
     - +.foundationdns.com
     - +.foundationdns.net
-    - +.fastly-terrarium.com
+    - +.foundationdns.org
     - +.imagedelivery.net
     - +.isbgpsafeyet.com
     - +.pacloudflare.com
@@ -153,17 +155,15 @@ payload:
     - +.workers.dev
     - +.cf-ipfs.com
     - +.cloudflare-ipfs.com
-    - +.llnwd.net
-    - +.imgix.com
-    - +.imgix.net
-    - +.delvenetworks.com
-    - +.limelight.com
-    - +.lldns.net
-    - +.llnw-trials.com
-    - +.llnw.com
-    - +.llnw.net
-    - +.one.one.one
+    - +.fastly-edge.com
+    - +.fastly-terrarium.com
+    - +.fastly.com
+    - +.fastly.io
+    - +.fastly.net
+    - +.fastlylabs.com
+    - +.fastlylb.net
     - +.akamai.co.kr
+    - +.one.one.one
     - +.accdn.com.cn
     - +.akadns88.net
     - +.akadns99.net

@@ -1,22 +1,8 @@
 payload:
-    - api-eu.carrotquest.app
-    - api-eu.carrotquest.io
-    - api-ru.carrotquest.app
-    - api-ru.carrotquest.io
-    - api-secure.carrotquest.app
-    - api-secure.carrottrack.app
-    - api.carrotquest.app
-    - api.carrotquest.io
-    - api.carrottrack.app
-    - api.dashly.app
-    - api.dashlytrack.app
-    - +.clarity.ms
-    - +.microsoftads.com
-    - +.msads.net
-    - +.nelreports.net
-    - +.browser.events.data.msn.cn
-    - +.browser.events.data.msn.com
-    - +.bingads.com
+    - sentry.iptv.rt.ru
+    - +.advertising.adobe.com
+    - +.demdex.net
+    - +.tubemogul.com
     - +.2mdn-cn.net
     - +.2mdn.net
     - +.admob-cn.com
@@ -71,10 +57,12 @@ payload:
     - +.urchin.com
     - analytics.google.com
     - +.ads.youtube.com
-    - +.a.mts.ru
-    - +.obs.mts.ru
-    - +.amazon-adsystem.com
-    - +.serving-sys.com
+    - +.ads-api.duolingo.com
+    - +.analytics.vpc.duolingo.com
+    - +.metrics.duolingo.com
+    - +.ads.yahoo.com
+    - +.gemini.yahoo.com
+    - +.ysm.yahoo.com
     - +.e.mindbox.ru
     - +.g.mindbox.ru
     - +.s.mindbox.ru
@@ -85,6 +73,22 @@ payload:
     - api.mindbox.ru
     - sentry.mindbox.ru
     - sentry.popmechanic.ru
+    - sentry.hetzner.company
+    - +.amazon-adsystem.com
+    - +.serving-sys.com
+    - +.advertising.apple.com
+    - +.api-adservices.apple.com
+    - +.iadsdk.apple.com
+    - +.iad.apple.com
+    - +.qwapi.com
+    - +.clarity.ms
+    - +.microsoftads.com
+    - +.msads.net
+    - +.nelreports.net
+    - +.browser.events.data.msn.cn
+    - +.browser.events.data.msn.com
+    - +.bingads.com
+    - +.snapads.com
     - +.adfox.ru
     - +.adfox.yandex.ru
     - +.admetrica.ru
@@ -126,17 +130,6 @@ payload:
     - mc.yango.com
     - pixel.yandex.com
     - report.ap.yandex-net.ru
-    - +.advertising.apple.com
-    - +.api-adservices.apple.com
-    - +.iadsdk.apple.com
-    - +.iad.apple.com
-    - +.qwapi.com
-    - +.ads-api.duolingo.com
-    - +.analytics.vpc.duolingo.com
-    - +.metrics.duolingo.com
-    - +.samsungadhub.com
-    - +.samsungads.com
-    - sentry.hetzner.company
     - +.ad.mail.ru
     - +.ads.viqeo.tv
     - +.adsadvisor.io
@@ -207,18 +200,25 @@ payload:
     - analytics.vk.ru
     - stats.vk-portal.net
     - target.vk.com
-    - +.ads.yahoo.com
-    - +.gemini.yahoo.com
-    - +.ysm.yahoo.com
     - ads-img.mozilla.org
     - ads.mozilla.org
-    - +.snapads.com
-    - sentry.iptv.rt.ru
-    - +.advertising.adobe.com
-    - +.demdex.net
-    - +.tubemogul.com
+    - +.a.mts.ru
+    - +.obs.mts.ru
     - +.analytics.facebook.com
     - +.facebookads.com
     - +.pixel.facebook.com
     - +.graph.instagram.com
     - +.graph-fallback.instagram.com
+    - +.samsungadhub.com
+    - +.samsungads.com
+    - api-eu.carrotquest.app
+    - api-eu.carrotquest.io
+    - api-ru.carrotquest.app
+    - api-ru.carrotquest.io
+    - api-secure.carrotquest.app
+    - api-secure.carrottrack.app
+    - api.carrotquest.app
+    - api.carrotquest.io
+    - api.carrottrack.app
+    - api.dashly.app
+    - api.dashlytrack.app
