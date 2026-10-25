@@ -207,6 +207,8 @@ payload:
     - ocsp2.apple.com
     - valid.apple.com
     - valid.origin-apple.com.akadns.net
+    - amp-api.podcasts.apple.com
+    - podcasts.apple.com
     - +.beats1.cn
     - +.beats1.com.cn
     - +.beats2.com.cn
@@ -214,14 +216,6 @@ payload:
     - +.beatsbydre.com
     - +.beatsbydre.com.cn
     - +.beatsep.cn
-    - +.apple-icloud.cn
-    - +.appleicloud.cn
-    - +.icloud-apple.cn
-    - +.icloud-content.com.cn
-    - +.icloud.cn
-    - +.icloud.com.cn
-    - +.icloud.net.cn
-    - +.icloudapple.cn
     - +.apple-itunes.cn
     - +.itunes-apple.cn
     - +.itunesapple.cn
@@ -293,5 +287,10 @@ payload:
     - musicstatus.music.apple.com
     - play.music.apple.com
     - speedysub.music.apple.com
-    - amp-api.podcasts.apple.com
-    - podcasts.apple.com
+    - +.apple-icloud.cn
+    - +.appleicloud.cn
+    - +.icloud-apple.cn
+    - +.icloud-content.com.cn
+    - +.icloud.com.cn
+    - +.icloud.net.cn
+    - +.icloudapple.cn
