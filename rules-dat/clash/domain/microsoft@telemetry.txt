@@ -4,6 +4,8 @@
 +.data.microsoft.com
 +.telemetry.microsoft.com
 +.nelreports.net
+dc.services.visualstudio.com
+rt.services.visualstudio.com
 +.browser.events.data.msn.cn
 +.browser.events.data.msn.com
 +.in.applicationinsights.azure.com
@@ -13,5 +15,3 @@ live.applicationinsights.azure.com
 +.collector.github.com
 copilot-telemetry-service.githubusercontent.com
 copilot-telemetry.githubusercontent.com
-dc.services.visualstudio.com
-rt.services.visualstudio.com

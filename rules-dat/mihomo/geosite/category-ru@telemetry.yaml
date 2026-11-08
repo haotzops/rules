@@ -1,4 +1,14 @@
 payload:
+    - DOMAIN,sentry.x5.ru
+    - DOMAIN,sentry.mindbox.ru
+    - DOMAIN,sentry.popmechanic.ru
+    - DOMAIN,stats.avito.ru
+    - DOMAIN,sentry.ozon.ru
+    - DOMAIN,analytics-stage.wildberries.ru
+    - DOMAIN,analytics.wildberries.ru
+    - DOMAIN,marketplace-sentry.wb.ru
+    - DOMAIN,sentry.wb.ru
+    - DOMAIN,web-analytics.wildberries.ru
     - DOMAIN,error-tracking.megamarket.tech
     - DOMAIN,metrics.21-school.ru
     - DOMAIN,sentry.sberauto.com
@@ -23,8 +33,9 @@ payload:
     - DOMAIN,mc.yandex.net
     - DOMAIN,mc.yango.com
     - DOMAIN,sentry.iptv.rt.ru
-    - DOMAIN,sentry.mindbox.ru
-    - DOMAIN,sentry.popmechanic.ru
+    - DOMAIN-SUFFIX,clickstream.sberbank.ru
+    - DOMAIN,metrika.kontur.ru
+    - DOMAIN,sentry.kontur.host
     - DOMAIN-SUFFIX,apptracer.ru
     - DOMAIN-SUFFIX,metrics.viqeo.tv
     - DOMAIN,sentry-ng.g.smailru.net
@@ -39,14 +50,3 @@ payload:
     - DOMAIN,stats.telega.info
     - DOMAIN-SUFFIX,log.dzen.ru
     - DOMAIN,stats.vk-portal.net
-    - DOMAIN,sentry.x5.ru
-    - DOMAIN,metrika.kontur.ru
-    - DOMAIN,sentry.kontur.host
-    - DOMAIN-SUFFIX,clickstream.sberbank.ru
-    - DOMAIN,sentry.ozon.ru
-    - DOMAIN,analytics-stage.wildberries.ru
-    - DOMAIN,analytics.wildberries.ru
-    - DOMAIN,marketplace-sentry.wb.ru
-    - DOMAIN,sentry.wb.ru
-    - DOMAIN,web-analytics.wildberries.ru
-    - DOMAIN,stats.avito.ru

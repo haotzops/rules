@@ -1,16 +1,18 @@
 payload:
     - cueme-api.quark.cn
     - ai.zhaomi.cn
-    - +.zhiexa.com
-    - +.doubaocdn.com
+    - +.clawhub-mirror.com
+    - +.rwkv.com
     - +.liblib.tv
     - +.rwkv.cn
-    - +.rwkv.com
+    - +.skillhub.cn
     - +.tapnow.top
+    - +.api-building.fun
     - +.qianwen.com
     - +.qianwenai.com
     - +.qwen.ai
     - +.qwenlm.ai
+    - +.pixeldance.com
     - +.tongyi.com
     - +.antafu.com
     - +.antaq.com
@@ -18,9 +20,9 @@ payload:
     - +.happyhorse.cn
     - +.happyshrimp.cn
     - +.sleeplesshorizon.cn
+    - +.picpic-ai.cn
     - +.dumate.cn
     - +.miaoda.cn
-    - +.deepseeksvc.com
     - +.mcpworld.com
     - +.tiangong.cn
     - +.bigmodel.cn
@@ -30,17 +32,15 @@ payload:
     - +.zhipucn.com
     - +.kimi.com
     - +.moonshot.cn
-    - +.deepseek.com
-    - +.diandianlife.top
-    - +.askdiandian.com
+    - +.obricclouddw.com
     - +.hailuoai.com
     - +.minimaxi.com
     - +.xingyeai.com
     - +.codebuddy.cn
     - +.workbuddy.cn
-    - +.xiaomimimo.com
-    - +.xiaoaiassist.com
-    - +.miaibox.com
+    - +.obriccloud.com
+    - +.oceancloudapi.com
+    - +.myparallelstory.com
     - +.baichuan-ai.com
     - +.cueme.cn
     - +.n.cn
@@ -55,18 +55,45 @@ payload:
     - +.xiezuocat.com
     - +.aispeech.com
     - +.dui.ai
-    - +.duiopen.com
-    - +.clawhub-mirror.com
-    - +.skillhub.cn
     - +.safeskill.cn
+    - +.senseaudio.cn
+    - +.senseavatar.com
+    - +.sensecore.cn
+    - +.sensefoundry.cn
+    - +.sensenova.cn
+    - +.sensetime.com
+    - +.xiaohuanxiong.com
+    - +.liblib.art
     - +.liblib.cloud
-    - +.cozesdk.com
-    - +.instreet.com
+    - +.duiopen.com
+    - +.zhiexa.com
+    - +.linka2a.net
+    - +.yzsgo.com
     - +.shunjing.xin
     - +.kakaxing.com
     - +.favonis.cloud
     - +.favonis.com
     - +.favonis.space
+    - +.ai-indeed.com
+    - +.doudou.com
+    - +.marscode.cn
+    - +.mcbaas.work
+    - +.mcdemo.show
+    - +.mchost.guru
+    - +.mcprev.cn
+    - +.tcwqqdy.guru
+    - +.trae.cn
+    - +.trae.guru
+    - +.yoma.cn
+    - +.maoxiangai.com
+    - +.hi-butterfly.cn
+    - +.miaibox.com
+    - +.xiaoaiassist.com
+    - +.xiaomimimo.com
+    - +.askdiandian.com
+    - +.diandianlife.top
+    - +.deepseek.com
+    - +.deepseeksvc.com
     - +.butterfly-static.cn
     - +.butterflyai.cn
     - +.coze-dns-01.com
@@ -80,37 +107,19 @@ payload:
     - +.cozedeploy.com
     - +.cozefn.cn
     - +.cozeide.cn
-    - +.linka2a.net
+    - +.cozesdk.com
     - +.cozetest.cn
     - +.cozetest2.cn
     - +.cozetest3.cn
     - +.dbbuilding.fun
     - +.building.fun
-    - +.yzsgo.com
+    - +.instreet.com
     - +.doubao-dev.com
     - +.doubao.com
-    - +.liblib.art
-    - +.hi-butterfly.cn
-    - +.maoxiangai.com
-    - +.myparallelstory.com
-    - +.oceancloudapi.com
-    - +.obriccloud.com
-    - +.obricclouddw.com
-    - +.picpic-ai.cn
-    - +.pixeldance.com
-    - +.api-building.fun
-    - +.doudou.com
-    - +.marscode.cn
-    - +.mcbaas.work
-    - +.mcdemo.show
-    - +.mchost.guru
-    - +.mcprev.cn
-    - +.tcwqqdy.guru
-    - +.trae.cn
-    - +.trae.guru
-    - +.yoma.cn
-    - +.marscode.com.cn
+    - +.doubaoapps.com
+    - +.doubaocdn.com
     - +.trae.com.cn
+    - +.marscode.com.cn
     - +.yuanqi.tencent.com
     - +.yuanbao.tencent.com
     - +.hunyuan.tencent.com

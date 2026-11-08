@@ -1,6 +1,5 @@
-DOMAIN-SUFFIX,xboxlive.cn
 DOMAIN-SUFFIX,yostar.cn
-DOMAIN-SUFFIX,bluearchive-cn.com
+DOMAIN,gog.qtlglb.com
 DOMAIN-SUFFIX,legendofzelda.cn
 DOMAIN-SUFFIX,legendofzelda.com.cn
 DOMAIN-SUFFIX,miitomo.com.cn
@@ -32,6 +31,7 @@ DOMAIN-SUFFIX,steamchina.com
 DOMAIN-SUFFIX,gstore.val.manlaxy.com
 DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
 DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$
-DOMAIN,gog.qtlglb.com
+DOMAIN-SUFFIX,xboxlive.cn
 DOMAIN-SUFFIX,leagueoflegends.cn
 DOMAIN-SUFFIX,lpl.com.cn
+DOMAIN-SUFFIX,bluearchive-cn.com
